@@ -1,0 +1,389 @@
+/*
+Theme Name: wp-bootstrap
+Theme URI: https://github.com/oxnz/wordpress-theme-nz
+Author: oxnz
+Author URI: http://oxnz.github.io/
+Description: A theme based on bootstrap
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentythirteen 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css");
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+input.rounded {
+	color: #c1c1c1;
+	background: #515151;
+	border: 1px solid #505050;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+	padding: 4px 14px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	font: -webkit-small-control;
+	-webkit-user-select: text;
+	display: inline-block;
+	-moz-box-shadow: 2px 2px 3px #666;
+	outline: 0;
+	-webkit-appearance: none;
+}
+
+input.rounded:focus {
+	color: black;
+	border-color: black;
+	background: white;
+	//width: 200px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-top: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #333333;
+}
+
+p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+/*
+ * Override Bootstrap's default container
+ */
+
+/*
+@media (min-width: 1200px) {
+	.container {
+		width: 970;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		width: 768;
+	}
+}
+*/
+
+input[type=submit] {
+	padding: 5px 15px;
+	background: #86284D;
+	border: 0 none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: white;
+}
+
+a,
+a:hover {
+	color: #86284D;
+}
+
+body {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
+	color: #676767;
+	background: #EEEDE8;
+}
+
+body a:link {
+	text-decoration: none;
+}
+
+ul.nav li {
+	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+/*
+ * end of global setting
+ * begin of site-header
+ */
+
+.site-header .topbar {
+	font-size: 11px;
+	background: black;
+	border-bottom: 1px solid #292929;
+}
+
+.site-header .topbar .toplinks {
+	float: right;
+	padding: 5px 0px;
+	margin: 0;
+}
+
+.site-header .topbar .toplinks li {
+	display: inline;
+}
+
+.site-header .topbar .toplinks li a {
+	color: #666666;
+}
+
+.site-header .topbar .toplinks li a:hover {
+	color: white;
+}
+
+.site-header .site-banner {
+	padding-top: 40px;
+	background-image: url(img/header-bg.png);
+	background-repeat: repeat;
+}
+
+.site-banner .site-name a {
+	color: #e1e1e1;
+}
+
+.site-nav {
+	display: inline-block;
+}
+
+.site-header .site-banner .site-nav ul li {
+	display: inline-block;
+	font-size: 100%;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+	padding: 0px 10px;
+	border-right: 1px solid #999999;
+}
+
+.site-header .site-banner .site-nav ul li:last-child {
+	border: 0px;
+}
+
+.site-header .site-banner .site-nav ul li:last-child a {
+	color: #e1e1e1;
+}
+
+.site-header .site-banner .site-nav ul li a {
+	color: #999999;
+	font-weight: normal;
+}
+
+.site-header .site-title {
+	padding-top: 120px;
+	color: #e1e1e1;
+}
+
+.site-header .site-description {
+	padding-bottom: 40px;
+}
+
+.site-header .linkbar {
+	display: block;
+	background: #272727;
+	border-top: 1px dashed #3c3c3c;
+	overflow: auto;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.site-header .linkbar {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.site-header .linkbar .breadcrumb {
+	margin: 0;
+	background: transparent;
+}
+
+.site-header .linkbar .site-search {
+	margin: 0;
+	padding-top: 5px;
+}
+
+.site-header .linkbar .site-search .searchform {
+	display: inline-block;
+}
+
+.site-header .space {
+	background: #EEEDE8;
+	padding-top: 40px;
+}
+
+.site-header .content-header {
+	background: #EEEDE8;
+	border-top: 1px dotted #999999;
+	border-bottom: 1px dotted #999999;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.site-header .content-header h2 {
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+	color: black;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: 3px;
+}
+
+/*
+ * end of site-header
+ * begin of site-content
+ */
+
+.site-content a:hover {
+	border-bottom: 1px dotted;
+}
+
+.site-content .blog .post ul li {
+	list-style: none;
+}
+
+.site-content .blog .post.well {
+	background: white;
+}
+
+.site-content .blog .post .title {
+	font-size: 265%;
+	font-family: georgia, serif;
+}
+
+.site-content .blog .post .author {
+	font-size: 40%;
+	padding-top: 10px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.site-content .blog .post .more-link {
+	text-transform: uppercase;
+	padding: 3px 6px;
+	background: #86284D;
+	color: white;
+	font-family:"Times New Roman",Georgia,Serif;
+	line-height: 50px;
+}
+
+.site-content .blog .post .metadata {
+	border-top: 1px solid #CCCCCC;
+	font-size: 40%;
+}
+
+.site-content .blog .post a.more-link:hover {
+	border: 1px dotted;
+}
+
+/*
+ * end of .site-content .blog
+ * begin of comments
+ */
+
+.site-content .comments-area ol {
+	padding-left: 0;
+	text-align: left;
+}
+
+.site-content .comments-area ol li {
+	margin-bottom: 10px;
+}
+
+.site-content .comments-title {
+	font-family:"Times New Roman",Georgia,Serif;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.site-content .comment-meta {
+	font-size: 80%;
+}
+
+.site-content .comment-reply-title {
+	margin-top: 10px;
+	font-family:"Times New Roman",Georgia,Serif;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.site-content .comment-form p label {
+	color: #86284D;
+	display: inline-block;
+	width: 80px;
+}
+
+.site-content .comment-form .comment-form-comment textarea {
+	width: 95%;
+}
+
+/*
+ * end of site-content
+ * begin of site-sidebar
+ */
+
+.site-content .site-sidebar ul {
+	padding-left: 0;
+}
+
+.site-content .site-sidebar ul li {
+	font-size: 12px;
+}
+
+.site-content .site-sidebar h3 {
+	font-family: georgia, serif;
+	color: #4B4740;
+	font-size: 18px;
+}
+
+.site-content .site-sidebar .primary-sidebar {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.site-sidebar .primary-sidebar ul {
+}
+
+.site-sidebar .primary-sidebar h3 {
+	border-bottom: 1px dotted #86284D;
+}
+
+.site-sidebar .primary-sidebar ul li {
+	list-style: none;
+}
+
+/*
+ * end of site-sidebar
+ * begin of site-footer
+ */
+
+.site-footer {
+	padding: 40px 0;
+	text-align: center;
+	background: black;
+	border-top: 4px solid #666666;
+}
+
+.site-footer .footer-links li {
+	display: inline;
+}
+
+.site-footer .footer-links li a:link {
+	text-decoration: none;
+	color: #676767;
+}
+
+.site-footer .footer-links li a:hover {
+	color: white;
+}

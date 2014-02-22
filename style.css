@@ -118,7 +118,8 @@ ul.nav li {
 .site-header .topbar {
 	font-size: 11px;
 	background: black;
-	border-bottom: 1px solid #292929;
+	//border-bottom: 1px solid #292929;
+	border-bottom: 1px dotted darkred;
 }
 
 .site-header .topbar .toplinks {
@@ -160,7 +161,8 @@ ul.nav li {
 	text-transform: uppercase;
 	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 	padding: 0px 10px;
-	border-right: 1px solid #999999;
+	//border-right: 1px solid #999999;
+	border-right: 1px dotted darkred;
 }
 
 .site-header .site-banner .site-nav ul li:last-child {
@@ -176,6 +178,10 @@ ul.nav li {
 	font-weight: normal;
 }
 
+.site-header .site-banner .site-nav ul li a:hover {
+	color: white;
+}
+
 .site-header .site-title {
 	padding-top: 120px;
 	color: #e1e1e1;
@@ -188,7 +194,9 @@ ul.nav li {
 .site-header .linkbar {
 	display: block;
 	background: #272727;
-	border-top: 1px dashed #3c3c3c;
+	//border-top: 1px dashed #3c3c3c;
+	border-top: 1px dotted darkred;
+	border-bottom: 1px solid darkred;
 	overflow: auto;
 	font-size: 11px;
 	line-height: 18px;
@@ -370,9 +378,9 @@ ul.nav li {
 
 .site-footer {
 	padding: 20px 0;
-	text-align: center;
 	background: black;
 	border-top: 4px solid #666666;
+	text-align: left;
 }
 
 .site-footer a {
@@ -383,14 +391,59 @@ ul.nav li {
 	color: white;
 }
 
-.site-footer .footer-links li {
-	display: inline;
+.site-footer .footer-links {
+	padding-bottom: 240px;
+}
+
+.site-footer .footer-links ul {
+	padding-left: 0px;
+	padding-top: 20px;
+}
+
+.site-footer .footer-links .column ul li {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 4px;
+	border-top: 1px solid #1c1c1d;
+	font-size: 20%;
+}
+
+.site-footer .footer-links .column ul li:last-child {
+	border-bottom: 1px solid #1c1c1d;
+}
+
+.site-footer .footer-links .column ul li p {
+	line-height: 140%;
+	margin-bottom: 0;
+}
+
+.site-footer .footer-links .column ul li a {
+	color: #434343;
+	font-weight: normal;
+}
+
+.site-footer .footer-links .column {
+}
+
+.site-footer .footer-links .column .title {
+	display: block;
+	border-right: 1px dotted darkred;
+}
+
+.site-footer .footer-links .column .title h4 {
+	font-family: georgia, serif;
+	color: #e1e1e1;
+	text-transform: uppercase;
+}
+
+.site-footer .footer-links .column .title p {
+	line-height: 30%;
 }
 
 .site-footer .footer-copyright {
 	border-top: 1px solid #1c1c1d;
 	padding-top: 10px;
-	margin-top: 20px;
 }
 
 .site-footer .footer-copyright p {
@@ -399,3 +452,6 @@ ul.nav li {
 	line-height: 80%;
 }
 
+.img-circle {
+	border: 4px solid white;
+}

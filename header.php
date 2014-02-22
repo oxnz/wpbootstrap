@@ -48,7 +48,9 @@
 			<h1 class="site-name pull-left"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 			<?php wp_nav_menu(array('container_class' => 'site-nav pull-right'));?>
 			<h1 class="site-title">Works, Blog, Projects</h1>
-			<p class="site-description"><?php bloginfo('description'); ?></p>
+			<p class="site-description"><?php bloginfo('description'); ?>
+				&nbsp;&nbsp;<a href="#">Learn more &raquo;</a>
+			</p>
 		</div>
 	</div><!-- #site-banner -->
 	<div class="linkbar">

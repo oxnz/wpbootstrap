@@ -14,16 +14,16 @@ get_header();
 </div>
 </div>
 <hr>
-<div class="row container">
-<div class="span5">
+<div id="content" class="row" role="main">
+<div class="pull-center">
+	<div class="col-sm-5">
 <img src="http://localhost/~oxnz/favicon.ico" class="img-circle">
 <p>Hello, this is a long title with xjfkajf ksdjfksd jfdsjf hajsdfkj sdfjas dsffasf dsafafd sfjskajfk sadjfksd</p>
-</div>
-<div class="span5">
+	</div>
+	<div class="col-sm-5">
 <h3><a class="active" href="#">Status</a></h3>
 <p>Recently, I'm busy doing house work!Hello, this is a long title with xjfkajf ksdjfksd jfdsjf hajsdfkj sdfjas dsffasf dsafafd sfjskajfk sadjfksd</p>
-</div>
-</div>
+	</div>
 </div>
 
 <hr>

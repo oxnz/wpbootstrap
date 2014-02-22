@@ -6,12 +6,44 @@
 <footer id="site-footer" class="site-footer">
 	<div class="container">
 		<div class="footer-links">
-			<ul>
-				<li><a href="#">abc</a></li>
-				<li><a href="#">abc</a></li>
-				<li><a href="#">abc</a></li>
-			</ul>
-		</div>
+			<div class="col-sm-4 column">
+				<div class="title">
+					<h4>General</h4>
+					<p>These maybe of some interests</p>
+				</div>
+				<ul>
+					<li><a href="#">About My Studio</a></li>
+					<li>
+					<p>hello: <a href="#">this is a para</a></p>
+					<p>hello: <a href="#">this is a para</a></p>
+					<p>hello: <a href="#">this is a para</a></p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4 column">
+				<div class="title">
+					<h4>General</h4>
+					<p>These maybe of some interests</p>
+				</div>
+				<ul>
+					<li><a href="#">About My Studio</a></li>
+					<li>hello <a href="#">world</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4 column">
+				<div class="title">
+					<h4>General</h4>
+					<p>These maybe of some interests</p>
+				</div>
+				<ul>
+					<li><a href="#">About My Studio</a></li>
+					<li><a href="#">About My Studio</a></li>
+					<li><a href="#">About My Studio</a></li>
+					<li><a href="#">About My Studio</a></li>
+					<li><a href="#">About My Studio</a></li>
+				</ul>
+			</div>
+		</div><!-- #footer-links -->
 		<div class="footer-copyright">
 			<p class="pull-left">&copy; 2011-2014 oxnz. <i>Oxnz Web Design.</i>
 				<small><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'Powered by %s'), 'WordPress' ); ?></a></small>

@@ -49,6 +49,7 @@ add_action('init', 'register_site_menu');
 //remove_filter('comment_text', 'wptexturize');
 //remove_filter('the_title', 'wptexturize');
 
+/*
 if (function_exists('register_sidebar'))
 	register_sidebar(array(
 		'before_widget' => '',
@@ -57,4 +58,5 @@ if (function_exists('register_sidebar'))
 		'after_title' => '</h3>',
 	));
 
+ */
 ?>

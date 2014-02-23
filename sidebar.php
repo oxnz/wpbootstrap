@@ -8,15 +8,15 @@
  */
 ?>
 <div class="site-sidebar">
-<div id="secondary">
-<!-- don't show description
+	<div id="secondary">
+	<!-- don't show description
 	<?php
 		$description = get_bloginfo( 'description', 'display' );
 		if ( ! empty ( $description ) ) :
 	?>
 	<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
 	<?php endif; ?>
--->
+	-->
 
 	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 	<nav role="navigation" class="navigation site-navigation secondary-navigation">

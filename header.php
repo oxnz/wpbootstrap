@@ -1,22 +1,5 @@
 <?php
-/**
- * The Header for nz theme
- *
- * Display all of the <head> section and everything up till <div id="container">
- *
- * @package nz
- * @since nz 0.1
- */
-?><!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8) ]><!-->
-<html <?php language_attributes(); ?>>
-<!--<![endif]-->
+?>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,62 +9,69 @@
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico"
 		rel="shortcut icon">
-	<?php wp_register_script('custom-script', get_template_directory_uri() .
-		'/bootstrap/js/bootstrap.js', array('jquery'));
-	//wp_register_script('custom-script', "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", array('jquery'));
-	wp_enqueue_script('custom-script'); ?>
+	<?php 
+		wp_register_script('custom-script', "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", array('jquery'));
+		wp_enqueue_script('custom-script'); ?>
 	<?php wp_head(); ?>
 </head>
 <body>
-<div id="site-header" class="site-header">
-	<div class="topbar">
+
+<div class="site-header">
+	<div class="glob-nav">
 		<div class="container">
-			<ul class="toplinks pull-right">
-				<li><a href="#">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-				<li><a href="#">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-				<li><a href="#">Login</a></li>
+			<div></div>
+			<ul>
+				<li><a href="#"><span class="glyphicon glyphicon-th-list"></span>&nbsp;About</a></li>
+				<li>
+					<a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+				<?php if (is_user_logged_in()) : global $current_user; get_currentuserinfo();
+	echo $current_user->display_name; ?>
+				<?php else : ?>
+					Login
+				<?php endif; ?>
+					</a>
+				</li>
 			</ul>
-		</div>
+			<span class="justify"></span>
+		</div><!-- #container -->
+	</div><!-- #glob-nav -->
+	<div class="site-nav container">
+		<div class="site-name"><a href="<?php echo site_url(); ?>">
+		<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
+		<!--
+<?php bloginfo('name'); ?>
+		-->
+		</a></div>
+		<?php wp_nav_menu(array('container_class' => ''));?>
+		<span class="justify"></span>
 	</div>
-	<div class="site-banner">
-		<div class="container">
-			<h1 class="site-name pull-left"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-			<?php wp_nav_menu(array('container_class' => 'site-nav pull-right'));?>
-			<h1 class="site-title">Works, Blog, Projects</h1>
-			<p class="site-description"><?php bloginfo('description'); ?>
-				&nbsp;&nbsp;<a href="#">Learn more &raquo;</a>
-			</p>
-		</div>
+	<div class="site-banner container">
+		<h1 class="site-title">Web, Works, Projects, Blog and More ...</h1>
+		<p class="site-description"><?php bloginfo('description'); ?>
 	</div><!-- #site-banner -->
-	<div class="linkbar">
+	<div class="site-info">
 		<div class="container">
-			<div class="position pull-left">
+			<div class="position">
 				<ol class="breadcrumb">
-					<!--
-					<li><a href="<?php echo home_url(); ?>"><?php home_url(); ?>Home</a></li>
-					-->
-					<li class="active"><?php echo "Home" . wp_title('/', false) ?></li>
+					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<?php if (is_home()) : ?>
+					<?php elseif (is_404()) : ?>
+					<li>Not Found</li>
+					<?php elseif (is_single()) : ?>
+					<li><?php the_category(' & '); ?></li>
+					<?php else : ?>
+					<li><?php wp_title(''); ?></li>
+					<?php endif; ?>
 				</ol>
-			</div>
-			<div class="site-search pull-right">
-				<form class="searchform" action="<?php site_url(); ?>">
-				<input type="text" class="rounded" name="s" id="s" placeholder="Search">
+			</div><!-- position -->
+			<div class="site-search">
+				<form class="searchform" action="<?php echo site_url(); ?>">
+				<input class="search-input rounded" type="text" name="s" id="s" placeholder="Search">
 				</form>
 			</div>
+			<div class="justify"></div>
 		</div><!-- #container -->
-	</div><!-- #linkbar -->
-	<!--<div class="space"></div>-->
-	<div class="content-header">
-		<div class="container">
-			<div class="title pull-left"><h2>The blog</h2></div>
-			<div class="motto pull-right">
-				<h2>Life Changeds, Friends Don't</h2>
-			</div>
-		</div>
-	</div><!-- #content-header -->
+	</div><!-- #site-info -->
 </div><!-- #site-header -->
-
-<div id="site-content" class="site-content container">
-
-<?php
-?>
+<div class="site-content container">

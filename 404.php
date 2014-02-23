@@ -9,20 +9,20 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<header class="page-header">
-			<h1 class="page-title"><?php _e( 'Not Found', 'wpbootstrap' ); ?></h1>
-		</header>
+<div class="panel panel-danger">
+	<div class="panel-heading">
+		<?php _e( 'Not Found', 'wpbootstrap' ); ?>
+	</div>
+	<div class="panel-body">
+		<p>当前请求的页面不存在，不如搜搜看?</p>
+		<?php get_search_form(); ?>
+	</div>
+</div>
 
-		<div class="page-wrapper">
-			<div class="page-content">
-				<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'wpbootstrap' ); ?></h2>
-				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'wpbootstrap' ); ?></p>
-
-				<?php get_search_form(); ?>
-			</div><!-- .page-content -->
-		</div><!-- .page-wrapper -->
-	</div><!-- #primary -->
-<br><br>
-
+		<!--
+		<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'wpbootstrap' ); ?></h2>
+		<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'wpbootstrap' ); ?></p>
+		<h2>不如意事常八九，正如此时404</h2>
+		<p>当前请求的页面不存在，不如搜搜看?</p>
+		-->
 <?php get_footer(); ?>

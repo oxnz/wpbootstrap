@@ -21,12 +21,14 @@
 		<div class="container">
 			<div></div>
 			<ul>
-				<li><a href="#"><span class="glyphicon glyphicon-th-list"></span>&nbsp;About</a></li>
-				<li>
-					<a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
-				<?php if (is_user_logged_in()) : global $current_user; get_currentuserinfo();
-	echo $current_user->display_name; ?>
+				<li><a href="#">About</a></li>
+				<li> | </li>
+				<li><a href="#">Contact</a></li>
+				<li> | </li>
+				<li><a href="#">
+				<?php if (is_user_logged_in()) : global $current_user;
+					get_currentuserinfo();
+					echo $current_user->display_name; ?>
 				<?php else : ?>
 					Login
 				<?php endif; ?>

@@ -8,41 +8,44 @@
 		<div class="footer-links">
 			<div class="column">
 				<div class="title">
-					<h4>General</h4>
-					<div>These maybe of some interests</div>
+					<h4>Hosted Projects</h4>
+					<div>Projects hosted or created by me</div>
 				</div>
 				<ul>
-					<li><a href="#">About My Studio</a></li>
-					<li>
-					<div>hello: <a href="#">this is a para</a></div>
-					<div>hello: <a href="#">this is a para</a></div>
-					<div>hello: <a href="#">this is a para</a></div>
-					</li>
+					<li><a href="#">pygtk-tutor</a></li>
+					<li><a href="#">yaosa</a></li>
+					<li><a href="#">zdcomp</a></li>
+					<li><a href="#">algorithms</a></li>
+					<li><a href="#">design patterns</a></li>
 				</ul>
 			</div>
 			<div class="column">
 				<div class="title">
-					<h4>General</h4>
-					<div>These maybe of some interests</div>
+					<h4>Products</h4>
+					<div>Availabel softwares written by me</div>
 				</div>
 				<ul>
-					<li><a href="#">About My Studio</a></li>
-					<li>
-					<div>hello: <a href="#">this is a para</a></div>
-					</li>
+					<li><a href="#">clang-user-manual</a></li>
+					<li><a href="#">Digital China Supplicant</a></li>
+					<li><a href="#">WPBootstrap</a></li>
+					<li><a href="#">oxnzbot</a></li>
+					<li><a href="#">nix-utils</a></li>
+					<li><a href="#">NZPlayer</a></li>
 				</ul>
 			</div>
 			<div class="column">
 				<div class="title">
-					<h4>General</h4>
-					<div>These maybe of some interests</div>
+					<h4>Social Connect</h4>
+					<div>Drop me a message</div>
 				</div>
 				<ul>
-					<li><a href="#">About My Studio</a></li>
-					<li><a href="#">About My Studio</a></li>
-					<li><a href="#">About My Studio</a></li>
-					<li><a href="#">About My Studio</a></li>
-					<li><a href="#">About My Studio</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Sina Weibo</a></li>
+					<li>Email: yunxinyi@gmail.com<br>
+						Tel: 027-8888888<br>
+						Skype: yunxinyi@live.cn</li>
+					<li>RSS - Works, RSS-Blog</li>
 				</ul>
 			</div>
 			<span class="justify"></span>

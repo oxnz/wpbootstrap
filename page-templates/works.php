@@ -6,11 +6,12 @@
 	get_header();
 ?>
 
-<div id="content" class="site-content row" role="main">
+<div class="work">
 <h1>Works</h1>
 <h1>Works</h1>
 <h1>Works</h1>
 <h1>Works</h1>
+</div>
 
 <?php
 	get_footer();

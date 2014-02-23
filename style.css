@@ -49,7 +49,7 @@ input.rounded {
        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
           transition: border linear 0.2s, box-shadow linear 0.2s;
 		  */
-	padding: 4px 14px;
+	padding: 5px 14px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -98,10 +98,20 @@ ul li {
 	text-align: justify;
 }
 
+.site-header a {
+	color: #666;
+}
+
+.site-header .site-nav a:hover,
+.site-header a:hover {
+	color: #e1e1e1;
+}
 
 .site-header .glob-nav {
+	padding: 5px 0;
 	background: black;
 	border-bottom: 1px dotted darkred;
+	border-bottom: 1px dotted #292929;
 }
 
 .site-header .glob-nav .container div,
@@ -111,12 +121,8 @@ ul li {
 }
 
 .site-header .glob-nav .container ul li {
-	padding: 0 10px;
-	border-right: 1px dotted darkred;
-}
-
-.site-header .glob-nav .container ul li:last-child {
-	border-right: none;
+	padding: 0 2px;
+	font-size: 80%;
 }
 
 .site-header .site-nav {
@@ -169,8 +175,13 @@ ul li {
 }
 
 .site-header .site-info {
+	padding: 2px 0;
 	color: #999999;
 	border-top: 1px dotted darkred;
+	border-bottom: 1px solid darkred;
+	border-top: 1px dashed #3c3c3c;
+	border-bottom: 1px solid #292929;
+	background: #272727;
 }
 
 .site-header .site-info a {
@@ -199,7 +210,7 @@ ul li {
 }
 
 .site-header .site-info .site-search input:focus {
-	padding: 5px 14px;
+	padding: 7px 14px;
 	width: 260px;
 }
 
@@ -332,6 +343,31 @@ ul li {
 }
 
 /*
+ * <-- index & single
+ * --> works
+ */
+
+.works {
+	background: green;
+}
+
+.works img {
+	vertical-align: top;
+}
+
+.works .preview,
+.works .intro {
+	display: inline-block;
+	padding: 0 2%;
+}
+
+.works .intro {
+	width: 40%;
+	background: orange;
+}
+
+
+/*
  * <-- site-content
  * --> site-sidebar
  */
@@ -437,4 +473,11 @@ ul li {
 
 .site-footer .copyright div {
 	display: inline-block;
+}
+
+/*
+ * exp
+ */
+.img-circle {
+	border: 1px solid red;
 }

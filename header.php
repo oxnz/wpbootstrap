@@ -1,5 +1,11 @@
 <?php
-?>
+/**
+ * The Header for WPBootstrap theme
+ *
+ * @package WPBootstrap
+ * @since WPBootstrap 1.0
+ */
+?><!DOCTYPE html>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +16,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico"
 		rel="shortcut icon">
+
 	<?php 
 		wp_register_script('custom-script', "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", array('jquery'));
 		wp_enqueue_script('custom-script'); ?>

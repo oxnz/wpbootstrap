@@ -39,7 +39,8 @@
 <div class="site-header">
 	<div class="glob-nav">
 		<div class="container">
-			<ul class="pull-right">
+			<div></div>
+			<ul>
 				<li><a href="#">About</a></li>
 				<li> | </li>
 				<li><a href="#">Contact</a></li>
@@ -54,6 +55,7 @@
 					</a>
 				</li>
 			</ul>
+			<span class="justify"></span>
 		</div><!-- #container -->
 	</div><!-- #glob-nav -->
 	<div class="site-nav container">
@@ -90,9 +92,7 @@
 				<input class="search-input rounded" type="text" name="s" id="s" placeholder="Search">
 				</form>
 			</div>
-<!--
-			<div class="justify"></div>
--->
+			<span class="justify"></span>
 		</div><!-- #container -->
 	</div><!-- #site-info -->
 </div><!-- #site-header -->

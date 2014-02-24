@@ -419,6 +419,50 @@ ul li {
 }
 
 /*
+ * <-- works
+ * --> about me
+ */
+
+.about-me {
+	background: white;
+	color: #666;
+}
+
+.vcard {
+	padding: 20px 0;
+}
+
+.vcard .lside {
+	text-align: center;
+	border-right: 1px dotted;
+}
+
+.vcard .photo {
+	border: 4px solid #d1d1d1;
+}
+
+.vcard .lside,
+.vcard .rside {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.vcard .rside {
+	max-width: 60%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.vcard .lside h4,
+.vcard .lside h5 {
+	color: #d14f1d;
+	color: #84281d;
+}
+
+.profile .table {
+	color: #666;
+}
+/*
  * <-- site-content
  * --> site-sidebar
  */
@@ -436,6 +480,47 @@ ul li {
 .widget ul li a {
 	color: #86284D;
 	font-size: 80%;
+}
+
+.profile .follow-links {
+	padding: 20px 0;
+}
+
+.profile .follow-links li {
+	display: inline-block;
+}
+
+/*
+ * <-- commen sidebar settings
+ * --> follow-me settings
+ */
+
+.follow-me {
+	padding-bottom: 30px;
+}
+
+.follow-me ul li {
+	display: inline-block;
+	padding-top: 10px;
+}
+
+span.social-icon {
+	margin: 0;
+	padding: 17px 25px;
+	width: 50px;
+	height: 50px;
+}
+
+span.social-icon-gplus {
+	background-image: url('img/social-icons/g.png');
+}
+
+span.social-icon-twitter {
+	background-image: url('img/social-icons/t.png');
+}
+
+span.social-icon-facebook {
+	background-image: url('img/social-icons/f.png');
 }
 
 /*
@@ -529,6 +614,3 @@ ul li {
 /*
  * exp
  */
-.img-circle {
-	border: 1px solid red;
-}

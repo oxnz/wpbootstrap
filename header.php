@@ -6,17 +6,29 @@
  * @since WPBootstrap 1.0
  */
 ?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo bloginfo('name');	echo is_front_page() ?
 	" | " . get_bloginfo('description') : wp_title('|', true); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<!--[if lt IE 9]>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+	<![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico"
 		rel="shortcut icon">
-
+	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	<?php 
 		wp_register_script('custom-script', "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", array('jquery'));
 		wp_enqueue_script('custom-script'); ?>
@@ -27,8 +39,7 @@
 <div class="site-header">
 	<div class="glob-nav">
 		<div class="container">
-			<div></div>
-			<ul>
+			<ul class="pull-right">
 				<li><a href="#">About</a></li>
 				<li> | </li>
 				<li><a href="#">Contact</a></li>
@@ -43,7 +54,6 @@
 					</a>
 				</li>
 			</ul>
-			<span class="justify"></span>
 		</div><!-- #container -->
 	</div><!-- #glob-nav -->
 	<div class="site-nav container">

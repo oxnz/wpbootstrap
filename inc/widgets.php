@@ -5,7 +5,7 @@ class Follow_Me_Widget extends WP_Widget {
 	private $format_strings;
 	function __construct() {
 		parent::__construct('follow_me', __('Follow Me', 'wpbootstrap'), array(
-			'classname' => 'follow_me',
+			'classname' => 'follow-me',
 			'description' => __('Use this widget to list commenly used social network links to be followed by others', 'wpbootstrap'),
 		));
 		$this->format_strings = array(
@@ -16,7 +16,6 @@ class Follow_Me_Widget extends WP_Widget {
 
 	public function widget($args, $instance) {
 		$format = $instance['format'];
-		$number = empty($instance['number']) ? 2 : absint($instance['number']);
 		$title = apply_filters('widget_title', empty($instance['title']) ? $this->format_strings[$format] : $instance['title'], $instance, $this->id_base);
 
 		echo $args['before_widget'];
@@ -24,17 +23,14 @@ class Follow_Me_Widget extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 		?>
 		<ul>
-			<li><a href="#">RSS</a>
-			<li><a href="#">Sina</a>
-			<li><a href="#">Twitter</a>
-			<li><a href="#">Facebook</a>
+			<li><a href="#">
+				<span class="social-icon social-icon-twitter"></span></a></li>
+			<li><a href="#">
+				<span class="social-icon social-icon-facebook"></span></a></li>
+			<li><a href="#">
+				<span class="social-icon social-icon-gplus"></span></a></li>
 		</ul>
 		<?php echo $args['after_widget']; ?>
-<!--x
-		<h1 class="widget-title" <?php echo esc_attr($format); ?>">
-		<a class="entry-format" href="<?php echo esc_url(get_post_format_link($format)); ?>"><?php echo $title; ?></a>
-</div>
--->
 <?php
 	}
 

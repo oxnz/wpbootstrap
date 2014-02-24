@@ -21,7 +21,7 @@
 			</div>
 			<div class="column">
 				<div class="title">
-					<h4>Products</h4>
+					<h4>Available Products</h4>
 					<div>Availabel softwares written by me</div>
 				</div>
 				<ul>
@@ -39,9 +39,12 @@
 					<div>Drop me a message</div>
 				</div>
 				<ul>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Sina Weibo</a></li>
+					<li><a href="#">Twitter</a> |
+						<a href="#">Facebook</a> |
+						<a href="#">weibo</a></li>
+					<li><a href="#">Github</a> |
+						<a href="#">SourceForge</a> |
+						<a href="#">StackOverflow</a></li>
 					<li>Email: yunxinyi@gmail.com<br>
 						Tel: 027-8888888<br>
 						Skype: yunxinyi@live.cn</li>

@@ -1,3 +1,4 @@
+<head></head>
 <?php
 /**
  * The Header for WPBootstrap theme

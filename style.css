@@ -65,7 +65,6 @@ input.rounded:focus {
 	color: black;
 	border-color: black;
 	background: white;
-	//width: 200px;
 }
 
 h1, h2, h3, h4 {
@@ -215,7 +214,6 @@ ul li {
 
 .site-header .site-info .site-search input {
 	width: 180px;
-	-moz-transition: width .4s;
 	transition: width .4s;
 	-moz-transition: width .4s;
 	-webkit-transition: width .4s;
@@ -366,7 +364,7 @@ ul li {
 
 .work {
 	padding-top: 40px;
-	border-bottom: 1px solid;
+	padding-bottom: 10px;
 }
 
 .work .header {

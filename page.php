@@ -6,4 +6,5 @@ get_header();
 <?php endwhile; else : ?>
 	<div class="alert alert-danger">Sorry, this page does not exists.</div>
 <? endif; ?>
+
 <?php get_footer(); ?>

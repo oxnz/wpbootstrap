@@ -7,6 +7,7 @@
 	" | " . get_bloginfo('description') : wp_title('|', true); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico"
 		rel="shortcut icon">
 	<?php 
@@ -40,12 +41,12 @@
 	</div><!-- #glob-nav -->
 	<div class="site-nav container">
 		<div class="site-name"><a href="<?php echo site_url(); ?>">
-		<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
+			<?php bloginfo('name'); ?>
 		<!--
-<?php bloginfo('name'); ?>
+		<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
 		-->
 		</a></div>
-		<?php wp_nav_menu(array('container_class' => ''));?>
+		<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
 		<span class="justify"></span>
 	</div>
 	<div class="site-banner container">
@@ -57,7 +58,7 @@
 			<div class="position">
 				<ol class="breadcrumb">
 					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<?php if (is_home()) : ?>
+					<?php if (is_home() || is_front_page()) : ?>
 					<?php elseif (is_404()) : ?>
 					<li>Not Found</li>
 					<?php elseif (is_single()) : ?>

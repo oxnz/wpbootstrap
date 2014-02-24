@@ -1,6 +1,7 @@
 <?php
 get_header(); ?>
 
+<h1>index.php</h1>
 <div id="content" class="row" role="main">
 	<div class="col-sm-8">
 		<div class="blog">

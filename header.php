@@ -90,7 +90,9 @@
 				<input class="search-input rounded" type="text" name="s" id="s" placeholder="Search">
 				</form>
 			</div>
+<!--
 			<div class="justify"></div>
+-->
 		</div><!-- #container -->
 	</div><!-- #site-info -->
 </div><!-- #site-header -->

@@ -89,6 +89,7 @@ ul li {
 }
 
 .justify {
+	content: "";
 	width: 100%;
 	display: inline-block;
 }
@@ -531,6 +532,7 @@ span.social-icon-facebook {
 .site-footer {
 	border-top: 4px solid #666666;
 	background: black;
+	padding-bottom: 20px;
 }
 
 .site-footer a {

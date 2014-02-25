@@ -5,7 +5,7 @@
  * @package WPBootstrap
  * @since WPBootstrap 1.0
  */
-?>
+ ?><!DOCTYPE xhtml>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
 <![endif]-->

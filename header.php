@@ -69,7 +69,7 @@
 		<span class="justify"></span>
 	</div>
 	<div class="site-banner container">
-		<h1 class="site-title">Web, Works, Projects, Blog and More ...</h1>
+		<h1 class="site-title">Works, Projects, Blog and More ...</h1>
 		<p class="site-description"><?php bloginfo('description'); ?>
 	</div><!-- #site-banner -->
 	<div class="site-info">

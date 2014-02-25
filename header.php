@@ -4,8 +4,9 @@
  *
  * @package WPBootstrap
  * @since WPBootstrap 1.0
+ * <!DOCTYPE html>
  */
- ?><!DOCTYPE xhtml>
+ ?>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
 <![endif]-->
@@ -45,14 +46,13 @@
 				<li> | </li>
 				<li><a href="#">Contact</a></li>
 				<li> | </li>
-				<li><a href="#">
+				<li>
 				<?php if (is_user_logged_in()) : global $current_user;
-					get_currentuserinfo();
-					echo $current_user->display_name; ?>
+					get_currentuserinfo(); ?>
+					<a href="<?php echo get_edit_user_link(); ?>"><?php echo $current_user->display_name; ?></a>
 				<?php else : ?>
-					Login
+					<a href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
 				<?php endif; ?>
-					</a>
 				</li>
 			</ul>
 			<span class="justify"></span>

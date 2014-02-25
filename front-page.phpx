@@ -1,0 +1,5 @@
+<?php
+get_header();?>
+
+<a href="#ba"><img src="http://localhost/~oxnz/wp-content/uploads/2014/02/t.png"></a>
+<?php get_footer(); ?>

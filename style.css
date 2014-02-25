@@ -481,9 +481,13 @@ ul li {
 	border-bottom: 1px dotted;
 }
 
-.widget ul li a {
+.widget a {
 	color: #86284D;
 	font-size: 80%;
+}
+
+.widget a:hover {
+	border-bottom: 1px dotted;
 }
 
 .profile .follow-links li {

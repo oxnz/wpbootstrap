@@ -12,11 +12,11 @@
 					<div>Projects hosted or created by me</div>
 				</div>
 				<ul>
-					<li><a href="#">pygtk-tutor</a></li>
-					<li><a href="#">yaosa</a></li>
-					<li><a href="#">zdcomp</a></li>
-					<li><a href="#">algorithms</a></li>
-					<li><a href="#">design patterns</a></li>
+					<li><a href="https://github.com/oxnz/pygtk-tutor">pygtk-tutor</a></li>
+					<li><a href="https://github.com/oxnz/yaosa">yaosa</a></li>
+					<li><a href="https://github.com/oxnz/zdcomp">zdcomp</a></li>
+					<li><a href="https://github.com/oxnz/algorithms">algorithms</a></li>
+					<li><a href="https://github.com/oxnz/design-patterns">design patterns</a></li>
 				</ul>
 			</div>
 			<div class="column">
@@ -25,12 +25,12 @@
 					<div>Availabel softwares written by me</div>
 				</div>
 				<ul>
-					<li><a href="#">clang-user-manual</a></li>
-					<li><a href="#">Digital China Supplicant</a></li>
-					<li><a href="#">WPBootstrap</a></li>
-					<li><a href="#">oxnzbot</a></li>
-					<li><a href="#">nix-utils</a></li>
-					<li><a href="#">NZPlayer</a></li>
+					<li><a href="https://github.com/oxnz/clang-user-manual">clang-user-manual</a></li>
+					<li><a href="https://github.com/oxnz/digital-china-supplicant">Digital China Supplicant</a></li>
+					<li><a href="https://github.com/oxnz/wpbootstrap">WPBootstrap</a></li>
+					<li><a href="https://github.com/oxnz/oxnzbot">oxnzbot</a></li>
+					<li><a href="https://github.com/oxnz/nix-utils">nix-utils</a></li>
+					<li><a href="https://github.com/oxnz/NZPlayer">NZPlayer</a></li>
 				</ul>
 			</div>
 			<div class="column">
@@ -41,14 +41,13 @@
 				<ul>
 					<li><a href="#">Twitter</a> |
 						<a href="#">Facebook</a> |
-						<a href="#">weibo</a></li>
-					<li><a href="#">Github</a> |
-						<a href="#">SourceForge</a> |
+						<a href="http://weibo.com/u/2868646094">weibo</a></li>
+					<li><a href="https://github.com/oxnz">Github</a> |
+						<a href="http://sourceforge.net/users/yunxinyi">SourceForge</a> |
 						<a href="#">StackOverflow</a></li>
-					<li>Email: yunxinyi@gmail.com<br>
-						Tel: 027-8888888<br>
+					<li>Email: <a href="mailto:yunxinyi@gmail.com">yunxinyi@gmail.com</a><br>
 						Skype: yunxinyi@live.cn</li>
-					<li>RSS - Works, RSS-Blog</li>
+						<li><a href="<?php bloginfo('rss_url'); ?>">RSS - Works</a>, RSS-Blog</li>
 				</ul>
 			</div>
 			<span class="justify"></span>

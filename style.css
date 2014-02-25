@@ -94,7 +94,11 @@ ul li {
 }
 
 .site-header {
+	/*
 	background: rgb(20, 20, 20);
+	background: rgb(32, 77, 110);
+	*/
+	background-image: url('img/x.png');
 	text-align: justify;
 }
 
@@ -127,6 +131,7 @@ ul li {
 
 .site-header .site-nav{
 	padding-top: 40px;
+	font-size: 120%;
 }
 
 .site-header .site-nav div,
@@ -510,7 +515,6 @@ ul li {
 .site-footer {
 	border-top: 4px solid #666666;
 	background: black;
-	background: transparent;
 	padding-bottom: 20px;
 }
 

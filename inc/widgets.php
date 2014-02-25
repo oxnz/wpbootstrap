@@ -23,12 +23,9 @@ class Follow_Me_Widget extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 		?>
 		<ul>
-			<li><a href="#">
-				<span class="social-icon social-icon-twitter"></span></a></li>
-			<li><a href="#">
-				<span class="social-icon social-icon-facebook"></span></a></li>
-			<li><a href="#">
-				<span class="social-icon social-icon-gplus"></span></a></li>
+			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/t.png"></a></li>
+			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/f.png"></a></li>
+			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/g.png"></a></li>
 		</ul>
 		<?php echo $args['after_widget']; ?>
 <?php

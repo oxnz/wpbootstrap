@@ -511,6 +511,7 @@ ul li {
 .site-footer {
 	border-top: 4px solid #666666;
 	background: black;
+	background: transparent;
 	padding-bottom: 20px;
 }
 
@@ -595,3 +596,8 @@ ul li {
 /*
  * exp
  */
+
+.site-footer canvas {
+	margin: 0;
+	padding: 0;
+}

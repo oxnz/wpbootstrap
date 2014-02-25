@@ -152,7 +152,7 @@ ul li {
 }
 
 .site-header .site-nav .site-name {
-	font-family: 'sans-serif';
+	font-family: 'Microsoft Yahei', 'sans-serif';
 	font-size: 400%;
 }
 
@@ -172,10 +172,9 @@ ul li {
 
 .site-header .site-banner .site-title {
 	color: #e1e1e1;
-	font-family: 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-	font-size: 320%;
-	font-weight: normal;
-	font-weight: 300;
+	font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	font-weight: 100;
+	font-size: 400%;
 	margin: 0;
 	display: block;
 }

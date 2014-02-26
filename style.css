@@ -18,7 +18,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 body {
-	background: #EEEDE8;
 }
 
 pre,
@@ -32,10 +31,10 @@ code {
 
 input.rounded {
 	/*
+	*/
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
-	*/
 	color: #c1c1c1;
 	background: #515151;
 	border: 1px solid #505050;
@@ -63,12 +62,11 @@ input.rounded {
 
 input.rounded:focus {
 	color: black;
-	border-color: black;
 	background: white;
 }
 
 h1, h2, h3, h4 {
-	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Helvetica Neue', 'Segoe UI', 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 }
 
 a:hover {
@@ -94,15 +92,13 @@ ul li {
 }
 
 .site-header {
-	/*
-	background: rgb(32, 77, 110);
-	*/
-	background: rgb(20, 20, 20);
+	background-image: url('img/header-bg.png');
 	text-align: justify;
 }
 
+.site-header,
 .site-header a {
-	color: #666;
+	color: white;
 }
 
 .site-header .site-nav a:hover,
@@ -113,8 +109,8 @@ ul li {
 .site-header .glob-nav {
 	padding: 5px 0;
 	background: black;
-	border-bottom: 1px dotted #292929;
-	border-bottom: 1px dotted darkred;
+	opacity: .4;
+	font-weight: 300;
 }
 
 .site-header .glob-nav .container div,
@@ -139,7 +135,7 @@ ul li {
 }
 
 .site-header .site-nav div ul li {
-	border-right: 1px solid #999;
+	border-right: 1px solid white;
 	padding: 0 10px;
 }
 
@@ -148,8 +144,6 @@ ul li {
 }
 
 .site-header .site-nav div ul li a {
-	color: #999;
-	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 	font-size: 110%;
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -161,7 +155,6 @@ ul li {
 }
 
 .site-header .site-nav .site-name a {
-	color: #e1e1e1;
 }
 
 .site-header .site-nav .site-name,
@@ -175,8 +168,6 @@ ul li {
 }
 
 .site-header .site-banner .site-title {
-	color: #e1e1e1;
-	font-family: 'Helvetica Neue', 'Segoe UI', 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	font-weight: 100;
 	font-size: 400%;
 	margin: 0;
@@ -186,21 +177,16 @@ ul li {
 .site-header .site-banner .site-description {
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 100%;
-	color: #666;
+	color: #eee;
 }
 
 .site-header .site-info {
 	padding: 2px 0;
-	color: #999999;
-	border-bottom: 1px solid darkred;
-	border-top: 1px dashed #3c3c3c;
-	border-bottom: 1px solid #292929;
-	border-top: 1px dotted darkred;
-	background: #272727;
+	color: #ccc;
+	border-top: 1px dotted #43a6e2;
 }
 
 .site-header .site-info a {
-	color: #e1e1e1;
 }
 
 .site-header .site-info .container div {
@@ -221,11 +207,19 @@ ul li {
 	-moz-transition: width .4s;
 	-webkit-transition: width .4s;
 	-o-transition: width .4s;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 6px 14px;
+	border-color: #287cc2;
+	color: white;
 }
 
 .site-header .site-info .site-search input:focus {
-	padding: 6px 14px;
 	width: 260px;
+	opacity: 1;
+}
+
+.site-header .site-info .site-search input::-webkit-input-placeholder {
+	color: white;
 }
 
 /*
@@ -234,8 +228,20 @@ ul li {
  */
 
 .site-content {
+	color: #4d4e53;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.site-content a:link,
+.site-content a:active,
+.site-content a:visited {
+	color: #0095dd;
+}
+
+.site-content a:hover {
+	color: #86284d;
+	border-bottom: 1px dotted #287cc2;
 }
 
 .site-content .post {
@@ -244,15 +250,21 @@ ul li {
 
 .site-content .post .title {
 	font-size: 260%;
+	font-weight: 100;
+}
+
+.site-content h1,
+.site-content h2,
+.site-content h3,
+.site-content h4 {
+	font-weight: 100;
 }
 
 .site-content .post .title a {
-	color: #666;
+	color: black;
 }
 
 .site-content .post a:hover {
-	color: #86284d;
-	border-bottom: 1px dotted;
 }
 
 .post ul li {
@@ -264,7 +276,6 @@ ul li {
 .site-content .post .bottom-info {
 	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	font-size: 80%;
-	color: #999;
 }
 
 .site-content .post .top-info ul li ,
@@ -279,13 +290,13 @@ ul li {
 	font-size: 12px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
 	line-height: 20px;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid ;
 }
 
-.post .more-link {
+.post a.more-link {
 	text-transform: uppercase;
 	padding: 3px 6px;
-	background: #86284D;
+	background: #48ade4;
 	color: white;
 	font-family:"Times New Roman",Georgia,Serif;
 	line-height: 50px;
@@ -317,23 +328,21 @@ ul li {
 }
 
 .comment-body .comment-meta a {
-	color: #86284D;
 }
 
 .comment-body .reply a {
 	color: white;
-	background: #86284D;
+	background: #48ade4;
 	padding: 3px 6px;
-	font-family:"Times New Roman",Georgia,Serif;
 }
 
 .comment-reply-title {
 	padding-bottom: 6px;
-	border-bottom: 1px dotted #666666;
+	border-bottom: 1px dotted;
 }
 
 .comment-form p label {
-	color: #86284D;
+	color: #48ade4;
 	display: inline-block;
 	width: 80px;
 }
@@ -347,9 +356,13 @@ ul li {
 	width: 100%;
 }
 
-.comment-form input[type=submit] {
+.site-content .comment-form .form-allowed-tags code {
+	color: blue;
+}
+
+.site-content .comment-form input[type=submit] {
 	padding: 5px 15px;
-	background: #86284D;
+	background: #48ade4;
 	border: 0 none;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -378,7 +391,7 @@ ul li {
 .work .header .link {
 	color: white;
 	padding: 0 8px;
-	background: #84284d;
+	background: #48ade4;
 	text-transform: uppercase;
 }
 
@@ -415,7 +428,7 @@ ul li {
 }
 
 .work .preview .info ul li b {
-	color: #84284d;
+	color: #48ade4;
 	text-transform: uppercase;
 	font-size: 12px;
 	padding-right: 10px;
@@ -432,7 +445,6 @@ ul li {
 
 .about-me {
 	background: white;
-	color: #666;
 }
 
 .vcard {
@@ -455,19 +467,17 @@ ul li {
 }
 
 .vcard .rside {
-	max-width: 60%;
+	max-width: 50%;
 	text-align: left;
 	vertical-align: top;
 }
 
 .vcard .lside h4,
 .vcard .lside h5 {
-	color: #d14f1d;
-	color: #84281d;
+	color: #48ade4;
 }
 
 .profile .table {
-	color: #666;
 }
 /*
  * <-- site-content
@@ -485,7 +495,6 @@ ul li {
 }
 
 .widget a {
-	color: #86284D;
 	font-size: 80%;
 }
 
@@ -512,8 +521,8 @@ ul li {
  */
 
 .site-footer {
-	border-top: 4px solid #666666;
-	background: black;
+	border-top: 4px solid #40a7ca;
+	background: #b0d9e7;
 	padding-bottom: 20px;
 }
 
@@ -524,7 +533,7 @@ ul li {
 
 .site-footer a:hover,
 .site-footer .footer-claim a:hover {
-	color: #ccc;
+	color: #40a7ca;
 }
 
 .site-footer .footer-links {
@@ -539,20 +548,20 @@ ul li {
 
 .site-footer .footer-links .column .title {
 	padding-right: 40px;
-	border-right: 1px dotted darkred;
-	border-right: 1px dotted #999;
+	border-right: 1px dotted #40a7ca;
 }
 
 .site-footer .footer-links .column .title h4 {
 	margin: 0;
 	text-transform: uppercase;
-	color: white;
+	font-weight: 300;
 	font-size: 110%;
 	letter-spacing: 3px;
 }
 
 .site-footer .footer-links .column .title div {
-	color: #666;
+	color: #555;
+	font-weight: 300;
 	font-size: 90%;
 }
 
@@ -561,14 +570,12 @@ ul li {
 }
 
 .site-footer .footer-links .column ul li {
-	border-top: 1px dotted darkred;
-	border-top: 1px dotted #1c1c1c;
+	border-top: 1px dotted #40a7ca;
 	padding: 4px 0;
 }
 
 .site-footer .footer-links .column ul li:last-child {
-	border-bottom: 1px dotted darkred;
-	border-bottom: 1px dotted #1c1c1c;
+	border-bottom: 1px dotted #40a7ca;
 }
 
 .site-footer .footer-links {
@@ -577,14 +584,13 @@ ul li {
 
 .site-footer .footer-claim {
 	padding-top: 10px;
-	border-top: 1px dotted #1c1c1c;
+	border-top: 1px dotted #40a7ca;
 	font-size: 12px;
 	line-height: 20px;
 	color: #666;
 }
 
 .site-footer .footer-claim a {
-	color: #888;
 }
 
 .site-footer .copyright {

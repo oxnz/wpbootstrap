@@ -95,10 +95,9 @@ ul li {
 
 .site-header {
 	/*
-	background: rgb(20, 20, 20);
 	background: rgb(32, 77, 110);
 	*/
-	background-image: url('img/x.png');
+	background: rgb(20, 20, 20);
 	text-align: justify;
 }
 
@@ -114,8 +113,8 @@ ul li {
 .site-header .glob-nav {
 	padding: 5px 0;
 	background: black;
-	border-bottom: 1px dotted darkred;
 	border-bottom: 1px dotted #292929;
+	border-bottom: 1px dotted darkred;
 }
 
 .site-header .glob-nav .container div,
@@ -193,10 +192,10 @@ ul li {
 .site-header .site-info {
 	padding: 2px 0;
 	color: #999999;
-	border-top: 1px dotted darkred;
 	border-bottom: 1px solid darkred;
 	border-top: 1px dashed #3c3c3c;
 	border-bottom: 1px solid #292929;
+	border-top: 1px dotted darkred;
 	background: #272727;
 }
 

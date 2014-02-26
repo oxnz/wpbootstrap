@@ -265,6 +265,8 @@ ul li {
 
 .site-header .site-info .site-search input:focus {
 	width: 260px;
+	background: white;
+	color: black;
 	opacity: 1;
 }
 

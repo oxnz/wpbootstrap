@@ -25,7 +25,9 @@ class Follow_Me_Widget extends WP_Widget {
 		<ul>
 			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/t.png"></a></li>
 			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/f.png"></a></li>
-			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/g.png"></a></li>
+			<li>
+				<a href="https://plus.google.com/112691032821919860318" target="blank">
+				<img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/g.png"></a></li>
 		</ul>
 		<?php echo $args['after_widget']; ?>
 <?php

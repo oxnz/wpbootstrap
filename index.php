@@ -13,8 +13,7 @@ get_header(); ?>
 					<?php the_author(); ?>
 					</li>
 					<li>
-					<span class="glyphicon glyphicon-calendar"></span>
-					<?php the_date(); ?>
+					<?php the_date('F j, Y', '<span class="glyphicon glyphicon-calendar"></span> '); ?>
 					</li>
 					<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
 				</ul><!-- #info -->

@@ -18,6 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 body {
+	background: #EEEDE8;
 }
 
 pre,
@@ -31,11 +32,13 @@ code {
 
 input.rounded {
 	/*
-	*/
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
-	border: 0px;
+	*/
+	color: #c1c1c1;
+	background: #515151;
+	border: 1px solid #505050;
 	/*
 	-webkit-transition: none;
 	-moz-transition: none;
@@ -59,15 +62,13 @@ input.rounded {
 }
 
 input.rounded:focus {
-	/*
 	color: black;
 	border-color: black;
-	*/
+	background: white;
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Helvetica Neue', 'Segoe UI', 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-	font-weight: 100;
+	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 
 a:hover {
@@ -97,26 +98,24 @@ ul li {
 	background: rgb(20, 20, 20);
 	background: rgb(32, 77, 110);
 	*/
-	color: white;
-	background-image: url('img/header-bg.png');
+	background-image: url('img/x.png');
 	text-align: justify;
 }
 
 .site-header a {
-	color: white;
+	color: #666;
 }
 
 .site-header .site-nav a:hover,
 .site-header a:hover {
-	border-bottom: 1px dotted;
+	color: #e1e1e1;
 }
 
 .site-header .glob-nav {
 	padding: 5px 0;
 	background: black;
-	opacity: 0.3;
-	font-weight: 300;
-	border-bottom: 1px dotted white;
+	border-bottom: 1px dotted darkred;
+	border-bottom: 1px dotted #292929;
 }
 
 .site-header .glob-nav .container div,
@@ -141,7 +140,7 @@ ul li {
 }
 
 .site-header .site-nav div ul li {
-	border-right: 1px solid;
+	border-right: 1px solid #999;
 	padding: 0 10px;
 }
 
@@ -150,10 +149,9 @@ ul li {
 }
 
 .site-header .site-nav div ul li a {
+	color: #999;
 	font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 	font-size: 110%;
-	font-family: 'Helvetica Neue', 'Segoe UI', 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-	font-weight: 300;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
@@ -164,6 +162,7 @@ ul li {
 }
 
 .site-header .site-nav .site-name a {
+	color: #e1e1e1;
 }
 
 .site-header .site-nav .site-name,
@@ -177,26 +176,32 @@ ul li {
 }
 
 .site-header .site-banner .site-title {
-	font-weight: 300;
+	color: #e1e1e1;
+	font-family: 'Helvetica Neue', 'Segoe UI', 'open sans', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	font-weight: 100;
 	font-size: 400%;
 	margin: 0;
 	display: block;
 }
 
 .site-header .site-banner .site-description {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 100%;
-	font-weight: 300;
-	color: #eee;
+	color: #666;
 }
 
 .site-header .site-info {
 	padding: 2px 0;
+	color: #999999;
 	border-top: 1px dotted darkred;
-	border-bottom: 1px solid white;
-	border-top: 1px dotted white;
+	border-bottom: 1px solid darkred;
+	border-top: 1px dashed #3c3c3c;
+	border-bottom: 1px solid #292929;
+	background: #272727;
 }
 
 .site-header .site-info a {
+	color: #e1e1e1;
 }
 
 .site-header .site-info .container div {
@@ -217,24 +222,11 @@ ul li {
 	-moz-transition: width .4s;
 	-webkit-transition: width .4s;
 	-o-transition: width .4s;
-	display: block;
-	color: #fff;
-	padding: 6px 14px;
-	background: rgba(255, 255, 255, 0.4);
-	-moz-appearance:    textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
-}
-
-.site-header .site-info .site-search input::-webkit-input-placeholder {
-	color: white;
 }
 
 .site-header .site-info .site-search input:focus {
-	color: black;
 	padding: 6px 14px;
 	width: 260px;
-	background: white;
 }
 
 /*
@@ -247,13 +239,6 @@ ul li {
 	padding-bottom: 30px;
 }
 
-.site-content a:link,
-.site-content a:visited,
-.site-content a:focus,
-.site-content a:active {
-	color: #0095dd;
-}
-
 .site-content .post {
 	background: white;
 }
@@ -263,9 +248,11 @@ ul li {
 }
 
 .site-content .post .title a {
+	color: #666;
 }
 
 .site-content .post a:hover {
+	color: #86284d;
 	border-bottom: 1px dotted;
 }
 
@@ -278,7 +265,7 @@ ul li {
 .site-content .post .bottom-info {
 	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	font-size: 80%;
-	color: #4d4e53;
+	color: #999;
 }
 
 .site-content .post .top-info ul li ,
@@ -289,17 +276,17 @@ ul li {
 
 .post .content {
 	padding: 10px 0;
-	color: #4d4e53;
+	color: #666;
 	font-size: 12px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
 	line-height: 20px;
 	border-bottom: 1px solid #CCC;
 }
 
-.post a.more-link {
+.post .more-link {
 	text-transform: uppercase;
 	padding: 3px 6px;
-	background: #48ade4;
+	background: #86284D;
 	color: white;
 	font-family:"Times New Roman",Georgia,Serif;
 	line-height: 50px;
@@ -307,6 +294,7 @@ ul li {
 
 .comment-body .reply a:hover,
 .post a.more-link:hover {
+	color: white;
 	border: 1px dotted;
 }
 
@@ -322,6 +310,7 @@ ul li {
 
 .comment {
 	background: #f3f7f9;
+	border-bottom: 1px solid #a89a94;
 }
 
 .comment-list li {
@@ -329,11 +318,12 @@ ul li {
 }
 
 .comment-body .comment-meta a {
+	color: #86284D;
 }
 
 .comment-body .reply a {
 	color: white;
-	background: #48ade4;
+	background: #86284D;
 	padding: 3px 6px;
 	font-family:"Times New Roman",Georgia,Serif;
 }
@@ -344,7 +334,7 @@ ul li {
 }
 
 .comment-form p label {
-	color: #4d4e53;
+	color: #86284D;
 	display: inline-block;
 	width: 80px;
 }
@@ -360,7 +350,7 @@ ul li {
 
 .comment-form input[type=submit] {
 	padding: 5px 15px;
-	background: #48ade4;
+	background: #86284D;
 	border: 0 none;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -389,7 +379,7 @@ ul li {
 .work .header .link {
 	color: white;
 	padding: 0 8px;
-	background: #48ade4;
+	background: #84284d;
 	text-transform: uppercase;
 }
 
@@ -416,6 +406,7 @@ ul li {
 }
 
 .work .preview .info {
+	color: #666;
 	width: 40%;
 }
 
@@ -425,7 +416,7 @@ ul li {
 }
 
 .work .preview .info ul li b {
-	color: #4d4e53;
+	color: #84284d;
 	text-transform: uppercase;
 	font-size: 12px;
 	padding-right: 10px;
@@ -442,6 +433,7 @@ ul li {
 
 .about-me {
 	background: white;
+	color: #666;
 }
 
 .vcard {
@@ -476,6 +468,7 @@ ul li {
 }
 
 .profile .table {
+	color: #666;
 }
 /*
  * <-- site-content
@@ -493,6 +486,7 @@ ul li {
 }
 
 .widget a {
+	color: #86284D;
 	font-size: 80%;
 }
 
@@ -519,18 +513,19 @@ ul li {
  */
 
 .site-footer {
-	border-top: 4px solid #ccc;
-	background: rgb(241, 245, 246);
+	border-top: 4px solid #666666;
+	background: black;
 	padding-bottom: 20px;
 }
 
 .site-footer a {
+	color: #444;
 	font-size: 11px;
 }
 
 .site-footer a:hover,
 .site-footer .footer-claim a:hover {
-	color: #48ade4;
+	color: #ccc;
 }
 
 .site-footer .footer-links {
@@ -545,19 +540,20 @@ ul li {
 
 .site-footer .footer-links .column .title {
 	padding-right: 40px;
-	border-right: 1px dotted #48ade4;
+	border-right: 1px dotted darkred;
+	border-right: 1px dotted #999;
 }
 
 .site-footer .footer-links .column .title h4 {
 	margin: 0;
 	text-transform: uppercase;
+	color: white;
 	font-size: 110%;
-	font-weight: 300;
 	letter-spacing: 3px;
 }
 
 .site-footer .footer-links .column .title div {
-	color: #555;
+	color: #666;
 	font-size: 90%;
 }
 
@@ -566,12 +562,14 @@ ul li {
 }
 
 .site-footer .footer-links .column ul li {
-	border-top: 1px dotted #48ade4;
+	border-top: 1px dotted darkred;
+	border-top: 1px dotted #1c1c1c;
 	padding: 4px 0;
 }
 
 .site-footer .footer-links .column ul li:last-child {
-	border-bottom: 1px dotted #48ade4;
+	border-bottom: 1px dotted darkred;
+	border-bottom: 1px dotted #1c1c1c;
 }
 
 .site-footer .footer-links {

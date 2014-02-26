@@ -95,10 +95,9 @@ ul li {
 
 .site-header {
 	/*
-	background: rgb(20, 20, 20);
 	background: rgb(32, 77, 110);
 	*/
-	background-image: url('img/x.png');
+	background: rgb(20, 20, 20);
 	text-align: justify;
 }
 

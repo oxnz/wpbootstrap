@@ -117,6 +117,7 @@ ul li {
 	background: black;
 	opacity: .4;
 	font-weight: 300;
+	font-size: 90%;
 }
 
 .site-header .glob-nav .container div,
@@ -127,7 +128,6 @@ ul li {
 
 .site-header .glob-nav .container ul li {
 	padding: 0 2px;
-	font-size: 80%;
 }
 
 /*
@@ -152,6 +152,7 @@ ul li {
 	padding-top: 20px;
 	text-align: justify !important;
 	width: 200px;
+	font-size: 16px;
 }
 
 .glob-nav .user-pane ul {
@@ -602,7 +603,7 @@ ul li {
 
 .site-footer a {
 	color: #444;
-	font-size: 11px;
+	font-size: 13px;
 }
 
 .site-footer a:hover,
@@ -629,14 +630,14 @@ ul li {
 	margin: 0;
 	text-transform: uppercase;
 	font-weight: 300;
-	font-size: 110%;
+	font-size: 130%;
 	letter-spacing: 3px;
 }
 
 .site-footer .footer-links .column .title div {
 	color: #555;
 	font-weight: 300;
-	font-size: 90%;
+	font-size: 110%;
 }
 
 .site-footer .footer-links .column ul {

@@ -101,8 +101,11 @@ ul li {
 	color: white;
 }
 
-.site-header .site-nav a:hover,
 .site-header a:hover {
+	color: #ddd;
+}
+
+.site-header .site-nav .nav-menu a:hover {
 	color: #e1e1e1;
 	display: inline-block;
 	animation: rotate360 .5s ;
@@ -148,7 +151,7 @@ ul li {
 	padding: 10px;
 	padding-top: 20px;
 	text-align: justify !important;
-	width: 160px;
+	width: 200px;
 }
 
 .glob-nav .user-pane ul {

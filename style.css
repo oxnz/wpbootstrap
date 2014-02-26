@@ -304,8 +304,8 @@ ul li {
 
 .comment-body .reply a:hover,
 .post a.more-link:hover {
-	color: white;
-	border: 1px dotted;
+	background: #2B91C9;
+	border: 0;
 }
 
 .comment-reply-title,
@@ -370,6 +370,10 @@ ul li {
 	color: white;
 }
 
+.site-content .comment-form input[type=submit]:hover {
+	background: #2B91C9;
+}
+
 /*
  * <-- index & single
  * --> works
@@ -397,8 +401,8 @@ ul li {
 }
 
 .work .header .link:hover {
-	border: 1px dotted;
-	border-bottom: none;
+	background: #2B91C9;
+	border: none;
 }
 
 .work .header .title,

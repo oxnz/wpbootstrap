@@ -456,6 +456,10 @@ ul li {
 	padding: 20px 0;
 }
 
+.vcard .lside a:hover {
+	border: none;
+}
+
 .vcard .lside {
 	text-align: center;
 	border-right: 1px dotted;
@@ -511,6 +515,10 @@ ul li {
 	display: inline-block;
 }
 
+.profile .follow-links li a:hover {
+	border: none;
+}
+
 /*
  * <-- commen sidebar settings
  * --> follow-me settings
@@ -518,6 +526,17 @@ ul li {
 
 .follow-me ul li {
 	display: inline-block;
+}
+
+.follow-me ul li a:hover {
+	border: none;
+}
+
+.vcard .photo:hover,
+.profile .follow-links li:hover,
+.follow-me ul li:hover {
+	animation: rotate360 .5s ;
+	-webkit-animation: rotate360 .5s ;
 }
 
 /*
@@ -613,4 +632,22 @@ ul li {
 .site-footer canvas {
 	margin: 0;
 	padding: 0;
+}
+
+@keyframes rotate360 {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate360 {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
 }

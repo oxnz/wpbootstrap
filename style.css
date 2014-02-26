@@ -127,6 +127,49 @@ ul li {
 	font-size: 80%;
 }
 
+/*
+ * -> user pane
+ */
+
+.glob-nav .container ul .user {
+	position: relative;
+}
+
+.glob-nav .user-pane:hover,
+.glob-nav .container ul .user:hover .user-pane {
+	display: block !important;
+	background: black;
+}
+
+.glob-nav .user-pane {
+	display: none !important;
+	position: absolute;
+	right: 0;
+	padding: 10px;
+	padding-top: 20px;
+	text-align: justify !important;
+	width: 160px;
+}
+
+.glob-nav .user-pane ul {
+	padding-right: 20px;
+}
+
+.glob-nav .user-pane .avatar,
+.glob-nav .user-pane ul {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.glob-nav .user-pane ul li {
+	display: block !important;
+}
+
+/*
+ * <-- user pane
+ * --> site-nav
+ */
+
 .site-header .site-nav{
 	padding-top: 40px;
 	font-size: 120%;
@@ -629,10 +672,6 @@ ul li {
 	display: inline-block;
 }
 
-/*
- * exp
- */
-
 .site-footer canvas {
 	margin: 0;
 	padding: 0;
@@ -655,3 +694,7 @@ ul li {
 		-webkit-transform: rotate(360deg);
 	}
 }
+
+/*
+ * exp
+ */

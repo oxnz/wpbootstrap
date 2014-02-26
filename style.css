@@ -358,6 +358,7 @@ ul li {
 
 .site-content .comment-form .form-allowed-tags code {
 	color: blue;
+	background: #d9f8f7;
 }
 
 .site-content .comment-form input[type=submit] {

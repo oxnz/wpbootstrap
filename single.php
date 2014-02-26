@@ -22,6 +22,7 @@ get_header();
 					<?php the_date(); ?>
 					</li>
 					<li>
+					<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
 					<?php if (get_comments_number() > 0) : ?>
 					<a href="<?php comments_link(); ?>">
 						<span class="glyphicon glyphicon-comment"></span>

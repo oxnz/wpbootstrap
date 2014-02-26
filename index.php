@@ -16,6 +16,7 @@ get_header(); ?>
 					<span class="glyphicon glyphicon-calendar"></span>
 					<?php the_date(); ?>
 					</li>
+					<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
 				</ul><!-- #info -->
 				<div class="content">
 					<?php the_content('continue reading &raquo;'); ?>

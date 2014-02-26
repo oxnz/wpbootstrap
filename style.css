@@ -104,6 +104,9 @@ ul li {
 .site-header .site-nav a:hover,
 .site-header a:hover {
 	color: #e1e1e1;
+	display: inline-block;
+	animation: rotate360 .5s ;
+	-webkit-animation: rotate360 .5s ;
 }
 
 .site-header .glob-nav {

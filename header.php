@@ -46,10 +46,21 @@
 				<li> | </li>
 				<li><a href="#">Contact</a></li>
 				<li> | </li>
-				<li>
-				<?php if (is_user_logged_in()) : global $current_user;
-					get_currentuserinfo(); ?>
-					<a href="<?php echo get_edit_user_link(); ?>"><?php echo $current_user->display_name; ?></a>
+				<li class="user">
+				<?php if (is_user_logged_in()) :
+					$current_user = wp_get_current_user(); ?>
+					<a href="<?php echo get_edit_user_link(); ?>">Hi, <?php echo $current_user->display_name; ?></a>
+					<div class="user-pane">
+						<div class="avatar">
+							<?php echo get_avatar($current_user->id, 48); ?>
+						</div>
+						<ul>
+							<li><a href="<?php echo get_edit_user_link(); ?>"><?php echo $current_user->display_name; ?></a></li>
+							<li><a href="<?php echo get_edit_user_link(); ?>">Profile</a></li>
+							<li><a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a></li>
+						</ul>
+						<span class="justify"></span>
+					</div>
 				<?php else : ?>
 					<a href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
 				<?php endif; ?>

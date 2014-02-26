@@ -23,10 +23,11 @@ class Follow_Me_Widget extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 		?>
 		<ul>
-			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/t.png"></a></li>
-			<li><a href="#"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/f.png"></a></li>
 			<li>
-				<a href="https://plus.google.com/112691032821919860318" target="blank">
+				<a href="https://twitter.com/yunxinyi" target="_blank"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/t.png"></a></li>
+			<li><a href="https://www.facebook.com/yun.xinyi" target="_blank"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/f.png"></a></li>
+			<li>
+				<a href="https://plus.google.com/112691032821919860318" target="_blank">
 				<img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/g.png"></a></li>
 		</ul>
 		<?php echo $args['after_widget']; ?>

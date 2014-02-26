@@ -465,7 +465,7 @@ ul li {
 
 .vcard .lside {
 	text-align: center;
-	border-right: 1px dotted;
+	border-right: 1px solid #ddd;
 }
 
 .vcard .photo {

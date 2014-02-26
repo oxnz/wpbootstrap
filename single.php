@@ -10,19 +10,18 @@ get_header();
 				<h3 class="title"><?php the_title(); ?></h3>
 				<ul class="top-info">
 					<li>
-					<span class="glyphicon glyphicon-user"></span>
-					<?php the_author(); ?>
+						<span class="glyphicon glyphicon-user"></span>
+						<?php the_author(); ?>
 					</li>
 					<li>
-					<span class="glyphicon glyphicon-tags"></span>
-					<?php the_category(', '); ?>
+						<span class="glyphicon glyphicon-tags"></span>
+						<?php the_category(', '); ?>
 					</li>
 					<li>
-					<span class="glyphicon glyphicon-calendar"></span>
-					<?php the_date(); ?>
+						<?php the_date('F j, Y', '<span class="glyphicon glyphicon-calendar"></span> '); ?>
 					</li>
-					<li>
 					<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
+					<li>
 					<?php if (get_comments_number() > 0) : ?>
 					<a href="<?php comments_link(); ?>">
 						<span class="glyphicon glyphicon-comment"></span>
@@ -33,7 +32,6 @@ get_header();
 						<?php comments_number(); ?>
 					<?php endif; ?>
 					</li>
-					<li>
 				</ul><!-- #info -->
 				<div class="content">
 					<?php the_content('continue reading &raquo;'); ?>

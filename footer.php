@@ -70,6 +70,27 @@
 			<div>Policy here This is a long line to take up place - This is a long line to take up place This is a long line to take up place </div>
 		</div>
 	</div><!-- #container -->
+
+	<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title">Contact</h4>
+		  </div>
+		  <div class="modal-body">
+			<?php comment_form(array(
+				'title_reply' => __('Leave me a message'),
+				'title_reply_to' => ('Leave %s a message'),
+				'comment_field' =>  '<p class="comment-form-comment">' .
+				'<textarea id="comment" name="comment" cols="20" rows="6" aria-required="true"></textarea></p>',
+				'label_submit' => __('Send'),
+			)); ?>
+		  </div>
+		  <div class="modal-footer"><p>&copy; 2011-2014 Oxnz</p></div>
+		</div><!-- #modal-content -->
+	  </div>
+	</div><!-- #contact -->
 	<!--
 	<canvas id="footerbg">Your browser does not support the HTML5 canvas tag.</canvas>
 	-->

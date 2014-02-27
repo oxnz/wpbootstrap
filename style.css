@@ -274,6 +274,10 @@ ul li {
 	color: white;
 }
 
+.site-header .site-info .site-search input:focus::-webkit-input-placeholder {
+	color: blue;
+}
+
 /*
  * <-- site-header
  * --> site-content

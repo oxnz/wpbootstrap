@@ -32,4 +32,14 @@ function footerbg() {
 	}
 }
 
-footerbg();
+//footerbg();
+
+/*
+ * enable tooltip
+ */
+jQuery(document).ready(function ($) {
+	if ($("[rel=tooltip]").length) {
+		$("[rel=tooltip]").tooltip($);
+	}
+});
+

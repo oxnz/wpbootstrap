@@ -360,6 +360,11 @@ ul li {
 	line-height: 50px;
 }
 
+/*
+ * <-- #post
+ * --> #comment
+ */
+
 .comment-body .reply a:hover,
 .post a.more-link:hover {
 	background: #2B91C9;
@@ -405,7 +410,7 @@ ul li {
 	width: 80px;
 }
 
-.site-content .comment-form .comment-form-comment textarea {
+.comment-form .comment-form-comment textarea {
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
 	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -414,12 +419,12 @@ ul li {
 	width: 100%;
 }
 
-.site-content .comment-form .form-allowed-tags code {
+.comment-form .form-allowed-tags code {
 	color: blue;
 	background: #d9f8f7;
 }
 
-.site-content .comment-form input[type=submit] {
+.comment-form input[type=submit] {
 	padding: 5px 15px;
 	background: #48ade4;
 	border: 0 none;
@@ -428,7 +433,7 @@ ul li {
 	color: white;
 }
 
-.site-content .comment-form input[type=submit]:hover {
+.comment-form input[type=submit]:hover {
 	background: #2B91C9;
 }
 
@@ -706,6 +711,11 @@ ul li {
 		-webkit-transform: rotate(360deg);
 	}
 }
+
+/*
+ * bootstrap.js elements
+ */
+
 
 /*
  * exp

@@ -55,7 +55,7 @@
 							<?php echo get_avatar($current_user->id, 64); ?>
 						</div>
 						<ul>
-							<li><a href="<?php echo get_edit_user_link(); ?>"><?php echo $current_user->display_name; ?></a></li>
+							<li><a href="<?php echo admin_url(); ?>"><?php echo $current_user->display_name; ?></a></li>
 							<li><a href="<?php echo get_edit_user_link(); ?>">Profile</a></li>
 							<li><a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a></li>
 						</ul>

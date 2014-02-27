@@ -105,11 +105,13 @@ ul li {
 	color: #ddd;
 }
 
-.site-header .site-nav .nav-menu a:hover {
+.site-header a:hover {
 	color: #e1e1e1;
 	display: inline-block;
-	animation: rotate360 .5s ;
-	-webkit-animation: rotate360 .5s ;
+	//text-shadow: 0 0 2px white, 0 0 4px white, 0 0 2px blue;
+	text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+	//animation: rotate360 .5s ;
+	//-webkit-animation: rotate360 .5s ;
 }
 
 .site-header .glob-nav {

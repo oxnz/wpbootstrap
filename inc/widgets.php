@@ -83,4 +83,16 @@ class Follow_Me_Widget extends WP_Widget {
 	}
 }
 
+/*
+	                     <div class="g-person" data-width="295" data-href="//plus.google.com/112691032821919860318" data-rel="author"></div>
+
+						 <!-- Place this tag after the last widget tag. -->
+						 <script type="text/javascript">
+		  (function() {
+			      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				      po.src = 'https://apis.google.com/js/platform.js';
+				      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					    })();
+		</script>
+ */
 ?>

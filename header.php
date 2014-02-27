@@ -44,7 +44,7 @@
 			<ul>
 				<li><a href="#">About</a></li>
 				<li> | </li>
-				<li><a href="#">Contact</a></li>
+				<li><a data-target="#contact" data-toggle="modal" href="">Contact</a></li>
 				<li> | </li>
 				<li class="user">
 				<?php if (is_user_logged_in()) :

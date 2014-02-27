@@ -11,3 +11,11 @@ Yet another Wordpress theme.
 ###blue version
 ![WPBootstrap](./screenshot2.png "WPBootstrap")
 
+
+##Features
+
+###follow-me widget
+####on admin panel
+![Follow me widget](./follow-me-admin.png "Follow me admin")
+####on widget panel
+![Follow me widget](./follow-me.png "Follow me admin")

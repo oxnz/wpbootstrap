@@ -508,6 +508,33 @@ ul li {
 
 /*
  * <-- works
+ * --> projects
+ */
+
+.carousel-indicators li {
+	background: blue;
+}
+
+.carousel-caption {
+	display: block;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, .8);
+}
+
+.carousel-caption h3 {
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+	color: darkblue;
+}
+
+/*
+ * <-- projects
  * --> about me
  */
 

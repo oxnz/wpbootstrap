@@ -70,6 +70,7 @@
 			<div>Policy here This is a long line to take up place - This is a long line to take up place This is a long line to take up place </div>
 		</div>
 	</div><!-- #container -->
+</footer>
 
 	<div class="modal fade" id="about">
 		<div class="modal-dialog">
@@ -112,7 +113,6 @@
 	<canvas id="footerbg">Your browser does not support the HTML5 canvas tag.</canvas>
 	-->
 	<script src="<?php echo get_template_directory_uri(); ?>/wpbootstrap.js"></script>
-</footer>
 
 <?php wp_footer(); ?>
 </body>

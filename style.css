@@ -471,7 +471,15 @@ ul li {
 	text-align: justify;
 }
 
-.work .preview .preview-img,
+.work .preview .img-link img {
+	box-shadow: none;
+	transition: box-shadow .5s ease;
+}
+
+.work .preview .img-link img:hover {
+	box-shadow: 2px 2px 3px #24d222;
+}
+
 .work .preview .info {
 	display: inline-block;
 	vertical-align: top;

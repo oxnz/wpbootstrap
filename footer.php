@@ -100,7 +100,7 @@
 				'title_reply' => __('Leave me a message'),
 				'title_reply_to' => ('Leave %s a message'),
 				'comment_field' =>  '<p class="comment-form-comment">' .
-				'<textarea id="comment" name="comment" cols="20" rows="6" aria-required="true"></textarea></p>',
+				'<textarea class="form-control" id="comment" name="comment" rows="6" aria-required="true"></textarea></p>',
 				'label_submit' => __('Send'),
 			)); ?>
 		  </div>

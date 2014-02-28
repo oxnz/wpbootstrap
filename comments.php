@@ -53,7 +53,7 @@ if ( post_password_required() ) {
 		'title_reply' => __('Leave a reply'),
 		'title_reply_to' => ('Leave %s a reply'),
 		'comment_field' =>  '<p class="comment-form-comment">' .
-		'<textarea id="comment" name="comment" cols="20" rows="6" aria-required="true"></textarea></p>',
+		'<textarea class="form-control" id="comment" name="comment" rows="6" aria-required="true"></textarea></p>',
 		'label_submit' => __('Submit Comment'),
 	)); ?>
 	<?php //comment_form(); ?>

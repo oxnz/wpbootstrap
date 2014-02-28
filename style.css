@@ -361,6 +361,31 @@ ul li {
 	line-height: 50px;
 }
 
+.paging-nav {
+	text-align: justify;
+}
+
+.paging-nav a {
+	display: inline-block;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 8px 20px;
+	border: 1px solid #0095dd;
+	line-height: 23px;
+	border-radius: 7px;
+	font-size: 22px;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color .5s ease;
+	-webkit-transition: background-color .5s ease;
+}
+
+.paging-nav a:hover {
+	color: white;
+	border: 1px solid #0095dd;
+	background-color: #0095dd;
+}
+
 /*
  * <-- #post
  * --> #comment

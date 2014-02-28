@@ -38,8 +38,12 @@ get_header(); ?>
 					</li>
 				</ul>
 			</div><!-- #post #well -->
+		<?php endwhile; ?>
+		<div class="paging-nav">
+			<?php posts_nav_link(' ', '<span class="glyphicon glyphicon-circle-arrow-left"></span> Previous Page', 'Next Page <span class="glyphicon glyphicon-circle-arrow-right"></span>'); ?>
+			<span class="justify"></span>
+		</div>
 		<?php
-				endwhile;
 			else:
 				_e('Sorry, there is no post now.');
 			endif;

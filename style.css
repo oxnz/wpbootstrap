@@ -369,11 +369,9 @@ ul li {
 	display: inline-block;
 	background-color: #fff;
 	margin: 0 auto;
-	padding: 8px 20px;
+	padding: 6px 13px;
 	border: 1px solid #0095dd;
-	line-height: 23px;
 	border-radius: 7px;
-	font-size: 22px;
 	text-align: center;
 	text-decoration: none;
 	transition: background-color .5s ease;

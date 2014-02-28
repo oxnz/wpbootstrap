@@ -99,6 +99,7 @@ ul li {
 .site-header,
 .site-header a {
 	color: white;
+	transition: text-shadow .5s ease;
 }
 
 .site-header a:hover {
@@ -739,10 +740,23 @@ ul li {
  * exp
  */
 
-.test {
-	text-align: justify;
+a.test {
+	display: block;
+	width: 220px;
+	margin: 0 auto;
+	padding: 16px 0;
+	border: 1px solid #24d222;
+	line-height: 23px;
+	border-radius: 7px;
+	font-size: 22px;
+	color: #24d222;
+	text-align: center;
+	text-decoration: none;
+	-webkit-animation: btn_a 1.2s ease 1s forwards;
+	-webkit-transition: background-color .5s;
 }
 
-.test div {
-	display: inline-block;
+a.test:hover {
+	background-color: #24d222;
+	color: #fff;
 }

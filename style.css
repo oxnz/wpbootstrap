@@ -739,6 +739,14 @@ ul li {
 	border-bottom: 1px dotted #40a7ca;
 }
 
+#backToTop {
+	color: #428bca;
+}
+
+#backToTop:hover {
+	color: #24d222;
+}
+
 .site-footer .footer-claim {
 	padding: 10px 0;
 	border-top: 1px dotted #40a7ca;
@@ -800,4 +808,3 @@ ul li {
 /*
  * exp
  */
-

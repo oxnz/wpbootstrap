@@ -195,35 +195,32 @@ ul li {
 }
 
 .site-header .site-nav .container div,
-.site-header .site-nav .container div ul li {
+.site-header .menu li {
 	display: inline-block;
 }
 
-.site-header .site-nav .container div ul li {
+.site-header .menu li {
 	border-right: 1px solid white;
 	padding: 0 10px;
 }
 
-.site-header .site-nav .container div ul li:last-child {
+.site-header .menu li:last-child {
 	border-right: none;
 }
 
-.site-header .site-nav .container div ul li a {
+.site-header .menu li a {
 	font-size: 110%;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
 
-.site-header .site-nav .site-name {
+.site-header .site-name {
 	font-family: 'Microsoft Yahei', 'sans-serif';
 	font-size: 400%;
 }
 
-.site-header .site-nav .site-name a {
-}
-
-.site-header .site-nav .site-name,
-.site-header .site-nav .nav-menu {
+.site-header .site-name,
+.site-header .nav-menu {
 	vertical-align: top;
 }
 
@@ -233,14 +230,14 @@ ul li {
 	border-bottom: 1px solid #fff;
 }
 
-.site-header .site-banner .site-title {
+.site-header .site-title {
 	font-weight: 100;
 	font-size: 400%;
 	margin: 0;
 	display: block;
 }
 
-.site-header .site-banner .site-description {
+.site-header .site-description {
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 100%;
 	color: #eee;
@@ -264,11 +261,11 @@ ul li {
 	margin: 0;
 }
 
-.site-header .site-info .position .breadcrumb {
+.position .breadcrumb {
 	background: transparent;
 }
 
-.site-header .site-info .site-search input {
+.site-search input {
 	width: 180px;
 	transition: width .4s;
 	-moz-transition: width .4s;
@@ -280,18 +277,18 @@ ul li {
 	color: white;
 }
 
-.site-header .site-info .site-search input:focus {
+.site-search input:focus {
 	width: 260px;
 	background: white;
 	color: black;
 	opacity: 1;
 }
 
-.site-header .site-info .site-search input::-webkit-input-placeholder {
+.site-search input::-webkit-input-placeholder {
 	color: white;
 }
 
-.site-header .site-info .site-search input:focus::-webkit-input-placeholder {
+.site-search input:focus::-webkit-input-placeholder {
 	color: blue;
 }
 

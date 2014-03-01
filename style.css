@@ -689,7 +689,12 @@ ul li {
 
 .site-footer .footer-links {
 	padding-top: 15px;
+	padding-bottom: 40px;
 	text-align: justify;
+}
+
+.site-footer .footer-links .popover {
+	max-width: 400px;
 }
 
 .site-footer .footer-links .column {
@@ -731,10 +736,6 @@ ul li {
 
 .site-footer .footer-links .column ul li:last-child {
 	border-bottom: 1px dotted #40a7ca;
-}
-
-.site-footer .footer-links {
-	padding-bottom: 40px;
 }
 
 .site-footer .footer-claim {

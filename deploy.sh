@@ -2,6 +2,7 @@
 rsync -avP -e ssh \
 	--delete \
 	--exclude "$0" \
+	--exclude .DS_Store \
    	--exclude .git \
 	--exclude front-page.php \
 	./ \

@@ -79,9 +79,11 @@
 		<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
 		<span class="justify"></span>
 	</div>
-	<div class="site-banner container">
-		<h1 class="site-title">Works, Blog, Projects and More ...</h1>
-		<p class="site-description"><?php bloginfo('description'); ?>
+	<div class="site-banner">
+		<div class="container">
+			<h1 class="site-title">Works, Blog, Projects and More ...</h1>
+			<p class="site-description"><?php bloginfo('description'); ?>
+		</div>
 	</div><!-- #site-banner -->
 	<div class="site-info">
 		<div class="container">

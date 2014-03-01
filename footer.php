@@ -46,7 +46,9 @@
 						<a href="http://sourceforge.net/users/yunxinyi">SourceForge</a> |
 						<a href="https://bitbucket.org/oxnz"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
 					<li><span class="glyphicon glyphicon-envelope"></span> Email: <a href="mailto:yunxinyi@gmail.com">yunxinyi@gmail.com</a><br>
-						<i class="fa fa-skype"></i> Skype: yunxinyi@live.cn</li>
+						<i class="fa fa-skype"></i> Skype: yunxinyi@live.cn<br>
+						<i class="fa fa-stack-overflow"></i> StackOverflow: <a href="http://stackoverflow.com/users/2273296/oxnz">oxnz</a>
+					</li>
 					<li>
 						<a rel="popover" data-html="true" data-placement="top" data-original-title="QR Code" data-content="<img src='<?php echo get_template_directory_uri(); ?>/img/qr-code.png' />"><span class="glyphicon glyphicon-qrcode"></span> QR CODE</a> |
 						<a href="<?php bloginfo('rss_url'); ?>"><i class="fa fa-rss"></i> RSS</a> |

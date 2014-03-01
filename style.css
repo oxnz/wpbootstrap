@@ -107,7 +107,7 @@ ul li {
 }
 
 .site-header a:hover {
-	color: #e1e1e1;
+	color: white;
 	display: inline-block;
 	//text-shadow: 0 0 2px white, 0 0 4px white, 0 0 2px blue;
 	text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
@@ -117,10 +117,18 @@ ul li {
 
 .site-header .glob-nav {
 	padding: 5px 0;
-	background: black;
-	opacity: .4;
+	background-color: rgba(0, 0, 0, .3);
 	font-weight: 300;
 	font-size: 90%;
+}
+
+.site-header .glob-nav,
+.site-header .glob-nav a {
+	color: rgb(97, 138, 175);
+}
+
+.site-header .glob-nav a:hover {
+	color: white;
 }
 
 .site-header .glob-nav .container div,
@@ -144,7 +152,7 @@ ul li {
 .glob-nav .user-pane:hover,
 .glob-nav .container ul .user:hover .user-pane {
 	display: block !important;
-	background: black;
+	background-color: rgba(0, 0, 0, .3);
 }
 
 .glob-nav .user-pane {
@@ -178,7 +186,7 @@ ul li {
  */
 
 .site-header .site-nav {
-	border-top: 1px solid white;
+	border-top: 1px solid #fff;
 }
 
 .site-header .site-nav .container {
@@ -222,6 +230,7 @@ ul li {
 .site-header .site-banner {
 	padding-top: 70px;
 	padding-bottom: 40px;
+	border-bottom: 1px solid #fff;
 }
 
 .site-header .site-banner .site-title {
@@ -240,8 +249,8 @@ ul li {
 .site-header .site-info {
 	padding: 2px 0;
 	color: #ccc;
-	border-top: 1px dotted #43a6e2;
-	border-top: 1px solid #fff;
+	border-top: 1px solid #2b5b84;
+	border-bottom: 1px solid #00f;
 }
 
 .site-header .site-info a {
@@ -664,6 +673,7 @@ ul li {
 
 .site-footer {
 	border-top: 4px solid #c1dfe9;
+	border-top: 4px solid #5D9DB3;
 	background: #f5f5f5;
 	background-color: #e6e8ea;
 }

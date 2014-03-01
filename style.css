@@ -237,6 +237,7 @@ ul li {
 	padding: 2px 0;
 	color: #ccc;
 	border-top: 1px dotted #43a6e2;
+	border-top: 1px solid #fff;
 }
 
 .site-header .site-info a {
@@ -770,23 +771,3 @@ ul li {
  * exp
  */
 
-a.test {
-	display: block;
-	width: 220px;
-	margin: 0 auto;
-	padding: 16px 0;
-	border: 1px solid #24d222;
-	line-height: 23px;
-	border-radius: 7px;
-	font-size: 22px;
-	color: #24d222;
-	text-align: center;
-	text-decoration: none;
-	-webkit-animation: btn_a 1.2s ease 1s forwards;
-	-webkit-transition: background-color .5s;
-}
-
-a.test:hover {
-	background-color: #24d222;
-	color: #fff;
-}

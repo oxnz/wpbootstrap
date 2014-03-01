@@ -177,26 +177,30 @@ ul li {
  * --> site-nav
  */
 
-.site-header .site-nav{
+.site-header .site-nav {
+	border-top: 1px solid white;
+}
+
+.site-header .site-nav .container {
 	padding-top: 40px;
 	font-size: 120%;
 }
 
-.site-header .site-nav div,
-.site-header .site-nav div ul li {
+.site-header .site-nav .container div,
+.site-header .site-nav .container div ul li {
 	display: inline-block;
 }
 
-.site-header .site-nav div ul li {
+.site-header .site-nav .container div ul li {
 	border-right: 1px solid white;
 	padding: 0 10px;
 }
 
-.site-header .site-nav div ul li:last-child {
+.site-header .site-nav .container div ul li:last-child {
 	border-right: none;
 }
 
-.site-header .site-nav div ul li a {
+.site-header .site-nav .container div ul li a {
 	font-size: 110%;
 	letter-spacing: 3px;
 	text-transform: uppercase;

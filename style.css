@@ -738,7 +738,7 @@ ul li {
 }
 
 .site-footer .footer-claim {
-	padding-top: 10px;
+	padding: 10px 0;
 	border-top: 1px dotted #40a7ca;
 	border-top: 1px solid #000;
 	background-color: #2b5b84;

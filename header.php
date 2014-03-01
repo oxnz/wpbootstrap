@@ -69,16 +69,18 @@
 			<span class="justify"></span>
 		</div><!-- #container -->
 	</div><!-- #glob-nav -->
-	<div class="site-nav container">
-		<div class="site-name"><a href="<?php echo site_url(); ?>">
-			<?php bloginfo('name'); ?>
-		<!--
-		<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
-		-->
-		</a></div>
-		<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
-		<span class="justify"></span>
-	</div>
+	<div class="site-nav">
+		<div class="container">
+			<div class="site-name"><a href="<?php echo site_url(); ?>">
+				<?php bloginfo('name'); ?>
+				<!--
+				<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
+				-->
+			</a></div><!-- #site-name -->
+			<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
+			<span class="justify"></span>
+		</div><!-- #container -->
+	</div><!-- #site-nav -->
 	<div class="site-banner">
 		<div class="container">
 			<h1 class="site-title">Works, Blog, Projects and More ...</h1>

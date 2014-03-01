@@ -53,6 +53,7 @@
 						<a href="#"><i class="fa fa-google-plus"></i> Google Plus</a>
 
 					</li>
+					<li><a href="#" id="backToTop"><i class="fa fa-arrow-circle-o-up fa-lg"></i> Backtoptop</a></li>
 				</ul>
 			</div>
 			<span class="justify"></span>

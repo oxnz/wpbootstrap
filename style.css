@@ -661,6 +661,7 @@ ul li {
 .site-footer {
 	border-top: 4px solid #c1dfe9;
 	background: #f5f5f5;
+	background-color: #e6e8ea;
 }
 
 .site-footer a {
@@ -709,6 +710,10 @@ ul li {
 .site-footer .footer-links .column ul li {
 	border-top: 1px dotted #40a7ca;
 	padding: 4px 0;
+}
+
+.site-footer .footer-links .column ul li:hover {
+	background-color: #eee;
 }
 
 .site-footer .footer-links .column ul li:last-child {

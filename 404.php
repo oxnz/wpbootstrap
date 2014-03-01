@@ -2,27 +2,28 @@
 /**
  * The template for displaying 404 pages (Not Found)
  *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @package WPBootstrap
+ * @subpackage WPBootstrap
+ * @since WPBootstrap 1.0
  */
 
 get_header(); ?>
 
-<div class="panel panel-danger">
-	<div class="panel-heading">
-		<?php _e( 'Not Found', 'wpbootstrap' ); ?>
-	</div>
-	<div class="panel-body">
-		<p>当前请求的页面不存在，不如搜搜看?</p>
-		<?php get_search_form(); ?>
-	</div>
-</div>
 
-		<!--
-		<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'wpbootstrap' ); ?></h2>
-		<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'wpbootstrap' ); ?></p>
-		<h2>不如意事常八九，正如此时404</h2>
-		<p>当前请求的页面不存在，不如搜搜看?</p>
-		-->
+<center>
+<div class="wanted">
+	<div class="title">Wanted</div>
+	<div class="status">dynamic or static</div>
+	<div class="photo">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/avatar.png">
+	</div>
+	<div class="name">&diams; <?php echo end(explode('/', $_SERVER['REQUEST_URI'])); ?> &diams;</div>
+	<div class="description">
+"Oops, I screwed up and you discovered my fatal flaw. Well, we're not all perfect, but we try.  Can you try this again or maybe visit our <a title="Our Site" href="http://example.com/index.php">Home Page</a> to start fresh.  We'll do better next time."
+	</div>
+	<div class="reward">&int; 300, 000, 000 REWARD</div>
+	<div class="depart"><?php echo bloginfo('name'); ?></div>
+</div><!-- #wanted -->
+</center>
+
 <?php get_footer(); ?>

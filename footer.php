@@ -39,15 +39,20 @@
 					<div>Drop me a message</div>
 				</div>
 				<ul>
-					<li><a href="#">Twitter</a> |
-						<a href="#">Facebook</a> |
-						<a href="http://weibo.com/u/2868646094">weibo</a></li>
-					<li><a href="https://github.com/oxnz">Github</a> |
+					<li><a href="#"><i class="fa fa-twitter"></i> Twitter</a> |
+						<a href="#"><i class="fa fa-facebook"></i> Facebook</a> |
+						<a href="http://weibo.com/u/2868646094"><i class="fa fa-weibo"></i> Weibo</a></li>
+					<li><a href="https://github.com/oxnz"><i class="fa fa-github"></i> Github</a> |
 						<a href="http://sourceforge.net/users/yunxinyi">SourceForge</a> |
-						<a href="#">StackOverflow</a></li>
-					<li>Email: <a href="mailto:yunxinyi@gmail.com">yunxinyi@gmail.com</a><br>
-						Skype: yunxinyi@live.cn</li>
-						<li><a href="<?php bloginfo('rss_url'); ?>">RSS - Works</a>, RSS-Blog</li>
+						<a href="#"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
+					<li><span class="glyphicon glyphicon-envelope"></span> Email: <a href="mailto:yunxinyi@gmail.com">yunxinyi@gmail.com</a><br>
+						<i class="fa fa-skype"></i> Skype: yunxinyi@live.cn</li>
+					<li>
+						<a rel="popover" data-html="true" data-placement="top" data-original-title="QR Code" data-content="<img src='<?php echo get_template_directory_uri(); ?>/img/qr-code.png' />"><span class="glyphicon glyphicon-qrcode"></span> QR CODE</a> |
+						<a href="<?php bloginfo('rss_url'); ?>"><i class="fa fa-rss"></i> RSS</a> |
+						<a href="#"><i class="fa fa-google-plus"></i> Google Plus</a>
+
+					</li>
 				</ul>
 			</div>
 			<span class="justify"></span>

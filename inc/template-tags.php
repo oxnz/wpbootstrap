@@ -94,7 +94,6 @@ function wpbootstrap_post_nav() {
 				next_post_link( '%link', __( '<span class="meta-nav">Next Post:</span>%title', 'wpbootstrap' ) );
 			endif;
 			?>
-			<span class="justify"></span>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php

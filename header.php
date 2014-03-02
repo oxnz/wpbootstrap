@@ -71,22 +71,23 @@
 	</div><!-- #glob-nav -->
 	<div class="site-nav">
 		<div class="container">
-			<div class="site-name"><a href="<?php echo site_url(); ?>">
-				<?php bloginfo('name'); ?>
+			<div class="site-name"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
 				<!--
 				<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
 				-->
-			</a></div><!-- #site-name -->
+			</div><!-- #site-name -->
 			<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
 			<span class="justify"></span>
 		</div><!-- #container -->
 	</div><!-- #site-nav -->
+<?php if (is_home() or is_front_page()) : ?>
 	<div class="site-banner">
 		<div class="container">
 			<h1 class="site-title">Works, Blog, Projects and More ...</h1>
 			<p class="site-description"><?php bloginfo('description'); ?>
 		</div>
 	</div><!-- #site-banner -->
+<?php endif; ?>
 	<div class="site-info">
 		<div class="container">
 			<div class="position">

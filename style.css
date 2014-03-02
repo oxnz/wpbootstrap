@@ -228,26 +228,6 @@ ul li {
 
 /*
  * <-- #site-nav
- * --> #page-header
- */
-
-.page-header {
-	margin: 0;
-	padding: 10px 0;
-}
-
-.page-nav a,
-.page-nav div {
-	vertical-align: middle;
-	display: inline-block;
-}
-
-.nav-menu {
-	vertical-align: middle;
-}
-
-/*
- * <-- #page-header
  * --> #site-banner
  */
 

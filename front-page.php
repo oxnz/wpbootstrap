@@ -1,56 +1,23 @@
 <?php get_header(); ?>
-<div class="projects well">
-	<div id="slider" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-	<li data-target="#slider" data-slide-to="0" class="active"></li>
-	<li data-target="#slider" data-slide-to="1"></li>
-	<li data-target="#slider" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-	<div class="item active">
-		<img src="<?php echo get_template_directory_uri(); ?>/screenshot1.png" alt="...">
-	  <div class="carousel-caption">
-			<h3>XXX</h3>
-			<p>Hello</p>
-	  </div>
+<div id="test" class="ser-pane">
+<div class="info-pane">
+	<div class="avatar">
+		<img alt="" src="http://0.gravatar.com/avatar/626f34dec21559c6a46ca536b97d186a?s=96&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D96&amp;r=G" class="avatar avatar-96 photo" height="96" width="96">
 	</div>
-
-	<div class="item">
-		<img src="<?php echo get_template_directory_uri(); ?>/screenshot2.png" alt="...">
-	  <div class="carousel-caption">
-			<h3>YXX</h3>
-			<p>Yello</p>
-	  </div>
-  </div>
-
-	<div class="item">
-		<img src="<?php echo get_template_directory_uri(); ?>/follow-me.png" alt="...">
-	  <div class="carousel-caption">
-			<h3>33X</h3>
-			<p>Yello</p>
-	  </div>
+	<ul class="profile">
+		<div class="name">yunxinyi</div>
+		<div class="email">yunxinyi@gmail.com</div>
+		<div class="admin"><a href="#">Dashboard</a>
+			- <a href="#">Account</a></div>
+		<div class="profile-link">view profile</div>
+	</ul>
+</div>
+	<div class="control-pane">
+		<a href="#" class="btn btn-primary">Logout</a>
+		<a href="#" class="btn btn-primary">Logout</a>
+		<span class="justify"></span>
 	</div>
-
 </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#slider" data-slide="prev">
-	<span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#slider" data-slide="next">
-	<span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" style="width: 35%">
-					<span class="sr-only">35% Complete (success)</span>
-				</div>
-				<div class="progress-bar progress-bar-warnings" style="width: 20%">
-					<span class="sr-only">20% Complete (warning)</span>
-				</div>
-			</div>
-</div><!-- #projects -->
 
 <?php get_footer(); ?>

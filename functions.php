@@ -74,4 +74,6 @@ function wplogin_style() { ?>
 <?php }
 add_action('login_enqueue_scripts', 'wplogin_style');
 
+require get_template_directory() . '/inc/template-tags.php';
+
 ?>

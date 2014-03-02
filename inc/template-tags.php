@@ -88,10 +88,10 @@ function wpbootstrap_post_nav() {
 		<div class="nav-links">
 			<?php
 			if ( is_attachment() ) :
-				previous_post_link( '%link', __( '<span class="meta-nav">Published In</span>%title', 'wpbootstrap' ) );
+				previous_post_link( '%link', __( '<i class="fa fa-tags">Published In</i>%title', 'wpbootstrap' ) );
 			else :
-				previous_post_link( '%link', __( '<span class="meta-nav">Previous Post:</span>%title', 'wpbootstrap' ) );
-				next_post_link( '%link', __( '<span class="meta-nav">Next Post:</span>%title', 'wpbootstrap' ) );
+				previous_post_link( '%link', __( '<i class="fa fa-arrow-circle-o-left"></i> %title', 'wpbootstrap' ) );
+				next_post_link( '%link', __( '%title <i class="fa fa-arrow-circle-o-right"></i>', 'wpbootstrap' ) );
 			endif;
 			?>
 		</div><!-- .nav-links -->

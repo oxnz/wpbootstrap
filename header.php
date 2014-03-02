@@ -50,16 +50,26 @@
 					$current_user = wp_get_current_user(); ?>
 					<a href="<?php echo get_edit_user_link(); ?>">Hi, <?php echo $current_user->display_name; ?></a>
 					<div class="user-pane">
-						<div class="avatar">
-							<?php echo get_avatar($current_user->id, 96); ?>
-						</div>
-						<ul>
-							<li><a href="<?php echo admin_url(); ?>"><?php echo $current_user->display_name; ?></a></li>
-							<li><a href="<?php echo get_edit_user_link(); ?>">Profile</a></li>
-							<li><a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a></li>
-						</ul>
-						<span class="justify"></span>
-					</div>
+						<div class="pane-body">
+							<div class="avatar">
+								<?php echo get_avatar($current_user->id, 100); ?>
+							</div>
+							<ul class="profile">
+								<li><?php echo $current_user->display_name; ?></li>
+								<li><?php echo $current_user->user_email; ?></li>
+								<li>
+									<a href="<?php echo admin_url(); ?>">Dashboard</a> --
+									<a href="<?php echo get_edit_user_link(); ?>">Account</a>
+								</li>
+								<li><a class="view" href="<?php echo get_edit_user_link(); ?>">View Profile</a></li>
+							</ul>
+						</div><!-- .pane-body -->
+						<div class="pane-footer">
+							<a href="<?php echo admin_url(); ?>">Site Admin</a>
+							<a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+							<span class="justify"></span>
+						</div><!-- .pane-footer -->
+					</div><!-- .user-pane -->
 				<?php else : ?>
 					<a href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
 				<?php endif; ?>

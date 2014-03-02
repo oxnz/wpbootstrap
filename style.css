@@ -395,19 +395,22 @@ ul li {
 }
 
 .post-navigation .nav-links {
-	text-align: justify;
+	display: flex;
+	flex-direction: row;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
 }
 
 .post-navigation .nav-links .meta-nav {
-	padding-right: 5px;
+	//padding-right: 5px;
 }
 
 .post-navigation .nav-links a {
-	display: inline-block;
+	width: 100%;
 }
 
-.post-navigation .nav-links a[rel=prev] {
-	padding-right: 20px;
+.post-navigation .nav-links a[rel=next] {
+	text-align: right;
 }
 
 .post-navigation .nav-links a:hover {

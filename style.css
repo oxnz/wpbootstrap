@@ -406,7 +406,7 @@ ul li {
 }
 
 .post-navigation .nav-links a {
-	width: 100%;
+	flex: auto;
 }
 
 .post-navigation .nav-links a[rel=next] {

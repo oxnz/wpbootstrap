@@ -104,12 +104,8 @@ ul li {
 }
 
 .site-header a:hover {
-	color: #ddd;
-}
-
-.site-header a:hover {
 	color: white;
-	display: inline-block;
+	//display: inline-block;
 	//text-shadow: 0 0 2px white, 0 0 4px white, 0 0 2px blue;
 	text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
 	//animation: rotate360 .5s ;
@@ -157,37 +153,93 @@ ul li {
 .glob-nav .container ul .user:hover {
 	background-color: rgba(0, 0, 0, .4);
 	background-color: rgba(255, 255, 255, 1);
+	border-right: 1px solid #bebebe;
 }
 
 .glob-nav > .container ul > .user:hover > .user-pane {
 	display: block !important;
-	background-color: rgba(0, 0, 0, .6);
 	background-color: white;
 }
 
-.glob-nav .user-pane {
-	display: none !important;
+.user-pane {
+	//display: none !important;
+	background: white;
 	position: absolute;
-	right: 0;
-	padding: 10px;
-	padding-top: 20px;
-	text-align: justify !important;
-	width: 200px;
+	right: -1;
 	font-size: 16px;
+	border: 1px solid #bebebe;
+	border-top: 0;
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	width: 320px;
+	text-align: left;
+	color: #444;
 }
 
-.glob-nav .user-pane ul {
-	padding-right: 20px;
+.user-pane .avatar,
+.user-pane .profile {
+	flex: auto;
 }
 
-.glob-nav .user-pane .avatar,
-.glob-nav .user-pane ul {
-	vertical-align: top;
-	display: inline-block;
+.user-pane .pane-body {
+	padding: 20px;
+	display: flex !important;
+	flex-direction: row !important;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0 2px 4px rgba(0,0,0,.12);
 }
 
-.glob-nav .user-pane ul li {
+.user-pane .pane-body .profile li {
 	display: block !important;
+	line-height: 100% !important;
+	padding: 3px 0 !important;
+}
+
+.user-pane .pane-body .profile li a {
+	color: #36c;
+}
+
+.user-pane .pane-body .profile li a:hover {
+	text-shadow: none;
+	color: #24d222;
+}
+
+.user-pane .pane-body .profile li:last-child {
+	padding-top: 12px !important;
+}
+
+.user-pane .pane-body .profile .view {
+	background-color: #428bca;
+	color: white;
+	border-radius: 2px;
+	padding: 5px 10px;
+	transition: background-color .5s ease;
+}
+
+.user-pane .pane-body .profile .view:hover {
+	background-color: #326b9c;
+	color: #fff;
+}
+
+.user-pane .pane-footer {
+	width: 100%;
+	padding: 10px 20px;
+	background-color: #f5f5f5;
+	text-align: justify;
+	border-top: 1px solid #ccc;
+}
+
+.user-pane .pane-footer a {
+	display: inline-block;
+	border: 1px solid;
+	padding: 5px 8px;
+	background-color: white;
+	transition: background-color .5s ease;
+	line-height: 100%;
+}
+
+.user-pane .pane-footer a:hover {
+	border: 1px solid #428bca;
+	background-color: #428bca;
 }
 
 /*

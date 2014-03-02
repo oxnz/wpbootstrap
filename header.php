@@ -51,7 +51,7 @@
 					<a href="<?php echo get_edit_user_link(); ?>">Hi, <?php echo $current_user->display_name; ?></a>
 					<div class="user-pane">
 						<div class="avatar">
-							<?php echo get_avatar($current_user->id, 64); ?>
+							<?php echo get_avatar($current_user->id, 96); ?>
 						</div>
 						<ul>
 							<li><a href="<?php echo admin_url(); ?>"><?php echo $current_user->display_name; ?></a></li>

@@ -117,7 +117,6 @@ ul li {
 }
 
 .site-header .glob-nav {
-	padding: 5px 0;
 	background-color: rgba(0, 0, 0, .3);
 	font-weight: 300;
 	font-size: 90%;
@@ -143,6 +142,7 @@ ul li {
 }
 
 .site-header .glob-nav .container ul li {
+	line-height: 30px;
 	padding: 0 2px;
 }
 
@@ -154,10 +154,15 @@ ul li {
 	position: relative;
 }
 
-.glob-nav .user-pane:hover,
-.glob-nav .container ul .user:hover .user-pane {
+.glob-nav .container ul .user:hover {
+	background-color: rgba(0, 0, 0, .4);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.glob-nav > .container ul > .user:hover > .user-pane {
 	display: block !important;
-	background-color: rgba(0, 0, 0, .3);
+	background-color: rgba(0, 0, 0, .6);
+	background-color: white;
 }
 
 .glob-nav .user-pane {

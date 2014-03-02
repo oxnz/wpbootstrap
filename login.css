@@ -1,0 +1,7 @@
+/*
+ * login.css
+ */
+.login div#login h1 a {
+	background-image: url('img/logo.png');
+	padding-bottom: 30px;
+}

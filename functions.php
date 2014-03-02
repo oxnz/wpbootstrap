@@ -59,4 +59,19 @@ if (function_exists('register_sidebar'))
 	));
 
  */
+
+function wplogin() {
+	add_filter('login_headerurl', 'get_site_url');
+}
+add_action('login_enqueue_scripts', 'wplogin');
+function wplogin_title() {
+	return get_bloginfo('description');
+}
+add_filter('login_headertitle', 'wplogin_title');
+function wplogin_style() { ?>
+	<link rel="stylesheet" id="wplogin_css" href="<?php echo get_bloginfo('stylesheet_directory') . '/login.css'; ?>" type="text/css" media="all" />
+	<link rel="shortcut icon" href="<?php echo get_site_url() . '/favicon.png'; ?>">
+<?php }
+add_action('login_enqueue_scripts', 'wplogin_style');
+
 ?>

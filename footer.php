@@ -50,7 +50,7 @@
 						<i class="fa fa-stack-overflow"></i> StackOverflow: <a href="http://stackoverflow.com/users/2273296/oxnz">oxnz</a>
 					</li>
 					<li>
-						<a rel="popover" data-html="true" data-placement="top" data-original-title="QR Code" data-content="<img src='<?php echo get_template_directory_uri(); ?>/img/qr-code.png' />"><span class="glyphicon glyphicon-qrcode"></span> QR CODE</a> |
+						<a rel="popover" data-container="body" data-html="true" data-placement="top" data-original-title="QR Code" data-content="<img src='<?php echo get_template_directory_uri(); ?>/img/qr-code.png' />"><span class="glyphicon glyphicon-qrcode"></span> QR CODE</a> |
 						<a href="<?php bloginfo('rss_url'); ?>"><i class="fa fa-rss"></i> RSS</a> |
 						<a href="https://plus.google.com/112691032821919860318"><i class="fa fa-google-plus"></i> Google Plus</a>
 

@@ -405,10 +405,6 @@ ul li {
 	-webkit-flex-direction: row;
 }
 
-.post-navigation .nav-links .meta-nav {
-	//padding-right: 5px;
-}
-
 .post-navigation .nav-links a {
 	width: 100%;
 }

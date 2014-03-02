@@ -66,7 +66,7 @@
 						</div><!-- .pane-body -->
 						<div class="pane-footer">
 							<a href="<?php echo admin_url(); ?>">Site Admin</a>
-							<a href="<?php echo wp_logout_url(get_permalink()); ?>">Logout</a>
+							<a href="<?php echo wp_logout_url(get_permalink()); ?>">Log out</a>
 							<span class="justify"></span>
 						</div><!-- .pane-footer -->
 					</div><!-- .user-pane -->

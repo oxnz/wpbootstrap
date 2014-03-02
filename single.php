@@ -18,7 +18,7 @@ get_header();
 						<?php the_category(', '); ?>
 					</li>
 					<li>
-						<?php the_date('F j, Y', '<span class="glyphicon glyphicon-calendar"></span> '); ?>
+						<?php the_date('F j, Y', '<i class="fa fa-calendar"></i> '); ?>
 					</li>
 					<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
 					<li>

@@ -132,6 +132,10 @@ ul li {
 	color: white;
 }
 
+.site-header .glob-nav .container {
+	text-align: right;
+}
+
 .site-header .glob-nav .container div,
 .site-header .glob-nav .container ul,
 .site-header .glob-nav .container ul li {

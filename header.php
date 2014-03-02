@@ -40,7 +40,6 @@
 <div class="site-header">
 	<div class="glob-nav">
 		<div class="container">
-			<div></div>
 			<ul>
 				<li><a data-toggle="modal" data-target="#about" href="#">About</a></li>
 				<li> | </li>
@@ -66,7 +65,6 @@
 				<?php endif; ?>
 				</li>
 			</ul>
-			<span class="justify"></span>
 		</div><!-- #container -->
 	</div><!-- #glob-nav -->
 	<div class="site-nav">

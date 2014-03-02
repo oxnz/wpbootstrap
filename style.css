@@ -662,10 +662,11 @@ ul li {
 }
 
 .wanted .title {
-	font-size: 600%;
+	font-size: 700%;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	border-bottom: 4px solid;
+	line-height: 100%;
 	display: inline-block;
 }
 

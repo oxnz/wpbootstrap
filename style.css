@@ -233,12 +233,15 @@ ul li {
 	width: 100%;
 	padding: 10px 20px;
 	background-color: #f5f5f5;
-	text-align: justify;
 	border-top: 1px solid #ccc;
+	display: box;
+	display: -webkit-box !important;
+	-webkit-box-pack: justify;
+	-webkit-box-align: center;
 }
 
 .user-pane .pane-footer a {
-	display: inline-block;
+	display: block;
 	border: 1px solid #dcdcdc;
 	font-size: 11px;
 	color: #000;
@@ -256,7 +259,6 @@ ul li {
 	color: #222 !important;
 	text-shadow: none;
 }
-	*/
 
 /*
  * <-- user pane
@@ -272,7 +274,13 @@ ul li {
 	font-size: 120%;
 }
 
-.site-header .site-nav .container div,
+.site-header .site-nav .nav-inner {
+	display: box;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: start;
+}
+
 .site-header .menu li {
 	display: inline-block;
 }
@@ -337,8 +345,11 @@ ul li {
 .site-header .site-info a {
 }
 
-.site-header .site-info .container div {
-	display: inline-block;
+.site-header .site-info .info-inner {
+	display: box;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: center;
 }
 
 .site-header .site-info .container div ol {
@@ -955,3 +966,9 @@ ul li {
 /*
  * exp
  */
+.test .container {
+	display: box;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: center;
+}

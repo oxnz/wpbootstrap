@@ -530,8 +530,12 @@ ul li {
 .post-navigation .nav-links a {
 	word-wrap: break-word;
 	white-space: normal;
-	width: 50%;
 	display: block;
+	max-width: 50%;
+}
+
+.post-navigation .nav-links a[rel=next] {
+	text-align: right;
 }
 
 .post-navigation .nav-links a:hover {

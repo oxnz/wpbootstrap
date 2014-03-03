@@ -216,7 +216,7 @@ ul li {
 }
 
 .user-pane .pane-body .profile .view {
-	background-color: #428bca;
+	background-color: #0095da;
 	color: white;
 	border-radius: 2px;
 	padding: 5px 10px;
@@ -423,13 +423,11 @@ ul li {
 .site-content a:link,
 .site-content a:active,
 .site-content a:visited {
-	color: #0095dd;
+	color: #0095da;
 }
 
 .site-content a:hover {
-	color: #86284d;
 	color: #24d222;
-	border-bottom: 1px dotted #287cc2;
 	border-bottom: 1px dotted #24d222;
 }
 
@@ -490,7 +488,7 @@ ul li {
 .post a.more-link {
 	text-transform: uppercase;
 	padding: 3px 6px;
-	background: #48ade4;
+	background: #0095da;
 	color: white;
 	font-family:"Times New Roman",Georgia,Serif;
 	line-height: 50px;
@@ -578,7 +576,7 @@ ul li {
 
 .comment-body .reply a {
 	color: white;
-	background: #48ade4;
+	background: #0095da;
 	padding: 3px 6px;
 }
 
@@ -588,7 +586,7 @@ ul li {
 }
 
 .comment-form p label {
-	color: #48ade4;
+	color: #0095da;
 	display: inline-block;
 	width: 80px;
 }
@@ -600,7 +598,7 @@ ul li {
 
 .comment-form input[type=submit] {
 	padding: 5px 15px;
-	background: #48ade4;
+	background: #0095da;
 	border: 0 none;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -643,7 +641,7 @@ ul li {
 .work .header .link {
 	color: white;
 	padding: 2px 8px;
-	background: #48ade4;
+	background: #0095da;
 	text-transform: uppercase;
 }
 
@@ -693,7 +691,7 @@ ul li {
 }
 
 .work .preview .info ul li b {
-	color: #48ade4;
+	color: #0095da;
 	text-transform: uppercase;
 	font-size: 12px;
 	padding-right: 10px;
@@ -783,7 +781,15 @@ ul li {
 
 .vcard .lside h4,
 .vcard .lside h5 {
-	color: #48ade4;
+	color: #0095da;
+}
+
+.profile {
+	border-color: #0095da;
+}
+
+.profile .panel-heading {
+	background-color: #0095da;
 }
 
 .profile .table {
@@ -912,7 +918,7 @@ ul li {
 
 .site-footer a:hover,
 .site-footer .footer-claim a:hover {
-	color: #40a7ca;
+	color: #0095da;
 }
 
 .site-footer .footer-links {
@@ -972,7 +978,7 @@ ul li {
 }
 
 #backToTop {
-	color: #428bca;
+	color: #0095da;
 }
 
 #backToTop:hover {

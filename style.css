@@ -233,10 +233,17 @@ ul li {
 	padding: 10px 20px;
 	background-color: #f5f5f5;
 	border-top: 1px solid #ccc;
-	display: box;
 	display: -webkit-box !important;
 	-webkit-box-pack: justify;
 	-webkit-box-align: center;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: center;
+
+	display: box;
+	box-pack: justify;
+	box-align: center;
 }
 
 .user-pane .pane-footer a {
@@ -278,6 +285,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: start;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: start;
+
+	display: box;
+	box-pack: justify;
+	box-align: start;
 }
 
 .site-header .menu li {
@@ -349,6 +364,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: center;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: center;
+
+	display: box;
+	box-pack: justify;
+	box-align: center;
 }
 
 .site-header .site-info .container div ol {
@@ -587,6 +610,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: end;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: end;
+
+	display: box;
+	box-pack: justify;
+	box-align: end;
 }
 
 .work .header .link {
@@ -612,6 +643,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: start;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: start;
+
+	display: box;
+	box-pack: justify;
+	box-align: start;
 }
 
 .work .preview .img-link img {
@@ -685,6 +724,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-packing: justify;
 	-webkit-box-align: start;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: start;
+
+	display: box;
+	box-pack: justify;
+	box-align: start;
 }
 
 .vcard .lside a:hover {
@@ -854,6 +901,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: start;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: start;
+
+	display: box;
+	box-pack: justify;
+	box-align: start;
 }
 
 .popover {
@@ -931,6 +986,14 @@ ul li {
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: center;
+
+	display: -moz-box;
+	-moz-box-pack: justify;
+	-moz-box-align: center;
+
+	display: box;
+	box-pack: justify;
+	box-align: center;
 }
 
 .site-footer canvas {

@@ -58,7 +58,6 @@
 					<li><a href="#" id="backToTop"><i class="fa fa-arrow-circle-o-up fa-lg"></i> Backtoptop</a></li>
 				</ul>
 			</div>
-			<span class="justify"></span>
 		</div><!-- #footer-links -->
 	</div><!-- #container -->
 	<div class="footer-claim">
@@ -68,11 +67,10 @@
 					<small><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><?php printf( __( 'Powered by %s'), 'WordPress' ); ?></a></small>
 				</div>
 				<div class="validate-links">
-<a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid XHTML</a>
+					<a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid XHTML</a>
 |
-<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS">Valid CSS</a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS">Valid CSS</a>
 				</div>
-				<span class="justify"></span>
 			</div><!-- #copyright -->
 			<div>Policy here a long line to take up place - This is a long line to take up place This is a long line to take up place </div>
 			<div>Policy here This is a long line to take up place - This is a long line to take up place This is a long line to take up place </div>

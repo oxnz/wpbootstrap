@@ -682,6 +682,9 @@ ul li {
 
 .vcard {
 	padding: 20px 0;
+	display: -webkit-box;
+	-webkit-box-packing: justify;
+	-webkit-box-align: start;
 }
 
 .vcard .lside a:hover {
@@ -699,13 +702,15 @@ ul li {
 
 .vcard .lside,
 .vcard .rside {
-	display: inline-block;
+	display: block;
 	padding: 0 30px;
 }
 
 .vcard .rside {
-	max-width: 50%;
-	text-align: left;
+	max-width: 60%;
+	min-width: 40%;
+	width: 60%;
+	text-align: justify;
 	vertical-align: top;
 }
 

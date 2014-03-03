@@ -157,7 +157,6 @@ ul li {
 .glob-nav .container ul .user:hover {
 	background-color: rgba(0, 0, 0, .4);
 	background-color: rgba(255, 255, 255, 1);
-	border-right: 1px solid #bebebe;
 }
 
 .glob-nav > .container ul > .user:hover > .user-pane {
@@ -169,9 +168,10 @@ ul li {
 	display: none !important;
 	background: white;
 	position: absolute;
-	right: -1;
+	right: 0;
 	font-size: 16px;
 	border: 1px solid #bebebe;
+	border-right: 0;
 	border-top: 0;
 	box-shadow: 0 2px 4px rgba(0,0,0,.2);
 	width: 340px;

@@ -438,6 +438,8 @@ ul li {
 }
 
 .site-content .post .title {
+	word-wrap: break-word;
+	white-space: normal;
 	font-size: 260%;
 	font-weight: 100;
 }
@@ -474,6 +476,8 @@ ul li {
 }
 
 .post .content {
+	word-wrap: break-word;
+	white-space: normal;
 	padding: 10px 0;
 	color: #666;
 	font-size: 12px;
@@ -524,6 +528,9 @@ ul li {
 }
 
 .post-navigation .nav-links a {
+	word-wrap: break-word;
+	white-space: normal;
+	width: 50%;
 	display: block;
 }
 

@@ -848,16 +848,13 @@ ul li {
 .site-footer .footer-links {
 	padding-top: 15px;
 	padding-bottom: 40px;
-	text-align: justify;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: start;
 }
 
 .popover {
 	max-width: 400px;
-}
-
-.site-footer .footer-links .column {
-	vertical-align: top;
-	display: inline-block;
 }
 
 .site-footer .footer-links .column .title {
@@ -928,11 +925,9 @@ ul li {
 }
 
 .site-footer .copyright {
-	text-align: justify;
-}
-
-.site-footer .copyright div {
-	display: inline-block;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: center;
 }
 
 .site-footer canvas {

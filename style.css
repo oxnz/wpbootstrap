@@ -150,6 +150,11 @@ ul li {
 	position: relative;
 }
 
+.glob-nav .container ul .user a:hover {
+	color: #24d222;
+	text-shadow: none;
+}
+
 .glob-nav .container ul .user:hover {
 	background-color: rgba(0, 0, 0, .4);
 	background-color: rgba(255, 255, 255, 1);
@@ -248,7 +253,7 @@ ul li {
 .user-pane .pane-footer a:hover {
 	border-color: #c6c6c6;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-	color: #222;
+	color: #222 !important;
 	text-shadow: none;
 }
 	*/

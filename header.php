@@ -45,9 +45,9 @@
 				<li> | </li>
 				<li><a data-target="#contact" data-toggle="modal" href="#">Contact</a></li>
 				<li> | </li>
+				<?php if (is_user_logged_in()) : ?>
 				<li class="user">
-				<?php if (is_user_logged_in()) :
-					$current_user = wp_get_current_user(); ?>
+				<?php $current_user = wp_get_current_user(); ?>
 					<a href="<?php echo get_edit_user_link(); ?>">Hi, <?php echo $current_user->display_name; ?></a>
 					<div class="user-pane">
 						<div class="pane-body">
@@ -71,6 +71,7 @@
 						</div><!-- .pane-footer -->
 					</div><!-- .user-pane -->
 				<?php else : ?>
+				<li>
 					<a href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
 				<?php endif; ?>
 				</li>

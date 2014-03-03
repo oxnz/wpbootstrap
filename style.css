@@ -678,6 +678,7 @@ ul li {
 
 .work .preview .img-link img:hover {
 	box-shadow: 2px 2px 3px #24d222;
+	box-shadow: 1px 1px 1px #555;
 }
 
 .work .preview .info {

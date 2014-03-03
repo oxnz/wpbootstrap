@@ -292,6 +292,10 @@ ul li {
 
 .site-header .site-nav .nav-inner {
 	display: box;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: start;
+
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: start;
@@ -371,6 +375,10 @@ ul li {
 
 .site-header .site-info .info-inner {
 	display: box;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: center;
+
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: center;
@@ -635,6 +643,10 @@ ul li {
 
 .work .header {
 	border-bottom: 1px solid;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: end;
+
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: end;
@@ -668,6 +680,10 @@ ul li {
 .work .preview {
 	padding-top: 24px;
 	text-align: justify;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: start;
+
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: start;
@@ -750,6 +766,10 @@ ul li {
 
 .vcard {
 	padding: 20px 0;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: start;
+
 	display: -webkit-box;
 	-webkit-box-packing: justify;
 	-webkit-box-align: start;
@@ -935,6 +955,10 @@ ul li {
 .site-footer .footer-links {
 	padding-top: 15px;
 	padding-bottom: 40px;
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: start;
+
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: start;
@@ -1020,6 +1044,10 @@ ul li {
 }
 
 .site-footer .copyright {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;
+	-ms-flex-align: center;
+
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	-webkit-box-align: center;

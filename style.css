@@ -476,6 +476,7 @@ ul li {
 }
 
 .post .content {
+	overflow: auto;
 	word-wrap: break-word;
 	white-space: normal;
 	padding: 10px 0;

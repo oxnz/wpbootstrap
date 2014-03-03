@@ -94,7 +94,6 @@ ul li {
 
 .site-header {
 	background-image: url('img/header-bg.png');
-	text-align: justify;
 }
 
 .site-header,
@@ -584,13 +583,15 @@ ul li {
 }
 
 .work .header {
-	text-align: justify;
 	border-bottom: 1px solid;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: end;
 }
 
 .work .header .link {
 	color: white;
-	padding: 0 8px;
+	padding: 2px 8px;
 	background: #48ade4;
 	text-transform: uppercase;
 }
@@ -603,12 +604,14 @@ ul li {
 .work .header .title,
 .work .header .link {
 	margin: 0;
-	display: inline-block;
 }
 
 .work .preview {
 	padding-top: 24px;
 	text-align: justify;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: start;
 }
 
 .work .preview .img-link img {
@@ -621,13 +624,8 @@ ul li {
 }
 
 .work .preview .info {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.work .preview .info {
 	color: #666;
-	width: 40%;
+	width: 42%;
 }
 
 .work .preview .info ul li {

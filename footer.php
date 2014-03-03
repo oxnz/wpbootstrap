@@ -88,7 +88,7 @@
 					<h4 class="modal-title">About</h4>
 				</div><!-- #modal-header -->
 				<div class="modal-body">
-					<p>&copy; 2011-2014 Oxnz.</p>
+					<p>&copy; 2011-2014 Oxnz. All Rights Reserved.</p>
 				</div><!-- #modal-body -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default btn-primary" data-dismiss="modal">OK</button>

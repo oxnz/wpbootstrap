@@ -67,7 +67,6 @@
 						<div class="pane-footer">
 							<a href="<?php echo admin_url(); ?>">Site Admin</a>
 							<a href="<?php echo wp_logout_url(get_permalink()); ?>">Log out</a>
-							<span class="justify"></span>
 						</div><!-- .pane-footer -->
 					</div><!-- .user-pane -->
 				<?php else : ?>
@@ -80,13 +79,14 @@
 	</div><!-- #glob-nav -->
 	<div class="site-nav">
 		<div class="container">
+			<div class="nav-inner">
 			<div class="site-name"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
 				<!--
 				<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
 				-->
 			</div><!-- #site-name -->
 			<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
-			<span class="justify"></span>
+			</div><!-- .nav-inner -->
 		</div><!-- #container -->
 	</div><!-- #site-nav -->
 <?php if (is_home() or is_front_page()) : ?>
@@ -99,6 +99,7 @@
 <?php endif; ?>
 	<div class="site-info">
 		<div class="container">
+			<div class="info-inner">
 			<div class="position">
 				<ol class="breadcrumb">
 					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page" rel="tooltip"><span class="glyphicon glyphicon-home"></span> Home</a></li>
@@ -117,8 +118,8 @@
 				<input class="search-input rounded" type="text" name="s" id="s" placeholder="Search">
 				</form>
 			</div>
-			<span class="justify"></span>
 		</div><!-- #container -->
+		</div><!-- #info-inner -->
 	</div><!-- #site-info -->
 </div><!-- #site-header -->
 <div class="site-content container">

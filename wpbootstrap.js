@@ -42,7 +42,9 @@ jQuery(document).ready(function ($) {
 		$("[rel=tooltip]").tooltip($);
 	}
 	if ($("[rel=popover]").length) {
-		$("[rel=popover]").popover($);
+		$("[rel=popover]").popover({
+			trigger: "hover"
+		});
 	}
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 50) {

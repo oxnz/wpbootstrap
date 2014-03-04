@@ -283,6 +283,7 @@ ul li {
 .site-header .site-nav {
 	border-top: 1px solid #2e78ad;
 	padding-bottom: 20px;
+	-webkit-animation: navup 1.2s linear forwards;
 }
 
 .site-header .site-nav .container {
@@ -379,6 +380,7 @@ ul li {
 	padding-top: 50px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #18468A;
+	-webkit-animation: bannerup 1s linear forwards;
 }
 
 .site-header .site-title {
@@ -399,6 +401,7 @@ ul li {
 	color: #ccc;
 	border-top: 1px solid #4d80da;
 	border-bottom: 1px solid #001188;
+	-webkit-animation: infoup 1s linear forwards;
 }
 
 .site-header .site-info a {
@@ -1125,6 +1128,34 @@ ul li {
 }
 
 
+@-webkit-keyframes navup {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes bannerup {
+	from {
+		padding-left: 40px;
+	}
+	to {
+		padding-left: 0;
+	}
+}
+
+@-webkit-keyframes infoup {
+	from {
+		-webkit-box-pack: center;
+	}
+	to {
+		-webkit-box-pack: justify;
+	}
+}
+
 /*
  * exp
  */
+

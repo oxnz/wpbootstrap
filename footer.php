@@ -55,7 +55,7 @@
 						<a href="https://plus.google.com/112691032821919860318"><i class="fa fa-google-plus"></i> Google Plus</a>
 
 					</li>
-					<li><a href="#" id="backToTop"><i class="fa fa-arrow-circle-o-up fa-lg"></i> Backtoptop</a></li>
+					<li><a href="#" id="backToTop"><i class="fa fa-arrow-circle-o-up fa-lg"></i> Back to Top</a></li>
 				</ul>
 			</div>
 		</div><!-- #footer-links -->

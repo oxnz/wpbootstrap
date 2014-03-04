@@ -170,7 +170,8 @@ ul li {
 
 .glob-nav > .container ul > .user:hover > .user-pane {
 	display: block !important;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 100;
 }
 
 .user-pane {

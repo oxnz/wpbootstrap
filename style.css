@@ -313,7 +313,6 @@ ul li {
 	display: inline-block;
 	border-right: 1px solid white;
 	padding: 0 10px;
-	position: relative;
 }
 
 .site-header .menu li:last-child {
@@ -321,7 +320,6 @@ ul li {
 }
 
 .site-header .menu .menu-item a {
-	display: block;
 	font-size: 110%;
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -331,6 +329,10 @@ ul li {
 	display: none;
 	position: absolute;
 	left: 0;
+}
+
+.site-header .menu .menu-item:hover {
+	position: relative;
 }
 
 .site-header .menu .menu-item:hover .sub-menu {

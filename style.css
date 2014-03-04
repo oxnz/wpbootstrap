@@ -311,21 +311,50 @@ ul li {
 
 .site-header .menu li {
 	display: inline-block;
-}
-
-.site-header .menu li {
 	border-right: 1px solid white;
 	padding: 0 10px;
+	position: relative;
 }
 
 .site-header .menu li:last-child {
 	border-right: none;
 }
 
-.site-header .menu li a {
+.site-header .menu .menu-item a {
+	display: block;
 	font-size: 110%;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+}
+
+.site-header .menu .sub-menu {
+	display: none;
+	position: absolute;
+	left: 0;
+}
+
+.site-header .menu .menu-item:hover .sub-menu {
+	display: block;
+}
+
+.site-header .menu .sub-menu .menu-item {
+	display: block;
+	border: none;
+	width: 150px;
+}
+
+.menu .menu-item:hover > .sub-menu .menu-item {
+}
+
+.site-header .menu .sub-menu .menu-item > .sub-menu {
+	display: none;
+}
+
+.site-header .menu .sub-menu .menu-item:hover > .sub-menu {
+	position: absolute;
+	top: 0;
+	left: 150px;
+	display: block;
 }
 
 .site-header .site-name {
@@ -766,21 +795,22 @@ ul li {
 
 .vcard {
 	padding: 20px 0;
+	border-color: #0095da;
 	display: -ms-flexbox;
 	-ms-flex-pack: justify;
-	-ms-flex-align: start;
+	-ms-flex-align: center;
 
 	display: -webkit-box;
 	-webkit-box-packing: justify;
-	-webkit-box-align: start;
+	-webkit-box-align: center;
 
 	display: -moz-box;
 	-moz-box-pack: justify;
-	-moz-box-align: start;
+	-moz-box-align: center;
 
 	display: box;
 	box-pack: justify;
-	box-align: start;
+	box-align: center;
 }
 
 .vcard .lside a:hover {
@@ -812,7 +842,10 @@ ul li {
 
 .vcard .lside h4,
 .vcard .lside h5 {
+	font-weight: normal;
 	color: #0095da;
+	color: #202020;
+	text-shadow: rgba(255, 255, 255, .1);
 }
 
 .profile {
@@ -1083,10 +1116,6 @@ ul li {
 		-webkit-transform: rotate(360deg);
 	}
 }
-
-/*
- * bootstrap.js elements
- */
 
 
 /*

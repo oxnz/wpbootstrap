@@ -398,7 +398,7 @@ ul li {
 	padding: 2px 0;
 	color: #ccc;
 	border-top: 1px solid #4d80da;
-	border-bottom: 1px solid #00f;
+	border-bottom: 1px solid #001188;
 }
 
 .site-header .site-info a {
@@ -437,7 +437,7 @@ ul li {
 	-moz-transition: width .4s;
 	-webkit-transition: width .4s;
 	-o-transition: width .4s;
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.5);
 	padding: 6px 14px;
 	border-color: #287cc2;
 	color: white;

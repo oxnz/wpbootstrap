@@ -115,7 +115,8 @@ ul li {
 	transition: text-shadow .5s ease;
 }
 
-.site-header a:hover {
+.site-header .menu a:hover,
+.site-header .site-info a:hover {
 	color: #0095da;
 	//animation: rotate360 .5s ;
 	//-webkit-animation: rotate360 .5s ;

@@ -108,16 +108,22 @@ ul li {
 .site-header,
 .site-header a {
 	color: white;
+}
+
+.site-header .glob-nav a,
+.site-header .site-name a {
 	transition: text-shadow .5s ease;
 }
 
 .site-header a:hover {
-	color: white;
-	//display: inline-block;
-	//text-shadow: 0 0 2px white, 0 0 4px white, 0 0 2px blue;
-	text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+	color: #0095da;
 	//animation: rotate360 .5s ;
 	//-webkit-animation: rotate360 .5s ;
+}
+
+.site-header .glob-nav a:hover,
+.site-header .site-name a:hover {
+	text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
 }
 
 .site-header .glob-nav {
@@ -230,6 +236,8 @@ ul li {
 	background-color: #0095da;
 	color: white;
 	border-radius: 2px;
+	margin: 0;
+	border: none;
 	padding: 5px 10px;
 	transition: background-color .5s ease;
 }
@@ -313,7 +321,7 @@ ul li {
 	box-align: start;
 }
 
-.site-header .menu li {
+.site-header .menu .menu-item {
 	display: inline-block;
 	border-right: 1px solid white;
 	padding: 0 10px;

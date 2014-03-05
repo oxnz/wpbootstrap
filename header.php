@@ -88,37 +88,13 @@
 			</div><!-- .nav-inner -->
 		</div><!-- #container -->
 	</div><!-- #site-nav -->
-<?php if (is_home() or is_front_page()) : ?>
+<?php //if (is_home() or is_front_page()) : ?>
 	<div class="site-banner">
 		<div class="container">
 			<h1 class="site-title">Works, Blog, Projects and More ...</h1>
 			<p class="site-description"><?php bloginfo('description'); ?>
 		</div>
 	</div><!-- #site-banner -->
-<?php endif; ?>
-	<div class="site-info">
-		<div class="container">
-			<div class="info-inner">
-			<div class="position">
-				<ol class="breadcrumb">
-					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page" rel="tooltip"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<?php if (is_home() || is_front_page()) : ?>
-					<?php elseif (is_404()) : ?>
-					<li>Not Found</li>
-					<?php elseif (is_single()) : ?>
-					<li><?php the_category(' & '); ?></li>
-					<?php else : ?>
-					<li><?php wp_title(''); ?></li>
-					<?php endif; ?>
-				</ol>
-			</div><!-- position -->
-			<div class="site-search">
-				<form class="searchform" action="<?php echo site_url(); ?>">
-				<input class="search-input rounded" type="text" name="s" id="s" placeholder="Search">
-				</form>
-			</div>
-		</div><!-- #container -->
-		</div><!-- #info-inner -->
-	</div><!-- #site-info -->
+<?php //endif; ?>
 </div><!-- #site-header -->
 <div class="site-content container">

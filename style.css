@@ -101,7 +101,8 @@ ul li {
 }
 
 .site-header {
-	background-image: url('img/header-bg.png');
+	background-color: #086894;
+	//background-image: url('img/header-bg.png');
 }
 
 .site-header,

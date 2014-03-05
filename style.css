@@ -1408,6 +1408,8 @@ ul li {
 .portrait {
 	text-align: center;
 	position: relative;
+	background: #963e3e;
+	height: 230px;
 }
 
 .portrait img {

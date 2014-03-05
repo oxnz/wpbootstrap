@@ -1125,6 +1125,15 @@ ul li {
 }
 
 
+@keyframes navup {
+	from {
+		opacity: 0.3;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @-webkit-keyframes navup {
 	from {
 		opacity: 0.3;
@@ -1134,12 +1143,30 @@ ul li {
 	}
 }
 
+@keyframes bannerup {
+	from {
+		padding-left: 40px;
+	}
+	to {
+		padding-left: 0;
+	}
+}
+
 @-webkit-keyframes bannerup {
 	from {
 		padding-left: 40px;
 	}
 	to {
 		padding-left: 0;
+	}
+}
+
+@keyframes infoup {
+	from {
+		-webkit-box-pack: center;
+	}
+	to {
+		-webkit-box-pack: justify;
 	}
 }
 

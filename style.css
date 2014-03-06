@@ -996,6 +996,7 @@ ul li {
 	border-top: 4px solid #c1dfe9;
 	border-top: 4px solid #5D9DB3;
 	border-top: 4px solid rgb(75, 150, 205);
+	border-top: 4px solid #00539f;
 	background-color: #e6e8ea;
 }
 
@@ -1083,6 +1084,7 @@ ul li {
 	-moz-box-shadow; inset 0 0 50px rgba(0,0,0,0.03),inset 0 0 20px rgba(0,0,0,0.03);
 	background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
 	background-image: linear-gradient(#144868 10%,#346997 90%);
+	background-image: linear-gradient(#00407a 10%,#00539f 90%);
 	font-size: 12px;
 	line-height: 20px;
 	color: #666;
@@ -1221,6 +1223,7 @@ ul li {
 
 .portfolio > .header {
 	border: 1px solid #85dbc2;
+	background-color: #00935f;
 }
 
 .portfolio {

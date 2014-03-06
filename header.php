@@ -88,14 +88,14 @@
 			</div><!-- .nav-inner -->
 		</div><!-- #container -->
 	</div><!-- #site-nav -->
-<?php if (is_home() or is_front_page()) : ?>
+<?php //if (is_home() or is_front_page()) : ?>
 	<div class="site-banner">
 		<div class="container">
 			<h1 class="site-title">Works, Blog, Projects and More ...</h1>
 			<p class="site-description"><?php bloginfo('description'); ?>
 		</div>
 	</div><!-- #site-banner -->
-<?php endif; ?>
+<?php //endif; ?>
 	<div class="site-info">
 		<div class="container">
 			<div class="info-inner">

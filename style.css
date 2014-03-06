@@ -101,8 +101,9 @@ ul li {
 }
 
 .site-header {
-	background-color: #086894;
-	//background-image: url('img/header-bg.png');
+	//background-color: #086894;
+	background-color: rgba(0, 83, 159, 1);
+	background-image: url('img/blueprint.png');
 }
 
 .site-header,

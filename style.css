@@ -526,6 +526,7 @@ ul li {
 	font-weight: 100;
 }
 
+.site-content .post .title,
 .site-content .post .title a {
 	color: black;
 }
@@ -555,7 +556,7 @@ ul li {
 	word-wrap: break-word;
 	white-space: normal;
 	padding: 10px 0;
-	color: #666;
+	color: #333;
 	font-size: 12px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
 	line-height: 20px;

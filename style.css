@@ -673,6 +673,10 @@ ul li {
 	width: 80px;
 }
 
+.comment-form .form-allowed-tags {
+	display: none;
+}
+
 .comment-form .form-allowed-tags code {
 	color: blue;
 	background: #d9f8f7;

@@ -544,6 +544,17 @@ ul li {
 	padding-right: 10px;
 }
 
+.post .content ul li {
+	display: list-item;
+	list-style-type: disc;
+	margin: 0 20px;
+}
+
+.post .content ol li {
+	margin: 0 20px;
+	list-style-type: decimal;
+}
+
 .site-content .post .top-info,
 .site-content .post .bottom-info {
 	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;

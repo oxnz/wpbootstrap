@@ -39,6 +39,11 @@ code {
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
+blockquote {
+	background-color: #d9e9ff;
+	font-size: 12px;
+}
+
 table {
 	width: 100%;
 }

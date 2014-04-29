@@ -522,7 +522,7 @@ ul li {
 	word-wrap: break-word;
 	white-space: normal;
 	font-size: 260%;
-	font-weight: 100;
+	font-weight: normal;
 }
 
 .site-content h1,
@@ -585,16 +585,32 @@ ul li {
 	color: #151515;
 }
 
-.post .content h1 {
-	font-size: 34px;
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5 {
+	font-weight: normal;
 }
 
-.post .content h1,
-.post .content h2,
-.post .content h3,
-.post .content h4,
+.post .content h1 {
+	font-size: 240%;
+}
+
+.post .content h2 {
+	font-size: 220%;
+}
+
+.post .content h3 {
+	font-size: 200%;
+}
+
+.post .content h4 {
+	font-size: 180%;
+}
+
 .post .content h5 {
-	//font-weight: normal;
+	font-size: 160%;
 }
 
 .post a.more-link {

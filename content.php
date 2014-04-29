@@ -27,6 +27,8 @@
 			<?php echo '<i class="fa fa-calendar"></i> '.get_the_date();
 				//the_date('F j, Y', '<i class="fa fa-calendar"></i> '); ?>
 			</li>
+			<li><?php the_tags('<i class="fa fa-tags"></i> ', ' • '); ?>
+			</li>
 			<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
 		</ul><!-- #info -->
 		<div class="content">
@@ -34,7 +36,7 @@
 		</div>
 		<ul class="bottom-info">
 			<li>Posted in
-			<?php the_category(', '); ?>
+			<?php the_category(' • '); ?>
 			</li>
 			<li>|</li>
 			<li>

@@ -479,6 +479,7 @@ ul li {
 
 .position .breadcrumb {
 	background: transparent;
+	padding-left: 0;
 }
 
 .site-search input {

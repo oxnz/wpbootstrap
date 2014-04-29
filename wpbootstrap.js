@@ -39,7 +39,7 @@ function footerbg() {
  */
 jQuery(document).ready(function ($) {
 	if ($("[rel=tooltip]").length) {
-		$("[rel=tooltip]").tooltip($);
+		//$("[rel=tooltip]").tooltip($);
 	}
 	if ($("[rel=popover]").length) {
 		$("[rel=popover]").popover({

@@ -106,7 +106,7 @@
 					<?php elseif (is_404()) : ?>
 					<li>Not Found</li>
 					<?php elseif (is_single()) : ?>
-					<li><?php the_category(' & '); ?></li>
+					<li><?php the_category(' • '); ?></li>
 					<?php else : ?>
 					<li><?php wp_title(''); ?></li>
 					<?php endif; ?>

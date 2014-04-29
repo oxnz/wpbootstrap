@@ -1089,6 +1089,7 @@ h1.widget-title {
 }
 
 .site-footer .footer-links {
+	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 40px;
 
@@ -1107,6 +1108,18 @@ h1.widget-title {
 	display: box;
 	box-pack: justify;
 	box-align: start;
+}
+
+.site-footer .footer-links .column {
+	box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-ms-box-flex: 1;
+	padding-left: 20px;
+}
+
+.site-footer .footer-links .column:first-child {
+	padding-left: 0;
 }
 
 .site-footer .footer-links .column .title {
@@ -1193,6 +1206,13 @@ h1.widget-title {
 	display: box;
 	box-pack: justify;
 	box-align: center;
+}
+
+.site-footer .copyright div:first-child {
+	box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-ms-box-flex: 1;
 }
 
 .site-footer canvas {

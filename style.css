@@ -467,11 +467,10 @@ ul li {
 }
 
 .site-header .site-info .info-inner .position {
+	box-flex: 1;
 	-moz-box-flex: 1;
-}
-
-.site-header .site-info .info-inner .site-search {
-	-moz-box-flex: 0;
+	-webkit-box-flex: 1;
+	-ms-box-flex: 1;
 }
 
 .site-header .site-info .container div ol {
@@ -1088,6 +1087,7 @@ ul li {
 .site-footer .footer-links {
 	padding-top: 15px;
 	padding-bottom: 40px;
+
 	display: -ms-flexbox;
 	-ms-flex-pack: justify;
 	-ms-flex-align: start;

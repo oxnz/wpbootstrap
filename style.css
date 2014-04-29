@@ -645,11 +645,13 @@ ul li {
 .paging-navigation .screen-reader-text {
 	margin: 0;
 	padding-bottom: 10px;
-	font-size: 110%;
+	font-size: 120%;
+	font-weight: normal;
 }
 
 .paging-navigation .pagination {
 	margin: 0;
+	font-size: 110%;
 }
 
 
@@ -1019,10 +1021,11 @@ ul li {
 	padding-bottom: 10px;
 }
 
-.widget-title {
+h1.widget-title {
 	margin-top: 0;
-	font-size: 160%;
-	border-bottom: 1px dotted;
+	font-size: 140%;
+	font-weight: normal;
+	border-bottom: 1px dotted #000;
 }
 
 .widget a {

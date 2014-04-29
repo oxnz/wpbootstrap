@@ -518,6 +518,7 @@ ul li {
 }
 
 .site-content .post .title {
+	margin-top: 0;
 	word-wrap: break-word;
 	white-space: normal;
 	font-size: 260%;
@@ -576,12 +577,24 @@ ul li {
 	font-size: 12px;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
 	line-height: 20px;
-	border-bottom: 1px solid ;
+	border-bottom: 1px solid #888;
 }
 
 .post .content::first-letter {
 	font-size: 200%;
 	color: #151515;
+}
+
+.post .content h1 {
+	font-size: 34px;
+}
+
+.post .content h1,
+.post .content h2,
+.post .content h3,
+.post .content h4,
+.post .content h5 {
+	//font-weight: normal;
 }
 
 .post a.more-link {

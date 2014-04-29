@@ -320,7 +320,8 @@ ul li {
 }
 
 .site-header .site-nav .nav-inner {
-	display: box;
+	width: 100%;
+
 	display: -ms-flexbox;
 	-ms-flex-pack: justify;
 	-ms-flex-align: start;
@@ -338,6 +339,13 @@ ul li {
 	box-align: start;
 }
 
+.site-header .site-nav .nav-inner .site-name {
+	box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-ms-box-flex: 1;
+}
+
 .site-header .menu .menu-item {
 	display: inline-block;
 	border-right: 1px solid white;
@@ -346,6 +354,7 @@ ul li {
 
 .site-header .menu li:last-child {
 	border-right: none;
+	padding-right: 0;
 }
 
 .site-header .menu .menu-item a {
@@ -454,6 +463,15 @@ ul li {
 	display: box;
 	box-pack: justify;
 	box-align: center;
+	width: 100%;
+}
+
+.site-header .site-info .info-inner .position {
+	-moz-box-flex: 1;
+}
+
+.site-header .site-info .info-inner .site-search {
+	-moz-box-flex: 0;
 }
 
 .site-header .site-info .container div ol {

@@ -115,6 +115,21 @@ ul li {
 	display: inline-block;
 }
 
+/*
+ * redefine wordpress elements
+ */
+
+p.wp-caption-text {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+/*
+ * end of redef of WP ELements
+ * start of wpbootstrap emements
+ */
+
 .site-header {
 	//background-color: #086894;
 	background-color: rgba(0, 83, 159, 1);

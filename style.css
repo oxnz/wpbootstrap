@@ -584,7 +584,8 @@ p.wp-caption-text {
 	color: black;
 }
 
-.site-content .post a:hover {
+.site-content .post a code:hover {
+	color: #0095da;
 }
 
 .post ul li {

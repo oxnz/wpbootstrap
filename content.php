@@ -21,7 +21,7 @@
 		<ul class="top-info">
 			<li>
 			<span class="glyphicon glyphicon-user"></span>
-			<?php the_author(); ?>
+			<?php the_author_link(); //the_author(); ?>
 			</li>
 			<li>
 			<?php echo '<i class="fa fa-calendar"></i> '.get_the_date();

@@ -63,7 +63,7 @@
 	<div class="footer-claim">
 		<div class="container">
 			<div class="copyright">
-				<div>&copy; 2011-2014 Oxnz. Themed by <a href="https://github.com/oxnz/wpbootstrap" title="WPBootstrap project page">WPBootstrap</a>. 
+				<div>&copy; 2011-2014 Oxnz, All Right Reserved. Themed by <a href="https://github.com/oxnz/wpbootstrap" title="WPBootstrap project page">WPBootstrap</a>. 
 					<small><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><?php printf( __( 'Powered by %s'), 'WordPress' ); ?></a></small>
 				</div>
 				<div class="validate-links">
@@ -72,7 +72,13 @@
 					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS">Valid CSS</a>
 				</div>
 			</div><!-- #copyright -->
-			<div>Policy here a long line to take up place - This is a long line to take up place This is a long line to take up place </div>
+			<div>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+<br />
+Except where otherwise noted, content on this site is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+			</div>
 			<div>Policy here This is a long line to take up place - This is a long line to take up place This is a long line to take up place </div>
 		</div>
 	</div><!-- #container -->

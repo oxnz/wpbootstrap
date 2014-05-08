@@ -669,6 +669,15 @@ p.wp-caption-text {
 	font-size: 160%;
 }
 
+.post .content table {
+	border: 1px solid red;
+}
+
+.post .content table th,
+.post .content table td {
+	border: 1px solid green;
+}
+
 .post a.more-link {
 	text-transform: uppercase;
 	padding: 3px 6px;

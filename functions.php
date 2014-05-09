@@ -8,10 +8,10 @@ function wpbootstrap_widgets_init() {
 		'name'          => __( 'Primary Sidebar', 'wpbootstrap' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'Main sidebar that appears on the left.', 'wpbootstrap' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-primary">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<h1 class="widget-title panel-heading">',
+		'after_title'   => '</h1><div class="panel-body"',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Content Sidebar', 'wpbootstrap' ),

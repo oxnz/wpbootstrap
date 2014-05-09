@@ -2,6 +2,7 @@
 
 function wpbootstrap_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
+	register_widget( 'NZPlayer_Widget' );
 	register_widget( 'Follow_Me_Widget' );
 
 	register_sidebar( array(

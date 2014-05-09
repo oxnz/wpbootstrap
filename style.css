@@ -706,38 +706,11 @@ p.wp-caption-text {
 	font-size: 110%;
 }
 
-
-.post-navigation .nav-links {
-	display: -ms-flexbox;
-	-ms-flex-pack: center;
-	-ms-flex-align: start;
-
-	display: -webkit-box;
-	-webkit-box-pack: justify;
-	-webkit-box-align: start;
-
-	display: -moz-box;
-	-moz-box-pack: justify;
-	-moz-box-align: start;
-
-	display: box;
-	box-pack: justify;
-	box-align: start;
-}
-
-.post-navigation .nav-links a {
+.post-navigation .pager li a {
 	word-wrap: break-word;
 	white-space: normal;
 	display: block;
 	max-width: 50%;
-}
-
-.post-navigation .nav-links a[rel=next] {
-	text-align: right;
-}
-
-.post-navigation .nav-links a:hover {
-	border: none;
 }
 
 /*

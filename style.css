@@ -1183,11 +1183,18 @@ h1.widget-title {
 	border-bottom: 1px dotted #40a7ca;
 }
 
-#backToTop {
+/*
+ * back-to-top
+ */
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 	color: #0095da;
 }
 
-#backToTop:hover {
+#back-to-top:hover {
 	color: #24d222;
 }
 

@@ -566,8 +566,7 @@ p.wp-caption-text {
 	color: #0095da;
 }
 
-.site-content .post a:hover,
-.site-content .widget a:hover {
+.site-content .post a:hover {
 	color: #24d222;
 	border-bottom: 1px dotted #24d222;
 }
@@ -1047,23 +1046,19 @@ p.wp-caption-text {
  * --> site-sidebar
  */
 
-.widget {
-	padding-bottom: 10px;
+.widget a:hover {
+	color: #24d222;
+}
+
+.widget ul li {
+	list-style: none;
 }
 
 h1.widget-title {
 	margin-top: 0;
-	font-size: 140%;
+	margin-bottom: 0;
+	font-size: 120%;
 	font-weight: normal;
-	border-bottom: 1px dotted #000;
-}
-
-.widget a {
-	font-size: 80%;
-}
-
-.widget a:hover {
-	border-bottom: 1px dotted;
 }
 
 .profile .follow-links li {
@@ -1081,10 +1076,6 @@ h1.widget-title {
 
 .follow-me ul li {
 	display: inline-block;
-}
-
-.follow-me ul li a:hover {
-	border: none;
 }
 
 .vcard .photo:hover,

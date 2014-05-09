@@ -39,23 +39,17 @@
 					<div>Drop me a message</div>
 				</div>
 				<ul>
-					<li><a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter"></i> Twitter</a> |
+					<li>
+						<a href="<?php bloginfo('rss_url'); ?>"><i class="fa fa-rss"></i> RSS</a> |
+					    <a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter"></i> Twitter</a> |
 						<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook"></i> Facebook</a> |
 						<a href="http://weibo.com/u/2868646094"><i class="fa fa-weibo"></i> Weibo</a></li>
 					<li><a href="https://github.com/oxnz"><i class="fa fa-github"></i> Github</a> |
 						<a href="http://sourceforge.net/users/yunxinyi">SourceForge</a> |
 						<a href="https://bitbucket.org/oxnz"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
 					<li><i class="fa fa-envelope"></i> Email: <a href="mailto:yunxinyi@gmail.com">yunxinyi@gmail.com</a><br>
-						<i class="fa fa-skype"></i> Skype: yunxinyi@live.cn<br>
 						<i class="fa fa-stack-overflow"></i> StackOverflow: <a href="http://stackoverflow.com/users/2273296/oxnz">oxnz</a>
 					</li>
-					<li>
-						<a rel="popover" data-container="body" data-html="true" data-placement="top" data-original-title="QR Code" data-content="<img src='<?php echo get_template_directory_uri(); ?>/img/qr-code.png' />"><span class="glyphicon glyphicon-qrcode"></span> QR CODE</a> |
-						<a href="<?php bloginfo('rss_url'); ?>"><i class="fa fa-rss"></i> RSS</a> |
-						<a href="https://plus.google.com/112691032821919860318"><i class="fa fa-google-plus"></i> Google Plus</a>
-
-					</li>
-					<li><a href="#" id="backToTop"><i class="fa fa-arrow-circle-o-up fa-lg"></i> Back to Top</a></li>
 				</ul>
 			</div>
 		</div><!-- #footer-links -->
@@ -73,11 +67,8 @@
 				</div>
 			</div><!-- #copyright -->
 			<div>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
-<br />
 Except where otherwise noted, content on this site is licensed under a
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY NC ND</a>.
 			</div>
 		</div>
 	</div><!-- #container -->
@@ -126,5 +117,6 @@ Except where otherwise noted, content on this site is licensed under a
 	<script src="<?php echo get_template_directory_uri(); ?>/wpbootstrap.js"></script>
 
 <?php wp_footer(); ?>
+	<a href="#" title="back to top" id="back-to-top"><i class="fa fa-arrow-circle-o-up fa-3x"></i></a>
 </body>
 </html>

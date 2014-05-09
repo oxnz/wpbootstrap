@@ -47,6 +47,7 @@ function wpbootstrap_paging_nav() {
 		'add_args' => array_map( 'urlencode', $query_args ),
 		'prev_text' => __( '<i class="fa fa-arrow-circle-o-left"></i> Previous', 'wpbootstrap' ),
 		'next_text' => __( 'Next <i class="fa fa-arrow-circle-o-right"></i>', 'wpbootstrap' ),
+		'type'	   => 'list',
 	) );
 
 	if ( $links ) :
@@ -54,9 +55,10 @@ function wpbootstrap_paging_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'wpbootstrap' ); ?></h1>
-		<div class="pagination loop-pagination">
-			<?php echo $links; ?>
-		</div><!-- .pagination -->
+		<?php
+			echo '<ul class="pagination">' .
+			substr($links, strlen('<ul class="page-numbers">'), -1);
+		?>
 	</nav><!-- .navigation -->
 	<?php
 	endif;

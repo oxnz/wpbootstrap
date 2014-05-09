@@ -46,14 +46,16 @@ jQuery(document).ready(function ($) {
 			trigger: "hover"
 		});
 	}
+	$('#back-to-top').hide(); // init status: hide
+	// show when 100px or greater to the top
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 50) {
-			$('#backToTop').fadeIn('slow');
+		if ($(this).scrollTop() > 100) {
+			$('#back-to-top').fadeIn('slow');
 		} else {
-			$('#backToTop').fadeOut('slow');
+			$('#back-to-top').fadeOut('slow');
 		}
 	});
-	$('#backToTop').click(function () {
+	$('#back-to-top').click(function () {
 		$("html, body").animate({ scrollTop: 0 }, 500);
 		return false;
 	});

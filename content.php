@@ -13,9 +13,9 @@
 	<div class="post well">
 		<?php
 		if (is_single()) :
-			the_title('<h3 class="title">', '</h3>');
+			the_title('<div class="page-header"><h3 class="title">', '</h3></div>');
 		else :
-			the_title('<h3 class="title"><a href="' .esc_url(get_permalink()) . '"rel="bookmark">', '</a></h3>');
+			the_title('<div class="page-header"><h3 class="title"><a href="' .esc_url(get_permalink()) . '"rel="bookmark">', '</a></h3></div>');
 		endif;
 		?>
 		<ul class="top-info">

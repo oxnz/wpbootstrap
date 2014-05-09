@@ -85,16 +85,16 @@ function wpbootstrap_post_nav() {
 <!--
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'wpbootstrap' ); ?></h1>
 -->
-		<div class="nav-links">
+		<ul class="pager">
 			<?php
 			if ( is_attachment() ) :
 				previous_post_link( '%link', __( '<i class="fa fa-tags">Published In</i>%title', 'wpbootstrap' ) );
 			else :
-				previous_post_link( '%link', __( '<i class="fa fa-arrow-circle-o-left"></i> %title', 'wpbootstrap' ) );
-				next_post_link( '%link', __( '%title <i class="fa fa-arrow-circle-o-right"></i>', 'wpbootstrap' ) );
+				previous_post_link( '<li class="previous">%link</li>', __( '<i class="fa fa-arrow-circle-o-left"></i> %title', 'wpbootstrap' ) );
+				next_post_link( '<li class="next">%link</li>', __( '%title <i class="fa fa-arrow-circle-o-right"></i>', 'wpbootstrap' ) );
 			endif;
 			?>
-		</div><!-- .nav-links -->
+		</ul><!-- pager -->
 	</nav><!-- .navigation -->
 	<?php
 }

@@ -1,0 +1,14 @@
+/*
+Theme Name: wp-bootstrap-editor
+Theme URI: https://github.com/oxnz/wpbootstrap
+Author: oxnz
+Author URI: http://oxnz.github.io/
+Description: A theme based on wpbootstrap, reuse the wpbootstrap makes
+			 the editor WYSIWYG
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentythirteen 
+ */
+
+@import url('style.css');

@@ -686,11 +686,6 @@ p.wp-caption-text {
 	line-height: 50px;
 }
 
-.post .content ol.footnotes:before {
-	content: "Footnotes:";
-	font-size: 200%;
-}
-
 /*
  * <- post conent
  * -> page nav

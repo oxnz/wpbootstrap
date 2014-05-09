@@ -562,7 +562,8 @@ p.wp-caption-text {
 	color: #0095da;
 }
 
-.site-content a:hover {
+.site-content .post a:hover,
+.site-content .widget a:hover {
 	color: #24d222;
 	border-bottom: 1px dotted #24d222;
 }

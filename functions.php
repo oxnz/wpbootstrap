@@ -60,6 +60,9 @@ if (function_exists('register_sidebar'))
 
  */
 
+/*
+ * alter login style
+ */
 function wplogin() {
 	add_filter('login_headerurl', 'get_site_url');
 }
@@ -75,5 +78,13 @@ function wplogin_style() { ?>
 add_action('login_enqueue_scripts', 'wplogin_style');
 
 require get_template_directory() . '/inc/template-tags.php';
+
+/*
+ * alter the editor style
+*/
+function alter_editor_style() {
+	add_editor_style(); // this will use editor-style.css in this dir
+}
+add_action('init', 'alter_editor_style');
 
 ?>

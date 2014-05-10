@@ -12,7 +12,7 @@ function wpbootstrap_widgets_init() {
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-primary">',
 		'after_widget'  => '</div></aside>',
 		'before_title'  => '<h1 class="widget-title panel-heading">',
-		'after_title'   => '</h1><div class="panel-body">',
+		'after_title'   => '</h1><div class="widget-body panel-body">',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Content Sidebar', 'wpbootstrap' ),

@@ -22,6 +22,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * override bootstrap color
  */
 
+.site-sidebar .panel {
+	border: none;
+}
+
 .page-header {
 	margin: 10px 0 20px;
 }

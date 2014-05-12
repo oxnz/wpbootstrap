@@ -7,8 +7,8 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-<div class="site-sidebar">
-	<div id="secondary">
+
+<div id="secondary">
 	<!-- don't show description
 	<?php
 		$description = get_bloginfo( 'description', 'display' );
@@ -30,4 +30,3 @@
 	</div><!-- #primary-sidebar -->
 	<?php endif; ?>
 </div><!-- #secondary -->
-</div><!-- #site-sidebar -->

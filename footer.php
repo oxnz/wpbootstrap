@@ -5,6 +5,7 @@
 
 <footer id="site-footer" class="site-footer">
 	<div class="container">
+		<?php get_sidebar( 'footer' ); ?>
 		<div class="footer-links">
 			<div class="column">
 				<div class="title">

@@ -48,7 +48,7 @@
 					<li><a href="https://github.com/oxnz"><i class="fa fa-github"></i> Github</a> |
 						<a href="http://sourceforge.net/users/yunxinyi">SourceForge</a> |
 						<a href="https://bitbucket.org/oxnz"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
-					<li><i class="fa fa-envelope"></i> Email: <a href="mailto:yunxinyi@gmail.com">yunxinyi@gmail.com</a><br>
+					<li>
 						<i class="fa fa-stack-overflow"></i> StackOverflow: <a href="http://stackoverflow.com/users/2273296/oxnz">oxnz</a>
 					</li>
 				</ul>

@@ -1075,6 +1075,24 @@ h1.widget-title {
 
 /*
  * <-- commen sidebar settings
+ * --> widget_calendar
+ */
+
+.widget_calendar .widget-body {
+	padding: 0;
+}
+
+.widget_calendar caption {
+	padding: 8px 0;
+	background: #255DA5;
+	color: #fff;
+}
+
+.widget_calendar tfoot {
+	border-top: 1px dotted #255DA5;
+}
+
+/* <-- widget_calendar
  * --> follow-me settings
  */
 

@@ -2,26 +2,25 @@
 
 function wpbootstrap_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
-	register_widget( 'NZPlayer_Widget' );
 	register_widget( 'Follow_Me_Widget' );
 
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'wpbootstrap' ),
 		'id'            => 'sidebar-1',
-		'description'   => __( 'Main sidebar that appears on the left.', 'wpbootstrap' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-primary">',
-		'after_widget'  => '</div></aside>',
-		'before_title'  => '<h1 class="widget-title panel-heading">',
-		'after_title'   => '</h1><div class="widget-body panel-body">',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Content Sidebar', 'wpbootstrap' ),
-		'id'            => 'sidebar-2',
 		'description'   => __( 'Additional sidebar that appears on the right.', 'wpbootstrap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Content Sidebar', 'wpbootstrap' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Main sidebar that appears on the left.', 'wpbootstrap' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-primary">',
+		'after_widget'  => '</div></aside>',
+		'before_title'  => '<h1 class="widget-title panel-heading">',
+		'after_title'   => '</h1><div class="widget-body panel-body">',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'wpbootstrap' ),

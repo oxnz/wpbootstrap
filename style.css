@@ -22,10 +22,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * override bootstrap color
  */
 
-.site-sidebar .panel {
-	border: none;
-}
-
 .page-header {
 	margin: 10px 0 20px;
 }
@@ -1047,8 +1043,12 @@ p.wp-caption-text {
 
 /*
  * <-- site-content 404 wanted
- * --> site-sidebar
+ * --> sidebar
  */
+
+.content-sidebar .panel {
+	border: none;
+}
 
 .widget a:hover {
 	color: #24d222;
@@ -1090,7 +1090,7 @@ h1.widget-title {
 }
 
 /*
- * <-- site-sidebar
+ * <-- sidebar
  * --> site-footer
  */
 

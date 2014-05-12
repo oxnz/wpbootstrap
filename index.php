@@ -18,8 +18,10 @@ get_header(); ?>
 	</div><!-- #col-sm-8 -->
 	<!-- <div class="col-sm-4 col-sm-offset-1" -->
 	<div class="col-sm-4">
-		<?php get_sidebar(); ?>
+		<?php get_sidebar('content'); ?>
 	</div><!-- #col-sm-4 -->
 </div><!-- #content -->
 
-<?php get_footer(); ?>
+<?php
+get_sidebar();
+get_footer();

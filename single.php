@@ -22,6 +22,7 @@ get_header();
 	</div><!-- #col-sm-8 -->
 	<div class="col-sm-3">
 	<!-- <div class="col-sm-4 col-sm-offset-1" -->
+		<?php get_sidebar( 'content' ); ?>
 		<?php get_sidebar(); ?>
 	</div><!-- #col-sm-4 -->
 </div><!-- #content -->

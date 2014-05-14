@@ -1,102 +1,5 @@
 <?php
 
-class Follow_Me_Widget extends WP_Widget {
-	private $formats = array('aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery');
-	private $format_strings;
-	function __construct() {
-		parent::__construct('follow_me', __('Follow Me', 'wpbootstrap'), array(
-			'classname' => 'follow-me',
-			'description' => __('Use this widget to list commenly used social network links to be followed by others', 'wpbootstrap'),
-		));
-		$this->title = 'Follow Me';
-	}
-
-	function widget($args, $instance) {
-		$format = $instance['format'];
-		$title = apply_filters('widget_title', empty($instance['title']) ? $this->format_strings[$format] : $instance['title'], $instance, $this->id_base);
-		$title = apply_filters('widget_title', $instance['title']);
-		$twitter = apply_filters('widget_title',$instance['twitter']);
-		$facebook = apply_filters('widget_title', $instance['facebook']);
-		$gplus = apply_filters('widget_title', $instance['gplus']);
-
-		echo $args['before_widget'];
-		if (! empty($title))
-			echo $args['before_title'] . $title . $args['after_title'];
-		else
-			echo $args['before_title'] . 'Follow Me' . $args['after_title'];
-
-		?>
-		<ul>
-			<li>
-				<a href="<?php echo $twitter; ?>" target="_blank"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/t.png"></a></li>
-			<li><a href="<?php echo $facebook; ?>" target="_blank"><img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/f.png"></a></li>
-			<li>
-				<a href="<?php echo $gplus; ?>" target="_blank">
-				<img src="http://xinyi.sourceforge.net/wp-content/uploads/2014/02/g.png"></a></li>
-		</ul>
-		<?php echo $args['after_widget']; ?>
-<?php
-	}
-
-	function update($new_instance, $instance) {
-		$instance['title'] = strip_tags($new_instance['title']);
-		$instance['twitter'] = $new_instance['twitter'];
-		$instance['gplus'] = $new_instance['gplus'];
-		$instance['facebook'] = $new_instance['facebook'];
-		return $instance;
-	}
-
-	function form($instance) {
-		if (isset($instance['title'])) {
-			$title = $instance['title'];
-		} else {
-			$title = __('Follow Me', 'text_domain');
-			$title = __('Follow Me', 'follow_me');
-		}
-		if (isset($instance['twitter'])) {
-			$twitter = $instance['twitter'];
-		}
-		if (isset($instance['facebook'])) {
-			$facebook = $instance['facebook'];
-		}
-		if (isset($instance['gplus'])) {
-			$gplus = $instance['gplus'];
-		}
-		?>
-		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
-		</p>
-		<p>
-			<label for="<?php echo $this->get_field_id('twitter'); ?>"><?php _e('Twitter:'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php echo esc_attr($twitter); ?>" />
-		</p>
-		<p>
-			<label for="<?php echo $this->get_field_id('gplus'); ?>"><?php _e('Google Plus:'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('gplus'); ?>" name="<?php echo $this->get_field_name('gplus'); ?>" type="text" value="<?php echo esc_attr($gplus); ?>" />
-		</p>
-		<p>
-			<label for="<?php echo $this->get_field_id('facebook'); ?>"><?php _e('Facebook:'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php echo esc_attr($facebook); ?>" />
-		</p>
-<?php
-	}
-}
-
-/*
-	                     <div class="g-person" data-width="295" data-href="//plus.google.com/112691032821919860318" data-rel="author"></div>
-
-						 <!-- Place this tag after the last widget tag. -->
-						 <script type="text/javascript">
-		  (function() {
-			      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-				      po.src = 'https://apis.google.com/js/platform.js';
-				      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					    })();
-		</script>
- */
-
-
 class NZWeather_Widget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array('classname' => 'nzweather',
@@ -269,5 +172,165 @@ jQuery(document).ready(function ($) {
 	<input class="widefat" id="<?php echo $this->get_field_id('location'); ?>" name = "<?php echo $this->get_field_name('location'); ?>" type="text" value="<?php echo $location; ?>" />
 </p>
 <?php
+	}
+}
+
+class NZProfile_Widget extends WP_Widget {
+	function __construct() {
+		$widget_ops = array('classname' => 'nzprofile',
+			'description' => __('A beautiful profile widget'));
+		parent::__construct('nzprofile', __('NZProfile'), $widget_ops);
+		$this->attrs = array('title'	=> 'Title',
+			'twitter'	=> 'Twitter',
+			'facebook'	=> 'Facebook',
+			'weibo'		=> 'Weibo',
+			'gplus'		=> 'GooglePlus'
+		);
+	}
+
+	function widget($args, $instance) {
+		extract($args);
+		foreach (array_keys($this->attrs)as $k) {
+			isset($instance[$attr]) ? $attr = $instance[$attr] : false;
+		}
+		$title = empty($instance['title']) ? $instance['title'] : __('NZProfile');
+		$title = apply_filters('widget_title', $title, $instance, $this->id_base);
+		$this->css();
+		echo $before_widget . $before_title;
+?>
+<div class="vcard">
+<?php
+		global $current_user;
+		echo get_avatar($current_user->ID, 100);
+?>
+	<div class="info">
+		<div class="name"><?php echo $current_user->display_name; ?></div>
+		<div class="email"><?php echo $current_user->user_email; ?></div>
+	</div>
+</div><!--.vcard-->
+<?php
+		echo $after_title;
+?>
+<div class="social">
+<?php
+		foreach ($this->attrs as $k => $n) {
+			$lnk = $instance[$k];
+			if ( empty($lnk) || 'title' == $k ) {
+				continue;
+			} else {
+?>
+	<div class="social-link" href="<?php echo $lnk; ?>"><?php echo $n; ?>
+		<div>12</div>
+	</div>
+<?php
+			}
+		}
+?>
+</div><!--.social-->
+<?php
+		echo $after_widget;
+	}
+
+	function css() {
+?>
+<style type="text/css">
+.nzprofile .vcard {
+	padding: 20px;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: box;
+
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ws-flex-pack: justify;
+	box-pack: justify;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ws-flex-align: center;
+	box-align: center;
+}
+
+.nzprofile .vcard .avatar {
+	border-radius: 50%;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+.nzprofile .vcard .info {
+	text-align: center;
+
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	box-flex: 1;
+}
+
+.nzprofile .vcard .info .name {
+	font-size: 140%;
+}
+
+.nzprofile .widget-body {
+	padding: 0;
+}
+
+.nzprofile .social {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: box;
+
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ws-flex-pack: justify;
+	box-pack: justify;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ws-flex-align: center;
+	box-align: center;
+}
+
+.nzprofile .social .social-link {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	box-flex: 1;
+
+	padding: 5px 0;
+	border-right: 1px solid #eee;
+	text-align: center;
+}
+
+.nzprofile .social .social-link:last-child {
+	border: none;
+}
+</style>
+<?php
+	} // end of func css
+
+	function update($new_instance, $old_instance) {
+		$instance = $old_instance;
+		foreach (array_keys($this->attrs) as $k) {
+			isset($new_instance[$k]) ? $instance[$k] = $new_instance[$k] : 0;
+		}
+		$instance['title'] = strip_tags($new_instance['title']);
+		return $instance;
+	}
+
+	function form($instance) {
+		extract($instance);
+		foreach ($this->attrs as $k => $n) {
+			isset($instance[$k]) ? $v = esc_attr($instance[$k]) : 0;
+?>
+<p>
+	<label for="<?php echo $this->get_field_id($k); ?>"><?php _e($n . ':'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id($k); ?>" name="<?php echo $this->get_field_name($k); ?>" type="text" value="<?php echo esc_attr($v); ?>" />
+</p>
+<?php
+		}
 	}
 }

@@ -722,15 +722,27 @@ p.wp-caption-text {
  * --> #comment
  */
 
+.comments-area {
+	background: #fff;
+}
+
 .comment-body .reply a:hover,
 .post a.more-link:hover {
 	background: #2B91C9;
 	border: 0;
 }
 
-.comment-reply-title,
-.comments-title {
+h3.comment-reply-title,
+h2.comments-title {
 	font-size: 18px;
+	font-weight: normal;
+}
+
+.comment-list .vcard .avatar {
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+	border: 5px solid #fff;
 }
 
 .comment-list cite {
@@ -739,7 +751,6 @@ p.wp-caption-text {
 }
 
 .comment {
-	background: #f3f7f9;
 	border-bottom: 1px solid #a89a94;
 }
 
@@ -926,7 +937,7 @@ p.wp-caption-text {
 	background: white;
 }
 
-.vcard {
+.about-me .vcard {
 	padding: 20px 0;
 	border-color: #0095da;
 	display: -ms-flexbox;
@@ -946,26 +957,26 @@ p.wp-caption-text {
 	box-align: center;
 }
 
-.vcard .lside a:hover {
+.about-me .vcard .lside a:hover {
 	border: none;
 }
 
-.vcard .lside {
+.about-me .vcard .lside {
 	text-align: center;
 	border-right: 1px solid #ddd;
 }
 
-.vcard .photo {
+.about-me .vcard .photo {
 	border: 4px solid #d1d1d1;
 }
 
-.vcard .lside,
-.vcard .rside {
+.about-me .vcard .lside,
+.about-me .vcard .rside {
 	display: block;
 	padding: 0 30px;
 }
 
-.vcard .rside {
+.about-me .vcard .rside {
 	max-width: 60%;
 	min-width: 40%;
 	width: 60%;
@@ -973,8 +984,8 @@ p.wp-caption-text {
 	vertical-align: top;
 }
 
-.vcard .lside h4,
-.vcard .lside h5 {
+.about-me .vcard .lside h4,
+.about-me .vcard .lside h5 {
 	font-weight: normal;
 	color: #0095da;
 	color: #202020;

@@ -184,7 +184,7 @@ class NZProfile_Widget extends WP_Widget {
 			'twitter'	=> 'Twitter',
 			'facebook'	=> 'Facebook',
 			'weibo'		=> 'Weibo',
-			'gplus'		=> 'GooglePlus'
+			'gplus'		=> 'Google Plus'
 		);
 	}
 
@@ -219,7 +219,7 @@ class NZProfile_Widget extends WP_Widget {
 				continue;
 			} else {
 ?>
-	<div class="social-link" href="<?php echo $lnk; ?>"><?php echo $n; ?>
+	<div class="social-link"><a href="<?php echo $lnk; ?>"><?php echo $n; ?></a>
 		<div>12</div>
 	</div>
 <?php

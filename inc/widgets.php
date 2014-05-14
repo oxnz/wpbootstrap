@@ -177,16 +177,23 @@ jQuery(document).ready(function ($) {
 <style type="text/css">
 .nzweather .today {
 	width: 100%;
+
 	display: -webkit-box;
 	display: -moz-box;
+	display: -ms-flexbox;
 	display: box;
+
 	-webkit-box-pack: justify;
 	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
 	box-pack: justify;
 }
 
 .nzweather .today .info {
 	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	box-flex: 1;
 }
 
 .nzweather .today .info .temp {
@@ -203,14 +210,29 @@ jQuery(document).ready(function ($) {
 }
 
 .nzweather .preditem {
-	display: -webkit-box;
-	-webkit-box-pack: justify;
-	-webkit-box-align: center;
 	font-size: 140%;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: box;
+
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	box-pack: justify;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	box-align: center;
 }
 
 .nzweather .preditem > .dayname {
 	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	box-flex: 1;
 }
 
 .nzweather .preditem > .temp {

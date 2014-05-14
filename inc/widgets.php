@@ -168,7 +168,7 @@ jQuery(document).ready(function ($) {
 			var temps = $(".preditem .tempnum");
 			var wicons = $(".preditem img.wicon");
 			for (var i = 0; i < temps.length; ++i) {
-				temps[i].textContent = gettemp(result.list[i].temp.eve, 2);
+				temps[i].textContent = gettemp(result.list[i].temp.eve, 0);
 				wicons[i].src = getwicon(result.list[i].weather[0].main);
 			}
 	});

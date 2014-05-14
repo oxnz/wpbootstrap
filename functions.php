@@ -3,6 +3,7 @@
 function wpbootstrap_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
 	register_widget( 'Follow_Me_Widget' );
+	register_widget( 'NZWeather_Widget' );
 
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'wpbootstrap' ),

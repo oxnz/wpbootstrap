@@ -88,4 +88,8 @@ function alter_editor_style() {
 }
 add_action('init', 'alter_editor_style');
 
+add_filter('get_calendar', function($cal) {
+	return $cal;
+});
+
 ?>

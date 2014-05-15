@@ -275,6 +275,10 @@ class NZProfile_Widget extends WP_Widget {
 	font-size: 140%;
 }
 
+.nzprofile .vcard .info .name {
+	word-wrap: break-word;
+}
+
 .nzprofile .widget-body {
 	padding: 0;
 }

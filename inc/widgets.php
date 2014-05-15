@@ -44,6 +44,8 @@ jQuery(document).ready(function ($) {
 			return baseurl + "rain.png";
 		case "Clouds":
 			return baseurl + "cloud.png";
+		case "Clear":
+			return baseurl + "clear.png";
 		default:
 			console.log("no appropriate icon for weather: " + weather);
 			return baseurl + "na.png";

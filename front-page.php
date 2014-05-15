@@ -37,6 +37,29 @@
 		<a href="#">See More Works &raquo;</a>
 	</div>
 </div><!-- .portfolio -->
+<div id="chart" class="chart"></div>
+<script type="text/javascript">
+
+var chart = document.getElementById("chart");
+chart.innerHTML='<canvas id="chart-canvas" width="400" height="300">Not supported</canvas>';
+var chart = document.getElementById("chart-canvas");
+var ctx = chart.getContext("2d");
+function drawCircle(ctx) {
+	ctx.fillStyle="#77d1f6";
+	ctx.strokeStyle = "#77d0f0";
+	ctx.beginPath();
+	ctx.moveTo(200, 150);
+	ctx.arc(200, 150, 150, 5, Math.PI*2, false);
+	ctx.fill();
+	ctx.stroke();
+	ctx.fillStyle="#381";
+	ctx.moveTo(200, 150);
+	ctx.arc(200, 150, 140, 0, Math.PI*2, false);
+	ctx.fill();
+	ctx.stroke();
+}
+drawCircle(ctx);
+</script>
 
 <div class="container">
 <?php get_footer(); ?>

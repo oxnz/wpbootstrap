@@ -636,7 +636,7 @@ p.wp-caption-text {
 	font-size: 12px;
 	font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
 	line-height: 20px;
-	border-bottom: 1px solid #888;
+	border-bottom: 1px solid #eee;
 }
 
 .post .content::first-letter {

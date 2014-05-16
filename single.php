@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <div id="content" class="row" role="main">
-	<div class="col-sm-9">
+	<div class="col-md-8">
 		<div class="blog">
 		<?php
 		if (have_posts()) :
@@ -20,7 +20,7 @@ get_header();
 		?>
 		</div><!-- #blog -->
 	</div><!-- #col-sm-8 -->
-	<div class="col-sm-3">
+	<div class="col-md-4">
 	<!-- <div class="col-sm-4 col-sm-offset-1" -->
 		<?php get_sidebar( 'content' ); ?>
 		<?php get_sidebar(); ?>

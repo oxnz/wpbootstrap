@@ -762,6 +762,10 @@ p.wp-caption-text {
 	text-align: right;
 }
 
+.comment-body .reply {
+	text-align: right;
+}
+
 .comment-body .reply a:hover,
 .post a.more-link:hover {
 	background: #2B91C9;

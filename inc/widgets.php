@@ -19,7 +19,9 @@ class NZWeather_Widget extends WP_Widget {
 		<div class="temp"><span id="tempnum">29</span>&#176;</div>
 		<div class="loc">' . $location . '</div>
 	</div>
-	<img class="wicon" id="wicon" src="' . $wiconurl . 'na.png">
+	<div class="wicon-wrapper">
+		<img class="wicon" id="wicon" src="' . $wiconurl . 'na.png">
+	</div>
 </div>';
 	$predcnt = 3; // predict 3 days
 	for ($i = 1; $i <= $predcnt; ++$i) {
@@ -46,6 +48,8 @@ jQuery(document).ready(function ($) {
 			return baseurl + "cloud.png";
 		case "Clear":
 			return baseurl + "clear.png";
+		case "Haze":
+			return baseurl + "haze.png";
 		default:
 			console.log("no appropriate icon for weather: " + weather);
 			return baseurl + "na.png";
@@ -94,7 +98,9 @@ jQuery(document).ready(function ($) {
 	box-pack: justify;
 }
 
-.nzweather .today .info {
+.nzweather .today .wicon-wrapper {
+	text-align: right;
+
 	-webkit-box-flex: 1;
 	-moz-box-flex: 1;
 	-ms-flex: 1;

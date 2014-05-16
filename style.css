@@ -1130,21 +1130,18 @@ h1.widget-title {
  */
 
 .site-footer {
-	border-top: 4px solid #00539f;
-	background-color: #e6e8ea;
 	background-color: #165391;
-	color: #eee;
+	color: #fff;
 }
 
 .site-footer a {
-	color: #ddd;
+	color: #eee;
 	font-size: 13px;
 }
 
 .site-footer a:hover,
 .site-footer .footer-claim a:hover {
-	color: #0095da;
-	color: #9DF3B2;
+	color: #dff;
 }
 
 .site-footer .footer-links {
@@ -1153,42 +1150,23 @@ h1.widget-title {
 
 .site-footer .footer-links .column {
 	padding-top: 15px;
+	font-weight: 300;
 }
 
 .site-footer .footer-links .column .title {
-	//border-right: 1px dotted #40a7ca;
-}
-
-.site-footer .footer-links .column .title h4 {
-	margin: 0;
 	text-transform: uppercase;
-	font-weight: normal;
 	font-size: 130%;
 	letter-spacing: 3px;
-	color: #fff;
-}
-
-.site-footer .footer-links .column .title div {
-	color: #dee;
-	font-weight: 300;
-	font-size: 110%;
-}
-
-.site-footer .footer-links .column ul {
-	padding-top: 20px;
+	font-weight: 400;
+	padding-bottom: 10px;
 }
 
 .site-footer .footer-links .column ul li {
-	border-top: 1px dotted #40a7ca;
 	padding: 4px 0;
 }
 
 .site-footer .footer-links .column ul li:hover {
 	background-color: #2B74AD;
-}
-
-.site-footer .footer-links .column ul li:last-child {
-	border-bottom: 1px dotted #40a7ca;
 }
 
 .site-footer .footer-links .column address {

@@ -7,10 +7,7 @@
 	<div class="container">
 		<div class="footer-links row">
 			<div class="column col-sm-4">
-				<div class="title">
-					<h4>Hosted Projects</h4>
-					<div>Projects hosted or created by me</div>
-				</div>
+				<h4 class="title">Hosted Projects</h4>
 				<ul>
 					<li><a href="https://github.com/oxnz/pygtk-tutor">pygtk-tutor</a></li>
 					<li><a href="https://github.com/oxnz/yaosa">yaosa</a></li>
@@ -21,10 +18,7 @@
 				<?php get_sidebar( 'footer' ); ?>
 			</div>
 			<div class="column col-sm-4">
-				<div class="title">
-					<h4>Available Products</h4>
-					<div>Availabel softwares written by me</div>
-				</div>
+				<h4 class="title">Available Products</h4>
 				<ul>
 					<li><a href="https://github.com/oxnz/clang-user-manual">clang-user-manual</a></li>
 					<li><a href="https://github.com/oxnz/digital-china-supplicant">Digital China Supplicant</a></li>
@@ -35,10 +29,7 @@
 				</ul>
 			</div>
 			<div class="column col-sm-4 social">
-				<div class="title">
-					<h4>Social Connect</h4>
-					<div>Drop me a message</div>
-				</div>
+				<h4 class="title">Social Connect</h4>
 				<ul>
 					<li>
 						<address>

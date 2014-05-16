@@ -213,8 +213,12 @@ class NZProfile_Widget extends WP_Widget {
 		echo get_avatar($current_user->ID, 100);
 ?>
 	<div class="info">
+<?php if (is_user_logged_in()) : ?>
 		<div class="name"><?php echo $current_user->display_name; ?></div>
 		<div class="email"><?php echo $current_user->user_email; ?></div>
+<?php else : ?>
+		<div class="name">Hi, Guest</div>
+<?php endif; ?>
 	</div>
 </div><!--.vcard-->
 <?php

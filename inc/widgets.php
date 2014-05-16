@@ -285,6 +285,8 @@ class NZProfile_Widget extends WP_Widget {
 }
 
 .nzprofile .social {
+	width: 100%;
+
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;

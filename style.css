@@ -1180,6 +1180,14 @@ h1.widget-title {
 	padding-top: 10px;
 }
 
+.site-footer .footer-links .column .social-links .fa-github:hover {
+	color: #000;
+}
+
+.site-footer .footer-links .column .social-links .fa-wechat:hover {
+	color: #67FF41;
+}
+
 /*
  * back-to-top
  */

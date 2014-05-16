@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="footer-links row">
 			<div class="column col-sm-4">
-				<h4 class="title">Hosted Projects</h4>
+				<h2 class="title">Projects</h2>
 				<ul>
 					<li><a href="https://github.com/oxnz/pygtk-tutor">pygtk-tutor</a></li>
 					<li><a href="https://github.com/oxnz/yaosa">yaosa</a></li>
@@ -18,7 +18,7 @@
 				<?php get_sidebar( 'footer' ); ?>
 			</div>
 			<div class="column col-sm-4">
-				<h4 class="title">Available Products</h4>
+				<h2 class="title">Products</h2>
 				<ul>
 					<li><a href="https://github.com/oxnz/clang-user-manual">clang-user-manual</a></li>
 					<li><a href="https://github.com/oxnz/digital-china-supplicant">Digital China Supplicant</a></li>
@@ -29,9 +29,10 @@
 				</ul>
 			</div>
 			<div class="column col-sm-4 social">
-				<h4 class="title">Social Connect</h4>
+				<h2 class="title">Social</h2>
 				<ul>
 					<li>
+						<strong>Address:</strong>
 						<address>
 							<strong>Web Designer &amp; Software Developer</strong><br />
 							Luo-jia-shan · Wuchang · Wuhan<br />

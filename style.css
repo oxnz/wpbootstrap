@@ -1150,15 +1150,16 @@ h1.widget-title {
 
 .site-footer .footer-links .column {
 	padding-top: 15px;
-	font-weight: 300;
 }
 
 .site-footer .footer-links .column .title {
+	/*
 	text-transform: uppercase;
 	font-size: 130%;
 	letter-spacing: 3px;
 	font-weight: 400;
 	padding-bottom: 10px;
+	*/
 }
 
 .site-footer .footer-links .column ul li {
@@ -1176,7 +1177,6 @@ h1.widget-title {
 
 .site-footer .footer-links .column .social-links {
 	padding-top: 10px;
-	text-align: center;
 }
 
 /*

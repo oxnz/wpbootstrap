@@ -1130,15 +1130,12 @@ h1.widget-title {
  */
 
 .site-footer {
-	border-top: 4px solid #c1dfe9;
-	border-top: 4px solid #5D9DB3;
-	border-top: 4px solid rgb(75, 150, 205);
 	border-top: 4px solid #00539f;
 	background-color: #e6e8ea;
 }
 
 .site-footer a {
-	color: #444;
+	color: #333;
 	font-size: 13px;
 }
 
@@ -1148,54 +1145,27 @@ h1.widget-title {
 }
 
 .site-footer .footer-links {
-	width: 100%;
-	padding-top: 15px;
-	padding-bottom: 40px;
-
-	display: -ms-flexbox;
-	-ms-flex-pack: justify;
-	-ms-flex-align: start;
-
-	display: -webkit-box;
-	-webkit-box-pack: justify;
-	-webkit-box-align: start;
-
-	display: -moz-box;
-	-moz-box-pack: justify;
-	-moz-box-align: start;
-
-	display: box;
-	box-pack: justify;
-	box-align: start;
+	padding-bottom: 30px;
 }
 
 .site-footer .footer-links .column {
-	box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-box-flex: 1;
-	-ms-box-flex: 1;
-	padding-left: 20px;
-}
-
-.site-footer .footer-links .column:first-child {
-	padding-left: 0;
+	padding-top: 15px;
 }
 
 .site-footer .footer-links .column .title {
-	padding-right: 40px;
 	border-right: 1px dotted #40a7ca;
 }
 
 .site-footer .footer-links .column .title h4 {
 	margin: 0;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: normal;
 	font-size: 130%;
 	letter-spacing: 3px;
 }
 
 .site-footer .footer-links .column .title div {
-	color: #555;
+	color: #333;
 	font-weight: 300;
 	font-size: 110%;
 }
@@ -1217,6 +1187,10 @@ h1.widget-title {
 	border-bottom: 1px dotted #40a7ca;
 }
 
+.site-footer .footer-links .column address {
+	margin-bottom: 0;
+	padding: 10px 0;
+}
 /*
  * back-to-top
  */
@@ -1234,6 +1208,8 @@ h1.widget-title {
 
 .site-footer .footer-claim {
 	padding: 10px 0;
+	background: rgb(22, 63, 129);
+	/*
 	border-top: 1px dotted #40a7ca;
 	border-top: 1px solid #000;
 	background-color: #2b5b84;
@@ -1243,6 +1219,7 @@ h1.widget-title {
 	background-image: linear-gradient(#1e415e 10%,#2b5b84 90%);
 	background-image: linear-gradient(#144868 10%,#346997 90%);
 	background-image: linear-gradient(#00407a 10%,#00539f 90%);
+	*/
 	font-size: 12px;
 	line-height: 20px;
 	color: #666;

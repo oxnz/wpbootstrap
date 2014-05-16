@@ -5,9 +5,8 @@
 
 <footer id="site-footer" class="site-footer">
 	<div class="container">
-		<?php get_sidebar( 'footer' ); ?>
-		<div class="footer-links">
-			<div class="column">
+		<div class="footer-links row">
+			<div class="column col-sm-4">
 				<div class="title">
 					<h4>Hosted Projects</h4>
 					<div>Projects hosted or created by me</div>
@@ -19,8 +18,9 @@
 					<li><a href="https://github.com/oxnz/algorithms">algorithms</a></li>
 					<li><a href="https://github.com/oxnz/design-patterns">design patterns</a></li>
 				</ul>
+				<?php get_sidebar( 'footer' ); ?>
 			</div>
-			<div class="column">
+			<div class="column col-sm-4">
 				<div class="title">
 					<h4>Available Products</h4>
 					<div>Availabel softwares written by me</div>
@@ -34,22 +34,25 @@
 					<li><a href="https://github.com/oxnz/NZPlayer">NZPlayer</a></li>
 				</ul>
 			</div>
-			<div class="column">
+			<div class="column col-sm-4">
 				<div class="title">
 					<h4>Social Connect</h4>
 					<div>Drop me a message</div>
 				</div>
 				<ul>
 					<li>
-						<a href="<?php bloginfo('rss_url'); ?>"><i class="fa fa-rss"></i> RSS</a> |
-					    <a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter"></i> Twitter</a> |
-						<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook"></i> Facebook</a> |
-						<a href="http://weibo.com/u/2868646094"><i class="fa fa-weibo"></i> Weibo</a></li>
-					<li><a href="https://github.com/oxnz"><i class="fa fa-github"></i> Github</a> |
-						<a href="http://sourceforge.net/users/yunxinyi">SourceForge</a> |
-						<a href="https://bitbucket.org/oxnz"><i class="fa fa-bitbucket"></i> Bitbucket</a></li>
+						<address>
+							<strong>Web Designer &amp; Software Developer</strong><br />
+							Luo-jia-shan · Wuchang · Wuhan<br />
+							email: yunxinyi{@}gmail.com
+						</address>
+					</li>
 					<li>
-						<i class="fa fa-stack-overflow"></i> StackOverflow: <a href="http://stackoverflow.com/users/2273296/oxnz">oxnz</a>
+						<strong>Follow me:</strong><br /><br />
+						<a href="https://github.com/oxnz"><i class="fa fa-github fa-4x"></i></a>
+						<a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter-square fa-4x"></i></a>
+						<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook-square fa-4x"></i></a>
+						<a href="#"><i class="fa fa-wechat fa-4x"></i></a>
 					</li>
 				</ul>
 			</div>

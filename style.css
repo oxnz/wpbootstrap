@@ -1132,16 +1132,19 @@ h1.widget-title {
 .site-footer {
 	border-top: 4px solid #00539f;
 	background-color: #e6e8ea;
+	background-color: #165391;
+	color: #eee;
 }
 
 .site-footer a {
-	color: #333;
+	color: #ddd;
 	font-size: 13px;
 }
 
 .site-footer a:hover,
 .site-footer .footer-claim a:hover {
 	color: #0095da;
+	color: #9DF3B2;
 }
 
 .site-footer .footer-links {
@@ -1153,7 +1156,7 @@ h1.widget-title {
 }
 
 .site-footer .footer-links .column .title {
-	border-right: 1px dotted #40a7ca;
+	//border-right: 1px dotted #40a7ca;
 }
 
 .site-footer .footer-links .column .title h4 {
@@ -1162,10 +1165,11 @@ h1.widget-title {
 	font-weight: normal;
 	font-size: 130%;
 	letter-spacing: 3px;
+	color: #fff;
 }
 
 .site-footer .footer-links .column .title div {
-	color: #333;
+	color: #dee;
 	font-weight: 300;
 	font-size: 110%;
 }
@@ -1180,7 +1184,7 @@ h1.widget-title {
 }
 
 .site-footer .footer-links .column ul li:hover {
-	background-color: #eee;
+	background-color: #2B74AD;
 }
 
 .site-footer .footer-links .column ul li:last-child {
@@ -1191,6 +1195,12 @@ h1.widget-title {
 	margin-bottom: 0;
 	padding: 10px 0;
 }
+
+.site-footer .footer-links .column .social-links {
+	padding-top: 10px;
+	text-align: center;
+}
+
 /*
  * back-to-top
  */
@@ -1226,7 +1236,7 @@ h1.widget-title {
 }
 
 .site-footer .footer-claim div {
-	color: #75a8d3;
+	color: #BECDDA;
 }
 
 .site-footer .footer-claim a {

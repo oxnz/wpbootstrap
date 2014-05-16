@@ -34,7 +34,7 @@
 					<li><a href="https://github.com/oxnz/NZPlayer">NZPlayer</a></li>
 				</ul>
 			</div>
-			<div class="column col-sm-4">
+			<div class="column col-sm-4 social">
 				<div class="title">
 					<h4>Social Connect</h4>
 					<div>Drop me a message</div>
@@ -48,11 +48,13 @@
 						</address>
 					</li>
 					<li>
-						<strong>Follow me:</strong><br /><br />
-						<a href="https://github.com/oxnz"><i class="fa fa-github fa-4x"></i></a>
-						<a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter-square fa-4x"></i></a>
-						<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook-square fa-4x"></i></a>
-						<a href="#"><i class="fa fa-wechat fa-4x"></i></a>
+						<strong>Follow me:</strong>
+						<div class="social-links">
+							<a href="https://github.com/oxnz"><i class="fa fa-github fa-4x"></i></a>
+							<a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter-square fa-4x"></i></a>
+							<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook-square fa-4x"></i></a>
+							<a href="#"><i class="fa fa-wechat fa-4x"></i></a>
+						</div>
 					</li>
 				</ul>
 			</div>

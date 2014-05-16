@@ -115,6 +115,7 @@ jQuery(document).ready(function ($) {
 }
 
 .nzweather .preditem {
+	width: 100%;
 	font-size: 140%;
 
 	display: -webkit-box;

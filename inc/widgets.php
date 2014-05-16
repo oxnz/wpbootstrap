@@ -48,6 +48,7 @@ jQuery(document).ready(function ($) {
 			return baseurl + "cloud.png";
 		case "Clear":
 			return baseurl + "clear.png";
+		case "Mist":
 		case "Haze":
 			return baseurl + "haze.png";
 		default:

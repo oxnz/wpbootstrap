@@ -727,6 +727,39 @@ p.wp-caption-text {
 	background: #fff;
 }
 
+.comment-body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: box;
+}
+
+.comment-body .comment-quote {
+	background-color: #d9e9ff;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	box-flex: 1;
+}
+
+.comment-body .comment-quote .comment-header {
+	display: table;
+	width: 100%;
+	text-align: left;
+}
+
+.comment-body .comment-quote .comment-header > span {
+	display: table-cell;
+}
+
+.comment-body .comment-quote .comment-header > .meta {
+	text-align: right;
+}
+
 .comment-body .reply a:hover,
 .post a.more-link:hover {
 	background: #2B91C9;
@@ -739,17 +772,22 @@ h2.comments-title {
 	font-weight: normal;
 }
 
+.comment-list > .comment {
+	border-bottom: 1px solid #eee;
+}
+
+.comment-list > .comment .children li {
+	padding: 10px 0px;
+}
+
 .comment-list .vcard .avatar {
+	margin-right: 20px;
 	border-radius: 50%;
 }
 
 .comment-list cite {
 	font-size: 120%;
 	color: #c60;
-}
-
-.comment {
-	border-bottom: 1px solid #eee;
 }
 
 .comment-list li {

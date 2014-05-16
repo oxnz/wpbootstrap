@@ -101,7 +101,7 @@
 			<div class="info-inner">
 			<div class="position">
 				<ol class="breadcrumb">
-					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page" rel="tooltip"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page" rel="tooltip"><i class="fa fa-home fa-lg"></i> Home</a></li>
 					<?php if (is_home() || is_front_page()) : ?>
 					<?php elseif (is_404()) : ?>
 					<li>Not Found</li>

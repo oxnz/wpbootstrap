@@ -20,17 +20,17 @@
 		?>
 		<ul class="top-info">
 			<li>
-			<span class="glyphicon glyphicon-user"></span>
+			<i class="fa fa-user"></i>
 			<?php the_author_link(); //the_author(); ?>
 			</li>
 			<li>
-			<?php echo '<i class="fa fa-calendar"></i> '.get_the_date();
+			<?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date();
 				//the_date('F j, Y', '<i class="fa fa-calendar"></i> '); ?>
 			</li>
-			<li><?php the_modified_date('F j, Y', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
+			<li><?php the_modified_date('F j, Y', '<i class="fa fa-spinner"></i> '); ?></li>
 			<li><?php the_tags('<i class="fa fa-tags"></i> ', ' • '); ?>
 			</li>
-			<li><?php edit_post_link('edit', '<span class="glyphicon glyphicon-edit"></span> '); ?></li>
+			<li><?php edit_post_link('edit', '<i class="fa fa-edit"></i> '); ?></li>
 		</ul><!-- #info -->
 		<div class="content">
 			<?php the_content('continue reading &raquo;'); ?>
@@ -43,11 +43,11 @@
 			<li>
 			<?php if (get_comments_number() > 0) : ?>
 			<a href="<?php comments_link(); ?>">
-				<span class="glyphicon glyphicon-comment"></span>
+				<i class="fa fa-comments"></i>
 				<?php comments_number(); ?>
 			</a>
 			<?php else : ?>
-				<span class="glyphicon glyphicon-comment"></span>
+				<i class="fa fa-comment"></i>
 				<?php comments_number(); ?>
 			<?php endif; ?>
 			</li>

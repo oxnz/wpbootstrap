@@ -29,7 +29,7 @@
 				</ul>
 			</div>
 			<div class="column col-sm-4 social">
-				<h2 class="title">Social</h2>
+				<h2 class="title">Contact</h2>
 				<ul>
 					<li>
 						<strong>Address:</strong>

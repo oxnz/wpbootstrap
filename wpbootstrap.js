@@ -39,7 +39,7 @@ function footerbg() {
  */
 jQuery(document).ready(function ($) {
 	if ($("[rel=tooltip]").length) {
-		//$("[rel=tooltip]").tooltip($);
+		$("[rel=tooltip]").tooltip($);
 	}
 	if ($("[rel=popover]").length) {
 		$("[rel=popover]").popover({
@@ -59,5 +59,22 @@ jQuery(document).ready(function ($) {
 		$("html, body").animate({ scrollTop: 0 }, 500);
 		return false;
 	});
-});
+	/*
+	 * scroll bar
+	 */
+	$('a[href*=#]:not([href=#])').click(function() {
+		console.log("clicked");
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			|| location.hostname == this.hostname) {
 
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 500);
+				return false;
+			}
+		}
+	});
+});

@@ -1176,6 +1176,12 @@ h1.widget-title {
 	color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+	.site-footer {
+		text-align: center;
+	}
+}
+
 .site-footer a {
 	color: #ddd;
 	font-size: 13px;

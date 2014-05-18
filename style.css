@@ -736,11 +736,23 @@ p.wp-caption-text {
 	display: box;
 }
 
+.comment-body .comment-quote:before {
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 30px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 16px solid #d9e9ff;
+	border-bottom: 10px solid transparent;
+}
+
 .comment-body .comment-quote {
+	position: relative;
 	background-color: #d9e9ff;
 	padding: 20px;
-	border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-radius: 10px;
 
 	-webkit-box-flex: 1;
 	-moz-box-flex: 1;

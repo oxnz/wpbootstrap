@@ -10,6 +10,22 @@
 	background: #fff;
 }
 
+.product .topnav {
+	margin: 0;
+	border-radius: 0;
+	//background: #165391;
+	//border-color: #165391;
+}
+
+.product .topnav .site-title {
+	color: #fff;
+	font-size: 150%;
+}
+
+/*
+ * -->side-nav
+ */
+
 .product .side-nav {
 	position: fixed;
 	top: 45%;
@@ -219,11 +235,14 @@
 	color: #636f70;
 }
 
-.btn {
+.product .jumbotron .btn,
+.product .subscribe .btn {
 	border: none;
 	font-size: 18px;
 	padding: 10px 23px;
+}
 
+.product .btn {
 	-webkit-transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	transition: 0.5s ease;

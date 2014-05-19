@@ -76,18 +76,29 @@
 			</ul>
 		</div><!-- #container -->
 	</div><!-- #glob-nav -->
-	<div class="site-nav">
+
+	<nav class="site-nav navbar" role="navigation">
 		<div class="container">
-			<div class="nav-inner">
-			<div class="site-name"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-				<!--
-				<img class="img-circle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></img>
-				-->
-			</div><!-- #site-name -->
-			<?php wp_nav_menu(array('container_class' => 'nav-menu'));?>
-			</div><!-- .nav-inner -->
-		</div><!-- #container -->
-	</div><!-- #site-nav -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-navicon fa-lg"></span>
+				</button>
+				<a class="navbar-brand site-name" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+<?php
+wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
+	'container'	=> '',
+	'menu_class'	=> 'nav navbar-nav navbar-right',
+	'walker'		=> new NZ_Walker_Nav_Menu,
+));
+?>
+			</div><!--/.navbar-collapse-->
+		</div><!-- #container-fluid -->
+	</nav><!-- #site-nav -->
+
 <?php //if (is_home() or is_front_page()) : ?>
 	<div class="site-banner">
 		<div class="container">

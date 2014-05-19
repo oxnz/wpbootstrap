@@ -350,6 +350,7 @@ p.wp-caption-text {
 
 .site-header .site-nav {
 	border-top: 1px solid #2e78ad;
+	border-radius: 0;
 	padding-bottom: 20px;
 	-webkit-animation: navup 1.2s linear forwards;
 	animation: navup 1.2s linear forwards;
@@ -360,93 +361,23 @@ p.wp-caption-text {
 	font-size: 120%;
 }
 
-.site-header .site-nav .nav-inner {
-	width: 100%;
-
-	display: -ms-flexbox;
-	-ms-flex-pack: justify;
-	-ms-flex-align: start;
-
-	display: -webkit-box;
-	-webkit-box-pack: justify;
-	-webkit-box-align: start;
-
-	display: -moz-box;
-	-moz-box-pack: justify;
-	-moz-box-align: start;
-
-	display: box;
-	box-pack: justify;
-	box-align: start;
-}
-
-.site-header .site-nav .nav-inner .site-name {
-	box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-box-flex: 1;
-	-ms-box-flex: 1;
-}
-
-.site-header .menu .menu-item {
-	display: inline-block;
-	border-right: 1px solid white;
-	padding: 0 10px;
-}
-
-.site-header .menu li:last-child {
-	border-right: none;
-	padding-right: 0;
-}
-
-.site-header .menu .menu-item a {
+.site-header .site-nav .menu-item a {
 	font-size: 110%;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
 
-.site-header .menu .sub-menu {
-	display: none;
-	position: absolute;
-	left: 0;
-}
-
-.site-header .menu .menu-item:hover {
-	position: relative;
-}
-
-.site-header .menu .menu-item:hover .sub-menu {
-	display: block;
-}
-
-.site-header .menu .sub-menu .menu-item {
-	display: block;
-	border: none;
-	width: 150px;
-}
-
-.menu .menu-item:hover > .sub-menu .menu-item {
-}
-
-.site-header .menu .sub-menu .menu-item > .sub-menu {
-	display: none;
-}
-
-.site-header .menu .sub-menu .menu-item:hover > .sub-menu {
-	position: absolute;
-	top: 0;
-	left: 150px;
-	display: block;
+.site-header .site-nav .main-menu-item > a,
+.site-header .site-nav .main-menu-item > a:hover,
+.site-header .site-nav .main-menu-item > a:focus {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .site-header .site-name {
+	height: 100%;
 	font-family: 'Microsoft Yahei', 'sans-serif';
 	font-size: 400%;
 	line-height: 100%;
-}
-
-.site-header .site-name,
-.site-header .nav-menu {
-	vertical-align: top;
 }
 
 /*

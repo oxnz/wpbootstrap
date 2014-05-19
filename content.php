@@ -27,7 +27,7 @@
 			<?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date();
 				//the_date('F j, Y', '<i class="fa fa-calendar"></i> '); ?>
 			</li>
-			<li><?php the_modified_date('F j, Y', '<i class="fa fa-spinner"></i> '); ?></li>
+			<li><?php the_modified_date('F j, Y', '<i class="fa fa-history"></i> '); ?></li>
 			<li><?php the_tags('<i class="fa fa-tags"></i> ', ' • '); ?>
 			</li>
 			<li><?php edit_post_link('edit', '<i class="fa fa-edit"></i> '); ?></li>

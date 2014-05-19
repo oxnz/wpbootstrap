@@ -42,10 +42,10 @@
 					<li>
 						<strong>Follow me:</strong>
 						<div class="social-links">
-							<a href="https://github.com/oxnz"><i class="fa fa-github fa-4x"></i></a>
+							<a href="https://github.com/oxnz"><i class="fa fa-github-square fa-4x"></i></a>
+							<a href="<?php bloginfo('rss2_url'); ?>" title="<?php _e('Syndicate this site using RSS'); ?>"><i class="fa fa-rss-square fa-4x"></i></a>
 							<a href="https://twitter.com/yunxinyix"><i class="fa fa-twitter-square fa-4x"></i></a>
 							<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook-square fa-4x"></i></a>
-							<a href="#"><i class="fa fa-wechat fa-4x"></i></a>
 						</div>
 					</li>
 				</ul>

@@ -183,6 +183,7 @@
 		width: 70%;
 	}
 
+	.product .jumbotron .btn,
 	.product .subscribe-form .btn {
 		width: 100%;
 	}
@@ -244,7 +245,6 @@
 	border: none;
 	font-size: 18px;
 	padding: 10px 23px;
-	width: 100%;
 }
 
 .product .btn {

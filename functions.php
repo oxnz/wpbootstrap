@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'post-thumbnails', array( 'post', 'page') );
+
 function wpbootstrap_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
 	register_widget( 'NZWeather_Widget' );

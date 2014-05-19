@@ -18,6 +18,11 @@
 			the_title('<div class="page-header"><h3 class="title"><a href="' .esc_url(get_permalink()) . '"rel="bookmark">', '</a></h3></div>');
 		endif;
 		?>
+<?php
+if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+}
+?>
 		<ul class="top-info">
 			<li>
 			<i class="fa fa-user"></i>

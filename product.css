@@ -76,6 +76,10 @@
 	vertical-align: middle;
 }
 
+.product figure img {
+	width: 100%;
+}
+
 @media screen and (max-width: 991px) {
 	.product .jumbotron figure {
 		margin-top: 50px;
@@ -240,6 +244,7 @@
 	border: none;
 	font-size: 18px;
 	padding: 10px 23px;
+	width: 100%;
 }
 
 .product .btn {

@@ -1,7 +1,57 @@
 <?php
 
-add_theme_support( 'post-thumbnails', array( 'post', 'page') );
+if ( ! function_exists( 'wpbootstrap_setup' ) ) :
+/**
+ * setup wpbootstrap theme defaults and registers support for various wordpress
+ * features.
+ *
+ * Note that this function is hooked into the after_setup_theme_hook, which
+ * runs before the init hook. The init hook is too late for same features, such
+ * as indicating support post thumbnails.
+ *
+ * @since WPBootstrap 1.6
+ */
+function wpbootstrap_setup() {
+	/*
+	 * Make WPBootstrap available for translation.
+	 *
+	 * Translations can be added to the /languages/ directory.
+	 */
+	load_theme_textdomain( 'wpbootstrap', get_template_directory() . '/languages' );
+	/*
+	 * alter the editor style
+	 */
+	add_editor_style(); // this will use editor-style.css in this dir
 
+	// Add RSS feed links to <head> for posts and comments
+	add_theme_support( 'automatic-feed-links' );
+
+	// Enable support for Post Thumbnails, and declare two sizes.
+	add_theme_support( 'post-thumbnails', array( 'post', 'page') );
+
+	// This theme uses wp_nav_menu() in two locations
+	register_nav_menus( array(
+		'primary'	=> __( 'Top primary menu', 'wpbootstrap' ),
+		'secondary' => __( 'Secondary menu not used yet', 'wpbootstrap' )
+	));
+
+	/*
+	 * Switch default core markup for search form, content form, and comments
+	 * to output valid HTML5
+	 */
+	add_theme_support( 'html5', array(
+		'search_form', 'comment-form', 'comment-list', 'gallery', 'caption'
+	));
+
+}
+endif; // wpbootstrap_setup
+add_action( 'after_setup_theme', 'wpbootstrap_setup' );
+
+/**
+ * Register three WPbootstrap widget areas.
+ *
+ * @since WPBootstrap 1.1
+ */
 function wpbootstrap_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
 	register_widget( 'NZWeather_Widget' );
@@ -38,13 +88,6 @@ function wpbootstrap_widgets_init() {
 add_action( 'widgets_init', 'wpbootstrap_widgets_init' );
 
 
-function register_site_menu() {
-	register_nav_menus(
-		array('header-menu' => __('Header Menu'), 'extra-menu' => __('Extra Menu'))
-	);
-}
-
-add_action('init', 'register_site_menu');
 //remove_filter('the_content', 'wpautop');
 //remove_filter('the_excerpt', 'wpautop');
 //remove_filter('the_content', 'wptexturize');
@@ -81,14 +124,6 @@ function wplogin_style() { ?>
 add_action('login_enqueue_scripts', 'wplogin_style');
 
 require get_template_directory() . '/inc/template-tags.php';
-
-/*
- * alter the editor style
-*/
-function alter_editor_style() {
-	add_editor_style(); // this will use editor-style.css in this dir
-}
-add_action('init', 'alter_editor_style');
 
 add_filter('get_calendar', function($cal) {
 	return $cal;

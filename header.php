@@ -115,7 +115,7 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page" rel="tooltip"><i class="fa fa-home fa-lg"></i> Home</a></li>
 					<?php if (is_home() || is_front_page()) : ?>
 					<?php elseif (is_404()) : ?>
-					<li>Not Found</li>
+					<li>Page Not Found</li>
 					<?php elseif (is_single()) : ?>
 					<li><?php the_category(' • '); ?></li>
 					<?php else : ?>

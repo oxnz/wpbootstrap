@@ -992,53 +992,6 @@ h2.comments-title {
  * --> #404 - wanted
  */
 
-.wanted {
-	text-transform: uppercase;
-	text-align: center;
-	font-family: "Times New Roman",Georgia,Serif;
-	font-weight: bold;
-	background-color: #fff;
-	width: 80%;
-	border: 1px solid #eee;
-	padding: 10px;
-	/*
-	background-color: rgb(250, 190, 110);
-	*/
-}
-
-.wanted .title {
-	font-size: 700%;
-	padding-bottom: 0;
-	margin-bottom: 0;
-	border-bottom: 4px solid;
-	line-height: 100%;
-	display: inline-block;
-}
-
-.wanted .status {
-	font-size: 200%;
-}
-
-.wanted .name {
-	font-size: 300%;
-}
-
-.wanted .description {
-	padding: 0 180px;
-	font-weight: normal;
-	text-transform: none;
-}
-
-.wanted .reward {
-	border-top: 2px solid;
-	font-size: 300%;
-}
-
-.wanted .depart {
-	text-align: right;
-	font-size: 140%;
-}
-
 /*
  * <-- site-content 404 wanted
  * --> sidebar

@@ -9,21 +9,37 @@
 
 get_header(); ?>
 
+<style type="text/css">
+.pnf {
+}
+.pnf h3 {
+	font-weight: normal;
+}
+.pnf .title .fa {
+	vertical-align: middle;
+}
+.pnf code {
+	display: inline-block;
+}
+</style>
 
-<center>
-<div class="wanted">
-	<div class="title">Wanted</div>
-	<div class="status">dynamic or static</div>
-	<div class="photo">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/avatar.png">
+<div class="pnf panel panel-danger">
+	<div class="panel-heading">
+		<h3 class="title">
+<i class="fa fa-exclamation-circle fa-2x"></i>
+Error 404: Not Found
+		</h3>
 	</div>
-	<div class="name">&diams; <?php echo end(explode('/', $_SERVER['REQUEST_URI'])); ?> &diams;</div>
-	<div class="description">
-"Oops, I screwed up and you discovered my fatal flaw. Well, we're not all perfect, but we try.  Can you try this again or maybe visit our <a title="Our Site" href="http://example.com/index.php">Home Page</a> to start fresh.  We'll do better next time."
+	<div class="panel-body">
+		<h3>Error Description:</h3>
+Uncaught Expcetion 'Not Found' encountered while request page: '<?php echo $_SERVER['REQUEST_URI']; ?>'
+		<h3>StackTrace:</h3>
+		<code>
+'Not Found': (code 404)
+	at Site.Service.getContent("<?php echo $_SERVER['REQUEST_URI']; ?>")
+	at Site.Service.writeResponse
+		</code>
 	</div>
-	<div class="reward">&int; 300, 000, 000 REWARD</div>
-	<div class="depart"><?php echo bloginfo('name'); ?></div>
-</div><!-- #wanted -->
-</center>
+</div>
 
 <?php get_footer(); ?>

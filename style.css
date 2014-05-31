@@ -620,6 +620,11 @@ p.wp-caption-text {
 	color: white;
 	font-family:"Times New Roman",Georgia,Serif;
 	line-height: 50px;
+	border-radius: 2px;
+}
+
+.post a.more-link:hover {
+	color: #fff;
 }
 
 /*
@@ -1043,6 +1048,10 @@ h1.widget-title {
 	background: #428bca;
 	border-radius: 2px;
 	color: #fff;
+}
+
+.widget_calendar td#today > a {
+	color: #8DFC77;
 }
 
 .widget_calendar tfoot {

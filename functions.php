@@ -63,8 +63,8 @@ function wpbootstrap_widgets_init() {
 		'description'   => __( 'Additional sidebar that appears on the right.', 'wpbootstrap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<div class="widget-title">',
+		'after_title'   => '</div>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Content Sidebar', 'wpbootstrap' ),
@@ -72,8 +72,8 @@ function wpbootstrap_widgets_init() {
 		'description'   => __( 'Main sidebar that appears on the left.', 'wpbootstrap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-primary">',
 		'after_widget'  => '</div></aside>',
-		'before_title'  => '<h1 class="widget-title panel-heading">',
-		'after_title'   => '</h1><div class="widget-body panel-body">',
+		'before_title'  => '<div class="widget-title panel-heading">',
+		'after_title'   => '</div><div class="widget-body panel-body">',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Widget Area', 'wpbootstrap' ),
@@ -81,8 +81,8 @@ function wpbootstrap_widgets_init() {
 		'description'   => __( 'Appears in the footer section of the site.', 'wpbootstrap' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<div class="widget-title">',
+		'after_title'   => '</div>',
 	));
 }
 add_action( 'widgets_init', 'wpbootstrap_widgets_init' );

@@ -23,7 +23,7 @@ class NZWeather_Widget extends WP_Widget {
 		<div class="loc">' . $location . '</div>
 	</div>
 	<div class="wicon-wrapper">
-		<img class="wicon" id="wicon" src="' . $wiconurl . 'na.png">
+		<img class="wicon" id="wicon" alt="weather" src="' . $wiconurl . 'na.png">
 	</div>
 </div>';
 	$predcnt = 3; // predict 3 days
@@ -32,7 +32,7 @@ class NZWeather_Widget extends WP_Widget {
 <div class="preditem">
 	<div class="dayname">' . ((1 == $i) ? 'Tomorrow' : date('l', strtotime('+' . $i . 'days'))) . '</div>
 	<div class="temp"><span class="tempnum">29</span>&#176;</div>
-	<div class="wicon"><img class="wicon" src="' . $wiconurl . 'na.png"></div>
+	<div class="wicon"><img class="wicon" alt="weather" src="' . $wiconurl . 'na.png"></div>
 </div>';
 	}
 ?>

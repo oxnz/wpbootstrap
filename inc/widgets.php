@@ -5,6 +5,9 @@ class NZWeather_Widget extends WP_Widget {
 		$widget_ops = array('classname' => 'nzweather',
 			'description' => __('A beautiful weather widget'));
 		parent::__construct('nzweather', __('NZWeather'), $widget_ops);
+
+		if ( is_active_widget(false, false, $this->id_base) )
+			add_action( 'wp_head', array($this, 'css') );
 	}
 
 	function widget($args, $instance) {
@@ -84,6 +87,11 @@ jQuery(document).ready(function ($) {
 	});
 });
 </script>
+<?php
+		echo $before_widget . $before_title . $today . $after_title . $predict . $after_widget;
+	}
+	function css() {
+?>
 <style type="text/css">
 .nzweather .today {
 	width: 100%;
@@ -158,7 +166,6 @@ jQuery(document).ready(function ($) {
 
 </style>
 <?php
-		echo $before_widget . $before_title . $today . $after_title . $predict . $after_widget;
 	}
 
 	function update($new_instance, $old_instance) {
@@ -196,6 +203,9 @@ class NZProfile_Widget extends WP_Widget {
 			'weibo'		=> 'Weibo',
 			'gplus'		=> 'Google Plus'
 		);
+
+		if ( is_active_widget(false, false, $this->id_base) )
+			add_action( 'wp_head', array($this, 'css') );
 	}
 
 	function widget($args, $instance) {
@@ -205,7 +215,6 @@ class NZProfile_Widget extends WP_Widget {
 		}
 		$title = empty($instance['title']) ? $instance['title'] : __('NZProfile');
 		$title = apply_filters('widget_title', $title, $instance, $this->id_base);
-		$this->css();
 		echo $before_widget . $before_title;
 ?>
 <div class="vcard">

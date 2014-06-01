@@ -59,7 +59,7 @@
 					<small><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><?php printf( __( 'Powered by %s'), 'WordPress' ); ?></a></small>
 				</div>
 				<div class="validate-links">
-					<a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid XHTML</a>
+					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5">Valid XHTML</a>
 |
 					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS">Valid CSS</a>
 				</div>

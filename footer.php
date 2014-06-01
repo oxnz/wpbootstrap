@@ -68,6 +68,7 @@
 Except where otherwise noted, content on this site is licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY NC ND</a>.
 			</div>
+			<div>--EOF--</div>
 		</div>
 	</div><!-- #container -->
 </footer>

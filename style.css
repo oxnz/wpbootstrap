@@ -1014,7 +1014,7 @@ h2.comments-title {
 	list-style: none;
 }
 
-h1.widget-title {
+.widget-title {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 120%;

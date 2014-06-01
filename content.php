@@ -15,7 +15,7 @@
 		if (is_single()) :
 			the_title('<div class="page-header"><h3 class="title">', '</h3></div>');
 		else :
-			the_title('<div class="page-header"><h3 class="title"><a href="' .esc_url(get_permalink()) . '"rel="bookmark">', '</a></h3></div>');
+			the_title('<div class="page-header"><h3 class="title"><a href="' .esc_url(get_permalink()) . ' "rel="bookmark">', '</a></h3></div>');
 		endif;
 		?>
 <?php

@@ -38,11 +38,11 @@ function footerbg() {
  * enable tooltip
  */
 jQuery(document).ready(function ($) {
-	if ($("[rel=tooltip]").length) {
-		$("[rel=tooltip]").tooltip($);
+	if ($("[data-toggle=tooltip]").length) {
+		$("[data-toggle=tooltip]").tooltip($);
 	}
-	if ($("[rel=popover]").length) {
-		$("[rel=popover]").popover({
+	if ($("[data-toggle=popover]").length) {
+		$("[data-toggle=popover]").popover({
 			trigger: "hover"
 		});
 	}

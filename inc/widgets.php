@@ -270,8 +270,8 @@ class NZProfile_Widget extends WP_Widget {
 .nzprofile .vcard .avatar {
 	border-radius: 50%;
 	border: none;
-	width: 100%;
-	height: 100%;
+	width: 100px;
+	height: 100px;
 }
 
 .nzprofile .vcard .info {

@@ -10,40 +10,34 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="post well">
-		<?php
+<div class="post panel panel-default">
+	<div class="panel-heading">
+<?php
 		if (is_single()) :
-			the_title('<div class="page-header"><h3 class="title">', '</h3></div>');
+			the_title('<h3 class="title">', '</h3>');
 		else :
-			the_title('<div class="page-header"><h3 class="title"><a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a></h3></div>');
+			the_title('<h3 class="title"><a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a></h3>');
 		endif;
-		?>
+?>
+	</div><!--/panel-heading-->
 <?php
 if ( has_post_thumbnail() ) {
 	the_post_thumbnail();
 }
 ?>
-		<ul class="top-info">
-			<li>
-			<i class="fa fa-user"></i>
-			<?php the_author_link(); //the_author(); ?>
-			</li>
-			<li>
-			<?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date();
-				//the_date('F j, Y', '<i class="fa fa-calendar"></i> '); ?>
-			</li>
-			<li><?php the_modified_date('F j, Y', '<i class="fa fa-history"></i> '); ?></li>
-			<li><?php the_tags('<i class="fa fa-tags"></i> ', ' • '); ?>
-			</li>
-			<li><?php edit_post_link('edit', '<i class="fa fa-edit"></i> '); ?></li>
-		</ul><!-- #info -->
-		<div class="content">
-			<?php the_content('continue reading &raquo;'); ?>
-		</div>
+	<ul class="top-info">
+		<li><i class="fa fa-user"></i> <?php the_author_link(); ?></li>
+		<li><?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date(); ?></li>
+		<li><?php the_modified_date('F j, Y', '<i class="fa fa-history"></i> '); ?></li>
+		<li><?php the_tags('<i class="fa fa-tags"></i> ', ' • '); ?></li>
+		<li><?php edit_post_link('edit', '<i class="fa fa-edit"></i> '); ?></li>
+	</ul><!-- #info -->
+	<div class="content panel-body">
+		<?php the_content('continue reading &raquo;'); ?>
+	</div>
+	<div class="panel-footer">
 		<ul class="bottom-info">
-			<li>Posted in
-			<?php the_category(' • '); ?>
-			</li>
+			<li>Posted in <?php the_category(' • '); ?></li>
 			<li>|</li>
 			<li>
 			<?php if (get_comments_number() > 0) : ?>
@@ -57,5 +51,6 @@ if ( has_post_thumbnail() ) {
 			<?php endif; ?>
 			</li>
 		</ul>
-	</div><!-- #post #well -->
+	</div><!--panel-footer-->
+</div><!-- #post #well -->
 </article><!-- #post-## -->

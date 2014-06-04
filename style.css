@@ -549,9 +549,10 @@ p.wp-caption-text {
 }
 
 .site-content .post .top-info,
-.site-content .post .bottom-info {
+.site-content .post .panel-footer {
 	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	font-size: 80%;
+	background-color: #ECF1F7;
 }
 
 .site-content .post .top-info ul li ,
@@ -626,6 +627,10 @@ p.wp-caption-text {
 .post .content table th,
 .post .content table td {
 	border: 1px solid green;
+}
+
+.post .content p {
+	margin: 5px auto;
 }
 
 .post a.more-link {

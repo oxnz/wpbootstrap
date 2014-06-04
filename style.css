@@ -678,7 +678,8 @@ p.wp-caption-text {
  * --> #comment
  */
 
-.comments-area {
+.comments-area,
+.comments-area .panel-heading {
 	background: #fff;
 }
 
@@ -743,9 +744,11 @@ h3.comment-reply-title,
 h2.comments-title {
 	font-size: 18px;
 	font-weight: normal;
+	margin: 10px auto;
 }
 
 .comment-list > .comment {
+	padding: 10px 0px;
 	border-bottom: 1px solid #eee;
 }
 
@@ -766,10 +769,7 @@ h2.comments-title {
 }
 
 .comment-list li {
-	padding: 10px 10px;
-}
-
-.comment-body .comment-meta a {
+	padding: 10px auto;
 }
 
 .comment-body .reply a {

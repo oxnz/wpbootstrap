@@ -197,3 +197,66 @@ class NZ_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
 }
+
+/*
+ * add auto generated index with link before every post
+ */
+function index_content($content) {
+	if (! is_single())
+		return $content;
+	$pattern = '@<h(?P<level>[1-6])(?P<attrs>[^>]*)>(?P<title>[^>]*)</h\1>@i';
+	$pos = preg_match_all($pattern, $content, $matches);
+	$output = '<h2>Index</h2>' . "\n" . '<ol class="index">' . "\n";
+	if ($pos && $pos > 1) {
+		for ($idx = 0; $idx < $pos; ++$idx) {
+			/* handle id */
+			if (preg_match('@id="(?P<id>[^"]*)"@i', $matches['attrs'][$idx], $m)) {
+				$id = $m['id'];
+			} else {
+				$id = 'idx-' . $idx;
+				$matches['attrs'][$idx] .= 'id="' . $id . '"';
+			}
+			/* handle list */
+			$level = $matches['level'][$idx];
+			$title = $matches['title'][$idx];
+			$title = '<a href="#' . $id . '" title="' . $title . '">' . $title . '</a>';
+			switch ($level) {
+			case 1:
+				$title = '<strong>' . $title . '</strong>';
+			case 2:
+				$output .= '<li>' . $title;
+				if ($level < $matches['level'][$idx+1])
+					$output .= "\n";
+				else
+					$output .= '</li>' . "\n";
+				break;
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+				if ($idx == 0 || ($matches['level'][$idx-1] < $level))
+					$output .= str_repeat('<ol><li>' . "\n",
+						$level - $matches['level'][$idx-1] - 1) . '<ol>' . "\n";
+				$output .= '<li>' . $title;
+				if ($level < $matches['level'][$idx+1])
+					$output .= "\n";
+				else if ($level == $matches['level'][$idx+1])
+					$output .= '</li>' . "\n";
+				else
+					$output .= str_repeat('</ol></li>',
+						$level - $matches['level'][$idx+1]);
+				break;
+			}
+		}
+		$output .= '</ol>';
+		$idx = -1;
+		$content = preg_replace_callback($pattern, function($m)
+			use (&$idx, &$matches) {
+			return '<h' . $m['level'] . ' ' . $matches['attrs'][++$idx] . '>'
+				. $m['title'] . '</h' . $m['level'] . '>';
+		}, $content);
+		$content = $output . $content;
+	}
+	return $content;
+}
+add_filter('the_content', index_content);

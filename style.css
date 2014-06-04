@@ -509,7 +509,7 @@ p.wp-caption-text {
 }
 
 .site-content .post .title {
-	margin-top: 0;
+	margin: 10px 0;
 	word-wrap: break-word;
 	white-space: normal;
 	font-size: 260%;
@@ -560,16 +560,30 @@ p.wp-caption-text {
 	padding: 0;
 }
 
+.post .panel-heading,
+.post .panel-footer {
+	background: #fff;
+}
+
+.post .top-info {
+	border-bottom: 1px solid #ddd;
+}
+
 .post .content {
 	overflow: auto;
 	word-wrap: break-word;
 	white-space: normal;
-	padding: 10px 0;
 	color: #333;
 	font-size: 12px;
 	font-family: 'Microsoft Yahei', 'Hiragino Sans GB', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;
 	line-height: 20px;
-	border-bottom: 1px solid #eee;
+}
+
+.post .panel-heading,
+.post .top-info,
+.post .panel-body,
+.post .panel-footer {
+	padding: 10px 20px;
 }
 
 .post .content::first-letter {

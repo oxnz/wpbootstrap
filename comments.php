@@ -18,14 +18,15 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area well">
+<div id="comments" class="comments-area panel panel-default">
 	<?php if ( have_comments() ) : ?>
-	<h2 class="comments-title page-header">
+	<div class="panel-heading"><h2 class="comments-title">
 		<?php
 			printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'wpbootstrap' ),
 				number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
-	</h2>
+	</h2></div><!--/panel-heading-->
+	<div class="panel-body">
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 	<ul class="pager">
 		<li class="previous"><?php previous_comments_link(__( '&larr; Older Comments')); ?></li>
@@ -79,7 +80,6 @@ if ( post_password_required() ) {
 		?>
 	</ol><!-- .comment-list -->
 
-
 	<?php if ( ! comments_open() ) : ?>
 	<p class="no-comments"><?php _e('Comments are closed.'); ?></p>
 	<?php endif; ?>
@@ -94,4 +94,5 @@ if ( post_password_required() ) {
 		'label_submit' => __('Submit Comment'),
 	)); ?>
 	<?php //comment_form(); ?>
+	</div><!--/panel-body-->
 </div><!-- #comments -->

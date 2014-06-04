@@ -9,8 +9,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="post panel panel-default">
+<article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
 	<div class="panel-heading">
 <?php
 		if (is_single()) :
@@ -52,5 +51,4 @@ if ( has_post_thumbnail() ) {
 			</li>
 		</ul>
 	</div><!--panel-footer-->
-</div><!-- #post #well -->
 </article><!-- #post-## -->

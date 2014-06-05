@@ -1,8 +1,6 @@
 <?php
 ?>
 
-</div><!-- #site-content #container -->
-
 <footer id="site-footer" class="site-footer">
 	<div class="container">
 		<div class="footer-links row">

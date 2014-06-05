@@ -131,4 +131,3 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 		</div><!-- #info-inner -->
 	</div><!-- #site-info -->
 </div><!-- #site-header -->
-<div class="site-content container">

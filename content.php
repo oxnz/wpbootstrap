@@ -19,25 +19,25 @@
 		endif;
 ?>
 	</div><!--/panel-heading-->
-<?php
-if ( has_post_thumbnail() ) {
-	the_post_thumbnail();
-}
-?>
 	<ul class="top-info">
 		<li><i class="fa fa-user"></i> <?php the_author_link(); ?></li>
 		<li><?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date(); ?></li>
-		<li><?php the_modified_date('F j, Y', '<i class="fa fa-history"></i> '); ?></li>
+		<li><?php the_modified_date('F j, Y', '<i class="fa fa-clock-o"></i> '); ?></li>
 		<li><?php the_tags('<i class="fa fa-tags"></i> ', ' • '); ?></li>
 		<li><?php edit_post_link('edit', '<i class="fa fa-edit"></i> '); ?></li>
 	</ul><!-- #info -->
 	<div class="content panel-body">
-		<?php the_content('continue reading &raquo;'); ?>
+<?php
+if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+}
+
+the_content('continue reading &raquo;');
+?>
 	</div>
 	<div class="panel-footer">
 		<ul class="bottom-info">
 			<li>Posted in <?php the_category(' • '); ?></li>
-			<li>|</li>
 			<li>
 			<?php if (get_comments_number() > 0) : ?>
 			<a href="<?php comments_link(); ?>">
@@ -49,6 +49,8 @@ if ( has_post_thumbnail() ) {
 				<?php comments_number(); ?>
 			<?php endif; ?>
 			</li>
+			<li><i class="fa fa-share-alt"></i> <?php echo rand(0, 100); ?> Shares</li>
+			<li><i class="fa fa-heart"></i> <?php echo rand(0, 100); ?> Likes</li>
 		</ul>
 	</div><!--panel-footer-->
 </article><!-- #post-## -->

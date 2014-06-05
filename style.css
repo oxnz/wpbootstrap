@@ -554,12 +554,6 @@ p.wp-caption-text {
 	font-size: 80%;
 }
 
-.site-content .post .top-info ul li ,
-.site-content .post .bottom-info ul li {
-	margin: 0;
-	padding: 0;
-}
-
 .post .panel-heading,
 .post .panel-footer {
 	background: #fff;

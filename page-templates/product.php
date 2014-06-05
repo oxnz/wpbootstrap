@@ -13,7 +13,7 @@ foreach (array(
 	'subscribe' => 'Subscribe',
 	'top' => 'back to top',
 ) as $id => $title) {
-	echo '<a href="#' . $id . '" rel="tooltip" title="' . $title . '" data-placement="left"></a>';
+	echo '<a href="#' . $id . '" data-toggle="tooltip" title="' . $title . '" data-placement="left"></a>';
 }
 ?>
 </nav>
@@ -33,8 +33,8 @@ if (comments_open() || get_comments_number()) {
 		<h2>Subscribe to get delightfully infrequent updates</h2>
 		<form class="subscribe-form form-inline" action="#" role="form">
 			<div class="form-group">
-				<label class="sr-only" for="exampleInputEmail1">Email address</label>
-				<input type="text" class="form-controll" placeholder="Enter email address" />
+				<label class="sr-only" for="subscribe-email">Email address</label>
+				<input name="subscribe-email" id="subscribe-email" type="text" class="form-controll" placeholder="Enter email address" />
 			</div>
 			<button type="submit" class="btn btn-success">Subscribe</button>
 		</form>

@@ -10,15 +10,30 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
-	<div class="panel-heading">
+	<div class="panel-heading"><h3 class="title">
 <?php
-		if (is_single()) :
-			the_title('<h3 class="title">', '</h3>');
-		else :
-			the_title('<h3 class="title"><a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a></h3>');
-		endif;
+$icon = '<i class="fa ';
+if ( in_category( 'Linux' ) )
+	$icon .= 'fa-linux';
+elseif ( in_category( 'Debug' ) )
+	$icon .= 'fa-bug';
+elseif ( in_category( 'Cloud' ) )
+	$icon .= 'fa-cloud';
+elseif ( in_category( 'Algorithm' ) )
+	$icon .= 'fa-signal';
+elseif ( in_category( 'OS X' ) )
+	$icon .= 'fa-apple';
+elseif ( in_category( 'Database' ) )
+	$icon .= 'fa-database';
+else
+	$icon .= 'fa-bullseye';
+$icon .= '"></i> ';
+//echo $icon;
 ?>
-	</div><!--/panel-heading-->
+<?php
+the_title('<a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a>');
+?>
+	</h3></div><!--/panel-heading-->
 	<ul class="top-info">
 		<li><i class="fa fa-user"></i> <?php the_author_link(); ?></li>
 		<li><?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date(); ?></li>

@@ -116,7 +116,7 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 					<?php elseif (is_404()) : ?>
 					<li>404</li>
 					<?php elseif (is_single()) : ?>
-					<li><?php the_category(' • '); ?></li>
+					<li><?php the_category(' &gt; '); ?></li>
 					<?php else : ?>
 					<li><?php wp_title(''); ?></li>
 					<?php endif; ?>

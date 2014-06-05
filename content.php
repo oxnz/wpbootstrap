@@ -37,7 +37,7 @@ the_content('continue reading &raquo;');
 	</div>
 	<div class="panel-footer">
 		<ul class="bottom-info">
-			<li>Posted in <?php the_category(' • '); ?></li>
+			<li>Posted in <?php the_category(' &bull; '); ?></li>
 			<li>
 			<?php if (get_comments_number() > 0) : ?>
 			<a href="<?php comments_link(); ?>">

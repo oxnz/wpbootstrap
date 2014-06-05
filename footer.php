@@ -56,10 +56,10 @@
 		<div class="container">
 			<div class="copyright">
 				<div>&copy; 2011-2014 Oxnz, All Right Reserved. Themed by <a href="https://github.com/oxnz/wpbootstrap" title="WPBootstrap project page">WPBootstrap</a>. 
-					<small><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><?php printf( __( 'Powered by %s'), 'WordPress' ); ?></a></small>
+					<small>Powered by <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><i class="fa fa-wordpress"></i></a></small>
 				</div>
 				<div class="validate-links">
-					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5">Valid XHTML</a>
+					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5">Valid HTML</a>
 |
 					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS">Valid CSS</a>
 				</div>

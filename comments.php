@@ -33,7 +33,7 @@ if ( post_password_required() ) {
 		<?php
 			wp_list_comments( array(
 				'style'		=> 'ol',
-				'avatar_size'=> 80,
+				'avatar_size'=> 50,
 				'reply_text'=> '<i class="fa fa-reply"></i> Reply',
 				'callback'	 => function($comment, $args, $depth) {
 					if ('div' == $args['style']) {
@@ -44,36 +44,38 @@ if ( post_password_required() ) {
 						$add_below = 'div-comment';
 					}
 ?>
-	<<?php echo $tag; ?> <?php comment_class(empty($args['has_children']) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
+	<<?php echo $tag; ?> <?php comment_class('well ' . (empty($args['has_children']) ? '' : 'parent')) ?> id="comment-<?php comment_ID() ?>">
 
 <?php if ('div' != $args['style']) : ?>
 <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 <?php endif; ?>
 
-<div class="comment-author vcard">
+<div class="comment-header">
+	<div class="comment-author">
 <?php if (0 != $args['avatar_size']) echo get_avatar($comment, $args['avatar_size']); ?>
+	</div>
+	<div class="comment-meta">
+		<?php printf(__('<cite class="author">%s</cite>'), get_comment_author_link()); ?>
+					<br>
+	<a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()); ?></a>
+	</div>
 </div>
 
+<blockquote class="comment-content">
 <?php if ('0' == $comment->comment_approved) : ?>
 <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.'); ?></em>
 <?php endif; ?>
+<?php comment_text(); ?>
+</blockquote>
 
-<div class="comment-quote">
-	<div class="comment-header">
-		<span><?php printf(__('<cite class="fn">%s</cite>'), get_comment_author_link()); ?></span>
-		<span class="meta"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()); ?></a><?php edit_comment_link(__('(Edit)'), ' ', ''); ?></span>
-	</div>
-	<div class="comment-content">
-		<?php comment_text(); ?>
-	</div>
 	<ol class="comment-footer">
+		<?php edit_comment_link(__('<i class="fa fa-edit"></i> Edit'), '<li> ', '</li>'); ?>
 		<li><?php comment_reply_link(array_merge($args, array(
 			'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))); ?></li>
 		<li><a href="#"><i class="fa fa-share"></i> Share</a></li>
 		<li><a href="#"><i class="fa fa-heart"></i> Like</a></li>
 		<li><a href="#"><i class="fa fa-flag"></i> Report</a></li>
 	</ol><!--/comment-footer-->
-</div>
 <?php if ('div' != $args['style']) : ?>
 </div>
 <?php endif; ?>

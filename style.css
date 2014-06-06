@@ -689,31 +689,39 @@ p.wp-caption-text {
 	margin: 5px 0;
 }
 
-.comments-area .comment-list > .comment:first-child {
-	border-top: none;
+.comments-area .comment-list > li.comment {
+	background-color: #ffc;
 }
 
-.comments-area .comment-list .comment {
-	border-top: 1px solid #eee;
+.comments-area .comment-list li.comment {
+	padding: 20px 20px 0 20px;
 }
 
-.comments-area .comment-list .comment .children {
-	margin-left: 40px;
+.comments-area .comment-list > li.comment .even {
+	background-color: #cff;
 }
 
-.comment-body {
-	padding: 10px 0;
+.comments-area .comment-list > li.comment .odd {
+	background-color: #fff;
+}
 
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: box;
+.comment-body > .comment-header > div {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .comment-body .comment-author > img {
 	border-radius: 50%;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	padding: 5px;
+}
+
+.comment-body .comment-meta {
+	margin-left: 10px;
+}
+
+.comment-body .comment-meta > .author {
+	color: #E92F00;
 }
 
 /* little triangle
@@ -730,55 +738,33 @@ p.wp-caption-text {
 }
 */
 
-.comment-body .comment-quote {
-	padding-left: 20px;
-
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	-ms-flex: 1;
-	box-flex: 1;
+.comment-body > .comment-content {
+	margin-top: 10px;
+	background-color: #ECF4FF;
 }
 
-.comment-body .comment-quote .comment-header {
-	display: table;
-	width: 100%;
-	text-align: left;
+.comment-body .comment-footer {
+	margin-bottom: 10px;
 }
 
-.comment-body .comment-quote .comment-header > span {
-	display: table-cell;
-}
-
-.comment-body .comment-quote .comment-header > span > cite.fn {
-	color: #E92F00;
-}
-
-.comment-body .comment-quote .comment-header > span.meta {
-	text-align: right;
-}
-
-.comment-body .comment-quote .comment-content {
-	margin: 10px 0;
-}
-
-.comment-body .comment-quote .comment-footer > li {
+.comment-body .comment-footer > li {
 	display: inline-block;
 	padding: 0 10px;
 }
 
-.comment-body .comment-quote .comment-footer > li:first-child {
+.comment-body .comment-footer > li:first-child {
 	padding-left: 0;
 }
 
-.comment-body .comment-quote .comment-footer > li:last-child {
+.comment-body .comment-footer > li:last-child {
 	padding-right: 0;
 }
 
-.comment-body .comment-quote .comment-footer > li > a {
+.comment-body .comment-footer > li > a {
 	color: #888;
 }
 
-.comment-body .comment-quote .comment-footer > li > a:hover {
+.comment-body .comment-footer > li > a:hover {
 	color: #0095da;
 }
 

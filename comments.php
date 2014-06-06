@@ -20,15 +20,30 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area panel panel-default">
 	<?php if ( have_comments() ) : ?>
+<<<<<<< HEAD
 	<div class="panel-heading">
 		<h2 class="comments-title"><i class="fa fa-comments-o"></i>
+=======
+	<div class="panel-heading"><h2 class="comments-title">
+>>>>>>> 9743fde1648cf706357b8f7eaa9057fc7fecea3b
 		<?php
 			printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'wpbootstrap' ),
 				number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
+<<<<<<< HEAD
 		</h2>
 	</div>
 	<div class="panel-body">
+=======
+	</h2></div><!--/panel-heading-->
+	<div class="panel-body">
+	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+	<ul class="pager">
+		<li class="previous"><?php previous_comments_link(__( '&larr; Older Comments')); ?></li>
+		<li class="next"><?php next_comments_link(__( 'Newer Comments &rarr;')); ?></li>
+	</ul>
+	<?php endif; // Check for comment navigation. ?>
+>>>>>>> 9743fde1648cf706357b8f7eaa9057fc7fecea3b
 	<ol class="comment-list">
 		<?php
 			wp_list_comments( array(
@@ -109,5 +124,9 @@ if ( post_password_required() ) {
 		'<textarea class="form-control" id="comment" name="comment" rows="6" aria-required="true"></textarea></p>',
 		'label_submit' => __('Submit Comment'),
 	)); ?>
+<<<<<<< HEAD
+=======
+	<?php //comment_form(); ?>
+>>>>>>> 9743fde1648cf706357b8f7eaa9057fc7fecea3b
 	</div><!--/panel-body-->
 </div><!-- #comments -->

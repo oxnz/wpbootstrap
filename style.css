@@ -724,6 +724,12 @@ p.wp-caption-text {
 	color: #E92F00;
 }
 
+.comment-body .comment-meta > .timestamp {
+	font-weight: 300;
+	font-size: 90%;
+	color: #888;
+}
+
 /* little triangle
 .comment-body .comment-quote:before {
 	content: "";
@@ -737,6 +743,16 @@ p.wp-caption-text {
 	border-bottom: 10px solid transparent;
 }
 */
+
+.comment-body > .comment-info {
+	padding: 5px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.comment-body > .comment-info > button.close {
+	right: auto;
+}
 
 .comment-body > .comment-content {
 	margin-top: 10px;
@@ -761,7 +777,7 @@ p.wp-caption-text {
 }
 
 .comment-body .comment-footer > li > a {
-	color: #888;
+	color: #555;
 }
 
 .comment-body .comment-footer > li > a:hover {
@@ -779,12 +795,13 @@ p.wp-caption-text {
  */
 
 .comment-form .form-allowed-tags {
-	display: none;
 }
 
 .comment-form .form-allowed-tags code {
 	color: blue;
 	background: #d9f8f7;
+	display: inline-block;
+	margin-top: 5px;
 }
 
 .comment-form input[type=submit] {

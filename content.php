@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
-	<div class="panel-heading"><h3 class="title">
+	<div class="panel-heading"><h1 class="title">
 <?php
 $icon = '<i class="fa ';
 if ( in_category( 'Linux' ) )
@@ -33,7 +33,7 @@ $icon .= '"></i> ';
 <?php
 the_title('<a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a>');
 ?>
-	</h3></div><!--/panel-heading-->
+	</h1></div><!--/panel-heading-->
 	<ul class="top-info">
 		<li><i class="fa fa-user"></i> <?php the_author_link(); ?></li>
 		<li><?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date(); ?></li>
@@ -47,7 +47,7 @@ if ( has_post_thumbnail() ) {
 	the_post_thumbnail();
 }
 
-the_content('continue reading &raquo;');
+the_content('<button class="btn btn-default btn-sm">continue reading &raquo;</button>');
 ?>
 	</div>
 	<div class="panel-footer">

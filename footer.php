@@ -57,9 +57,9 @@
 					<small>Powered by <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><i class="fa fa-wordpress"></i></a></small>
 				</div>
 				<div class="validate-links">
-					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5">Valid HTML</a>
+					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5" target="_blank">Valid HTML</a>
 |
-					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS">Valid CSS</a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS" target="_blank">Valid CSS</a>
 				</div>
 			</div><!-- #copyright -->
 			<div>
@@ -88,26 +88,6 @@ Except where otherwise noted, content on this site is licensed under a
 		</div>
 	</div><!-- #about -->
 
-	<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
-	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h4 class="modal-title">Contact</h4>
-		  </div>
-		  <div class="modal-body">
-			<?php comment_form(array(
-				'title_reply' => __('Leave me a message'),
-				'title_reply_to' => ('Leave %s a message'),
-				'comment_field' =>  '<p class="comment-form-comment">' .
-				'<textarea class="form-control" id="comment" name="comment" rows="6" aria-required="true"></textarea></p>',
-				'label_submit' => __('Send'),
-			)); ?>
-		  </div>
-		  <div class="modal-footer"><p>&copy; 2011-2014 Oxnz</p></div>
-		</div><!-- #modal-content -->
-	  </div>
-	</div><!-- #contact -->
 	<!--
 	<canvas id="footerbg">Your browser does not support the HTML5 canvas tag.</canvas>
 	-->

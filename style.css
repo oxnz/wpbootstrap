@@ -494,13 +494,15 @@ p.wp-caption-text {
 }
 
 .site-content a:link,
-.site-content a:active,
-.site-content a:visited {
+.site-content a:active {
 	color: #0095da;
 }
 
 .site-content .post a:hover {
 	color: #24d222;
+}
+
+.site-content .post .content a:hover {
 	border-bottom: 1px dotted #24d222;
 }
 
@@ -526,6 +528,10 @@ p.wp-caption-text {
 .site-content .post .title,
 .site-content .post .title a {
 	color: black;
+}
+
+.site-content .post .title a:hover {
+	color: #0095da;
 }
 
 .site-content .post a code:hover {
@@ -626,18 +632,19 @@ p.wp-caption-text {
 	margin: 5px auto;
 }
 
-.post a.more-link {
+.site-content .post a.more-link > button {
+	margin-top: 10px;
 	text-transform: uppercase;
 	padding: 3px 6px;
-	background: #0095da;
-	color: white;
 	font-family:"Times New Roman",Georgia,Serif;
-	line-height: 50px;
-	border-radius: 2px;
+	color: #fff;
+	background-color: #0095da;
+	border-color: #0095da;
 }
 
-.post a.more-link:hover {
-	color: #fff;
+.site-content .post a.more-link > button:hover {
+	color: #0095da;
+	background-color: #fff;
 }
 
 /*
@@ -677,8 +684,25 @@ p.wp-caption-text {
 	background: #fff;
 }
 
+.comments-area .comments-title {
+	font-weight: 300;
+	margin: 5px 0;
+}
+
+.comments-area .comment-list > .comment:first-child {
+	border-top: none;
+}
+
+.comments-area .comment-list .comment {
+	border-top: 1px solid #eee;
+}
+
+.comments-area .comment-list .comment .children {
+	margin-left: 40px;
+}
+
 .comment-body {
-	width: 100%;
+	padding: 10px 0;
 
 	display: -webkit-box;
 	display: -moz-box;
@@ -686,6 +710,13 @@ p.wp-caption-text {
 	display: box;
 }
 
+.comment-body .comment-author > img {
+	border-radius: 50%;
+	border: 1px solid #eee;
+	padding: 5px;
+}
+
+/* little triangle
 .comment-body .comment-quote:before {
 	content: "";
 	position: absolute;
@@ -697,12 +728,10 @@ p.wp-caption-text {
 	border-right: 16px solid #d9e9ff;
 	border-bottom: 10px solid transparent;
 }
+*/
 
 .comment-body .comment-quote {
-	position: relative;
-	background-color: #d9e9ff;
-	padding: 20px;
-	border-radius: 10px;
+	padding-left: 20px;
 
 	-webkit-box-flex: 1;
 	-moz-box-flex: 1;
@@ -720,68 +749,48 @@ p.wp-caption-text {
 	display: table-cell;
 }
 
-.comment-body .comment-quote .comment-header > .meta {
+.comment-body .comment-quote .comment-header > span > cite.fn {
+	color: #E92F00;
+}
+
+.comment-body .comment-quote .comment-header > span.meta {
 	text-align: right;
 }
 
-.comment-body .reply {
-	text-align: right;
+.comment-body .comment-quote .comment-content {
+	margin: 10px 0;
 }
 
-.comment-body .reply a:hover,
-.post a.more-link:hover {
-	background: #2B91C9;
-	border: none;
-}
-
-h3.comment-reply-title,
-h2.comments-title {
-	font-size: 18px;
-	font-weight: normal;
-	margin: 10px auto;
-}
-
-.comment-list > .comment {
-	padding: 10px 0px;
-	border-bottom: 1px solid #eee;
-}
-
-.comment-list > .comment .children li {
-	padding: 10px 0px;
-}
-
-.comment-list .vcard .avatar {
-	margin-right: 20px;
-	border-radius: 50%;
-	border: 1px solid #eee;
-	padding: 4px;
-}
-
-.comment-list cite {
-	font-size: 120%;
-	color: #c60;
-}
-
-.comment-list li {
-	padding: 10px auto;
-}
-
-.comment-body .reply a {
-	color: white;
-	background: #0095da;
-	padding: 3px 6px;
-}
-
-.comment-reply-title {
-	padding-bottom: 6px;
-	border-bottom: 1px solid #eee;
-}
-
-.comment-form p label {
-	color: #0095da;
+.comment-body .comment-quote .comment-footer > li {
 	display: inline-block;
-	width: 80px;
+	padding: 0 10px;
 }
+
+.comment-body .comment-quote .comment-footer > li:first-child {
+	padding-left: 0;
+}
+
+.comment-body .comment-quote .comment-footer > li:last-child {
+	padding-right: 0;
+}
+
+.comment-body .comment-quote .comment-footer > li > a {
+	color: #888;
+}
+
+.comment-body .comment-quote .comment-footer > li > a:hover {
+	color: #0095da;
+}
+
+.comments-area .comments-pager {
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+
+/*
+ * <-- comments-area
+ * --> comment-respond
+ */
 
 .comment-form .form-allowed-tags {
 	display: none;

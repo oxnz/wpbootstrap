@@ -47,7 +47,7 @@ if ( has_post_thumbnail() ) {
 	the_post_thumbnail();
 }
 
-the_content('<button class="btn btn-default btn-sm">continue reading &raquo;</button>');
+the_content('<span class="btn btn-default btn-sm">continue reading &raquo;</span>');
 ?>
 	</div>
 	<div class="panel-footer">

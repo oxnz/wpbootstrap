@@ -20,6 +20,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo bloginfo('name');	echo is_front_page() ?
 	" | " . get_bloginfo('description') : wp_title('|', true); ?></title>
+	<meta name="description" content="Errpro 作者为oxnz,是一个关注 IT 动态,软件开发,数据库,Cocoa,iOS,Linux,Mysql,Unix,线程,进程,C++,Lua,Python,Perl,Php,Shell,等的博客,同时发布了 NZPlayer,WPBootstrap 两款软件" />
+	<meta name="keywords" content="Errpro,排序,正则表达式,程序员,算法,软件开发,数据库,软件工程,Ajax,Algorithm,Android,Bash,C++,Coding,CSS,Cocoa,Database,Debug,Game,Go,Google,gcc,HTML,iOS,ie,Java,Javascript,jQuery,js,Linux,Mac,Mysql,Oracle,Perl,Php,Programming,language,Python,Ruby,SQL,Ubuntu,vim,web,Unix,线程,进程,Lua,Python,Shell,oxnz,NZPlayer,WPBootstrap" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>

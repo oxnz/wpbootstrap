@@ -632,7 +632,7 @@ p.wp-caption-text {
 	margin: 5px auto;
 }
 
-.site-content .post a.more-link > button {
+.site-content .post a.more-link > span {
 	margin-top: 10px;
 	text-transform: uppercase;
 	padding: 3px 6px;
@@ -642,7 +642,7 @@ p.wp-caption-text {
 	border-color: #0095da;
 }
 
-.site-content .post a.more-link > button:hover {
+.site-content .post a.more-link > span:hover {
 	color: #0095da;
 	background-color: #fff;
 }

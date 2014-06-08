@@ -52,7 +52,8 @@ the_content('<span class="btn btn-default btn-sm">continue reading &raquo;</span
 	</div>
 	<div class="panel-footer">
 		<ul class="bottom-info">
-			<li>Posted in <?php the_category(' &bull; '); ?></li>
+			<li><i class="fa fa-th-large"></i>
+				Posted in <?php the_category(' &bull; '); ?></li>
 			<li>
 			<?php if (get_comments_number() > 0) : ?>
 			<a href="<?php comments_link(); ?>">

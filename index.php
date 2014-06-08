@@ -2,9 +2,9 @@
 get_header(); ?>
 
 <div class="site-content container">
-	<div id="content" class="row" role="main">
+	<div id="content" class="row">
 		<div class="col-sm-8">
-			<div class="blog">
+			<div class="content-main" role="main">
 			<?php
 			if (have_posts()) :
 				while(have_posts()) : the_post();
@@ -15,12 +15,13 @@ get_header(); ?>
 				get_template_part('content', 'none');
 			endif;
 			?>
-			</div><!-- #blog -->
+			</div><!-- /content-main -->
 		</div><!-- #col-sm-8 -->
-		<!-- <div class="col-sm-4 col-sm-offset-1" -->
 		<div class="col-sm-4">
-			<?php get_sidebar('content'); ?>
-		</div><!-- #col-sm-4 -->
+			<div class="content-sidebar" role="complementary">
+				<?php get_sidebar('content'); ?>
+			</div>
+		</div>
 	</div><!-- #content -->
 </div><!-- #site-content #container -->
 

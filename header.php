@@ -37,7 +37,7 @@
 </head>
 <body>
 
-<div class="site-header">
+<header class="site-header">
 	<div class="glob-nav">
 		<div class="container">
 			<ul>
@@ -101,7 +101,7 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 	</nav><!-- #site-nav -->
 
 <?php //if (is_home() or is_front_page()) : ?>
-	<div class="site-banner">
+	<div class="site-banner" role="banner">
 		<div class="container">
 			<h1 class="site-title">Works, Blog, Projects and More ...</h1>
 			<p class="site-description"><?php bloginfo('description'); ?>
@@ -132,4 +132,4 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 		</div><!-- #container -->
 		</div><!-- #info-inner -->
 	</div><!-- #site-info -->
-</div><!-- #site-header -->
+</header><!-- #site-header -->

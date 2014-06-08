@@ -57,9 +57,9 @@
 					<small>Powered by <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wpbootstrap' ) ); ?>"><i class="fa fa-wordpress"></i></a></small>
 				</div>
 				<div class="validate-links">
-					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5" target="_blank">Valid HTML</a>
+					<a href="http://validator.w3.org/check/referer" title="This page validates as HTML5" target="_blank">Valid HTML<i class="fa fa-html5"></i></a>
 |
-					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS" target="_blank">Valid CSS</a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS" target="_blank">Valid CSS<i class="fa fa-css3"></i></a>
 				</div>
 			</div><!-- #copyright -->
 			<div>

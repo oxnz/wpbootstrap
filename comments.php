@@ -51,7 +51,7 @@ if ( post_password_required() ) {
 <?php endif; ?>
 
 <div class="comment-header">
-	<div class="comment-author">
+	<div class="comment-author vcard">
 <?php if (0 != $args['avatar_size']) echo get_avatar($comment, $args['avatar_size']); ?>
 	</div>
 	<div class="comment-meta">

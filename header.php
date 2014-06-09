@@ -58,20 +58,20 @@
 								<li><?php echo $current_user->display_name; ?></li>
 								<li><?php echo $current_user->user_email; ?></li>
 								<li>
-									<a href="<?php echo admin_url(); ?>">Dashboard</a> --
-									<a href="<?php echo get_edit_user_link(); ?>">Account</a>
+									<a href="<?php echo esc_url(admin_url()); ?>">Dashboard</a> --
+									<a href="<?php echo esc_url(get_edit_user_link()); ?>">Account</a>
 								</li>
 								<li><a class="view" href="<?php echo get_edit_user_link(); ?>">View Profile</a></li>
 							</ul>
 						</div><!-- .pane-body -->
 						<div class="pane-footer">
-							<a href="<?php echo admin_url(); ?>">Site Admin</a>
-							<a href="<?php echo wp_logout_url(get_permalink()); ?>">Log out</a>
+							<a href="<?php echo esc_url(admin_url()); ?>">Site Admin</a>
+							<a href="<?php echo esc_url(wp_logout_url(site_url($_SERVER['REQUEST_URI']))); ?>">Log out</a>
 						</div><!-- .pane-footer -->
 					</div><!-- .user-pane -->
 				<?php else : ?>
 				<li>
-					<a href="<?php echo wp_login_url(get_permalink()); ?>">Login</a>
+					<a href="<?php echo esc_url(wp_login_url(site_url($_SERVER['REQUEST_URI']))); ?>">Login</a>
 				<?php endif; ?>
 				</li>
 			</ul>
@@ -85,7 +85,7 @@
 					<span class="sr-only">Toggle navigation</span>
 					<span class="fa fa-navicon fa-lg"></span>
 				</button>
-				<a class="navbar-brand site-name" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+				<a class="navbar-brand site-name" href="<?php echo esc_url(site_url()); ?>"><?php bloginfo('name'); ?></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -113,7 +113,7 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 			<div class="info-inner">
 			<div class="position">
 				<ol class="breadcrumb">
-					<li class="active"><a href="<?php echo site_url(); ?>" title="Back to home page" data-toggle="tooltip"><i class="fa fa-home fa-lg"></i> Home</a></li>
+					<li class="active"><a href="<?php echo esc_url(site_url()); ?>" title="Back to home page" data-toggle="tooltip"><i class="fa fa-home fa-lg"></i> Home</a></li>
 					<?php if (is_home() || is_front_page()) : ?>
 					<?php elseif (is_404()) : ?>
 					<li>404</li>
@@ -125,7 +125,7 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 				</ol>
 			</div><!-- position -->
 			<div class="site-search">
-				<form class="searchform" action="<?php echo site_url(); ?>">
+				<form class="searchform" action="<?php echo esc_url(site_url()); ?>">
 				<input class="search-input rounded" type="text" name="s" id="s" placeholder="Search">
 				</form>
 			</div>

@@ -363,3 +363,60 @@ class NZProfile_Widget extends WP_Widget {
 		}
 	}
 }
+
+class NZRecentComments_Widget extends WP_Widget {
+	function __construct() {
+		$widget_ops = array('classname' => 'nzrecentcomments',
+			'description' => __('A beautiful recent comments widget'));
+		parent::__construct('nzrecentcomments', __('NZRecentComments'),
+			$widget_ops);
+	}
+
+	function widget($args, $instance) {
+		extract($args);
+		$title = "Recent Comments";
+		echo $before_widget . $before_title . $title . $after_title;
+?>
+Recent Comments
+<ul class="media-list">
+<?php
+		$comments = get_comments(array(
+			'status' => 'approve',
+		));
+		foreach ($comments as $comment) {
+?>
+	<li class="media">
+		<a class="pull-left" href="#">
+<?php echo get_avatar($comment->user_id, 64); ?>
+		</a>
+		<div class="media-body">
+			<h4 class="media-heading">
+<?php
+			comment_author_link($comment->comment_ID);
+			comment_date('n-j-Y', $comment->ID);
+?>
+			</h4>
+			<p>
+<?php
+			echo $comment->comment_content;
+?>
+			</p>
+		</div>
+	</li>
+<?php
+		}
+?>
+</ul>
+</div>
+<?php
+		echo $after_widget;
+	}
+
+	function form($instance) {
+	}
+
+	function update($new_instance, $old_instance) {
+		$instance = $old_instance;
+		return $instance;
+	}
+}

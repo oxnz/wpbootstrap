@@ -364,59 +364,258 @@ class NZProfile_Widget extends WP_Widget {
 	}
 }
 
-class NZRecentComments_Widget extends WP_Widget {
+class NZRecentPostsWidget extends WP_Widget_Recent_Posts {
 	function __construct() {
-		$widget_ops = array('classname' => 'nzrecentcomments',
-			'description' => __('A beautiful recent comments widget'));
-		parent::__construct('nzrecentcomments', __('NZRecentComments'),
-			$widget_ops);
+		parent::__construct('nzrecent-posts', __('Recent Posts'), null);
+		$this->id_base = 'nzrecent-posts';
+		$this->name = 'NZRecent Posts';
+		$this->option_name = 'nzrecent_posts_widget';
+		$this->alt_option_name = 'nzrecent posts widget';
+		$this->widget_options = array(
+			'classname' => 'nzrecent_posts_widget',
+			'description' => __('A beautiful recent posts widget'));
+		$this->control_options = array('id_base' => 'nzrecent-posts');
+		$this->id = true;
+		if ( is_active_widget(false, false, $this->id_base) )
+			add_action( 'wp_head', array($this, 'css') );
 	}
 
 	function widget($args, $instance) {
-		extract($args);
-		$title = "Recent Comments";
-		echo $before_widget . $before_title . $title . $after_title;
-?>
-Recent Comments
-<ul class="media-list">
-<?php
-		$comments = get_comments(array(
-			'status' => 'approve',
-		));
-		foreach ($comments as $comment) {
-?>
-	<li class="media">
-		<a class="pull-left" href="#">
-<?php echo get_avatar($comment->user_id, 64); ?>
-		</a>
-		<div class="media-body">
-			<h4 class="media-heading">
-<?php
-			comment_author_link($comment->comment_ID);
-			comment_date('n-j-Y', $comment->ID);
-?>
-			</h4>
-			<p>
-<?php
-			echo $comment->comment_content;
-?>
-			</p>
-		</div>
-	</li>
-<?php
+		$cache = array();
+		if ( ! $this->is_preview() ) {
+			$cache = wp_cache_get('nzrecent_posts_widget', 'widget');
 		}
+
+		if ( ! is_array( $cache ) ) {
+			$cache = array();
+		}
+
+		if ( ! isset( $args['widget_id'] ) ) {
+			$args['widget_id'] = $this->id;
+		}
+
+		if ( isset( $cache[ $args['widget_id']] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		ob_start();
+		extract($args);
+
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] :
+			__( 'NZRecent Posts' );
+		$title = apply_filters( 'widget_title', $title, $instance,
+			$this->id_base );
+		$number = ( ! empty( $instance['number'] ) ) ? absint(
+			$instance['number'] ) : 5;
+		if ( ! $number )
+			$number = 5;
+		$show_date = isset( $instance['show_date'] ) ? $instance['show_date']
+			: false;
+		$r = new WP_Query( apply_filters( 'widget_posts_args', array(
+			'posts_per_page' => $number,
+			'no_found_rows' => true,
+			'post_status' => 'publish',
+			'ignore_sticky_posts' => true
+		) ) );
+		if ($r->have_posts()) :
+			echo $before_widget;
+		if ( $title ) {
+			echo $before_title . $title . $after_title;
+		}
+		else echo '<div class="panel-body">';
+		// here are the contents before posts list
+		echo '<a class="btn btn-default btn-xs" href="'
+			. esc_url(home_url('/blog/')) . '">view more</a>';
 ?>
-</ul>
-</div>
+		</div><!--/panel-body-->
+		<ul class="list-group">
+<?php
+			while ( $r->have_posts() ) : $r->the_post();
+?>
+			<li class="list-group-item">
+			<a class="text-overflow" href="<?php the_permalink(); ?>">
+<?php
+			get_the_title() ? the_title() : the_ID(); ?></a>
+				by
+				<?php the_author_posts_link(); ?>
+<?php
+				if ( $show_date ) :
+					echo '<span class="post-date badge">' .  get_the_date()
+					. '</span>';
+				endif;
+?>
+			</li>
+<?php
+			endwhile; ?>
+		</ul>
+		<div class="panel-footer hide">
 <?php
 		echo $after_widget;
+
+		wp_reset_postdata();
+
+		endif;
+
+		if ( ! $this->is_preview() ) {
+			$cache[ $args['widget_id'] ] = ob_get_flush();
+			wp_cache_set( 'nzrecent_posts_widget', $cache, 'widget' );
+		} else {
+			ob_end_flush();
+		}
 	}
 
-	function form($instance) {
+	function css() {
+		if ( ! current_theme_supports( 'widgets' ) )
+			return;
+?>
+<style type="text/css">
+.nzrecent_posts_widget ul li span,
+.nzrecent_posts_widget ul.list-group > li.list-group-item > span.badge {
+background-color: #428bca;
+}
+</style>
+<?php
+	}
+}
+
+class NZRecentCommentsWidget extends WP_Widget_Recent_Comments {
+	function __construct() {
+		parent::__construct();
+		$this->id_base = 'nzrecent-comments';
+		$this->name = 'NZRecent Comments';
+		$this->widget_options = array('classname' => 'nzrecent_comments_widget',
+			'description' => __( 'Your site&#8217;s most recent comments' ));
+		$this->control_options = array( 'id_base' => 'nzrecent-comments' );
+		$this->option_name = 'nzrecent-comments_widget';
+		$this->alt_option_name = 'nzrecent-comments_widget';
+
+		if ( is_active_widget(false, false, $this->id_base) )
+			add_action( 'wp_head', array($this, 'css') );
 	}
 
-	function update($new_instance, $old_instance) {
-		$instance = $old_instance;
-		return $instance;
+	function css() {
+?>
+<style type="text/css">
+.nzrecent_comments_widget .nzrecent-comment {
+	border-top: 1px solid #eee;
+	margin: 0;
+	padding: 2px 0;
+}
+
+.nzrecent_comments_widget .nzrecent-comment:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+.nzrecent_comments_widget .nzrecent-comment .vcard,
+.nzrecent_comments_widget .nzrecent-comment .vcard .avatar {
+	border-radius: 50%;
+}
+
+.nzrecent_comments_widget .nzrecent-comment .media-heading,
+.nzrecent_comments_widget .nzrecent-comment .comment-excerpt {
+	max-width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.nzrecent_comments_widget .nzrecent-comment .comment-meta > small:first-child {
+	padding-left: 0;
+}
+
+.nzrecent_comments_widget .nzrecent-comment .comment-meta > small {
+	padding: 0 4px;
+}
+</style>
+<?php
+	}
+
+	function widget( $args, $instance ) {
+		global $comments, $comment;
+
+		$cache = array();
+		if ( ! $this->is_preview() ) {
+			$cache = wp_cache_get('widget_nzrecent_comments', 'widget');
+		}
+		if ( ! is_array( $cache ) ) {
+			$cache = array();
+		}
+
+		if ( ! isset( $args['widget_id'] ) )
+			$args['widget_id'] = $this->id;
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		extract($args, EXTR_SKIP);
+
+		$title = ( ! empty( $instance['title'] ) ) ?
+			$instance['title'] : __('NZRecent Comments');
+		$title = apply_filters( 'widget_title', $title, $instance,
+			$this->id_base );
+		$number = ( ! empty ( $instance['number'] ) ) ?
+			absint( $instance['number'] ) : 5;
+		if ( ! $number ) $number = 5;
+
+		$comments = get_comments( apply_filters( 'widget_comments_args', array(
+			'number' => $number,
+			'status' => 'approve',
+			'post_status' => 'publish'
+		) ) );
+
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
+		else
+			echo '<div class="panel-body">';
+		echo '<i class="fa fa-rss"></i> subscribe';
+		if ( $comments ) {
+			$post_ids = array_unique( wp_list_pluck( $comments,
+				'comment_post_ID' ) );
+			_prime_post_caches( $post_ids, strpos(
+				get_option( 'permalink_structure' ), '%category%' ), false);
+
+			echo '<ul id="nzrecent-comments-widget" class="media-list">';
+			foreach ( (array) $comments as $comment ) {
+?>
+<li class="nzrecent-comment media">
+<a class="pull-left img-thumbnail vcard <?php echo (!get_comment_author_url() ? 'disabled' : '"'); ?> href="<?php comment_author_url(); ?>">
+<?php
+					echo get_avatar(get_comment_author_email(),
+						54, '', get_comment_author());
+?>
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading text-overflow"><cite class="author"> <?php comment_author_link(); ?></cite>
+on <cite><?php echo get_the_title($comment->comment_post_ID); ?></cite>
+		</h4>
+		<div class="comment-excerpt"><?php comment_excerpt(); ?></div>
+		<cite class="comment-meta">
+			<small><i class="fa fa-clock-o"></i> <?php comment_date(); ?></small>
+			<small><i class="fa fa-share-alt"></i> Share</small>
+			<small><i class="fa fa-heart"></i> Like</small>
+			<small><i class="fa fa-rss"></i> RSS</small>
+		</cite>
+	</div>
+</li>
+<?php
+			}
+?>
+		</ul>
+<?php
+		} else {
+?>
+			<a class="disabled btn btn-default btn-xs">no comment yet</a>
+<?php
+		}
+
+		echo $after_widget;
+
+		if ( ! $this->is_preview() ) {
+			$cache[ $args['widget_id'] ] = $output;
+			wp_cache_set( 'widget_nzrecent_comments', $cache, 'widget' );
+		}
 	}
 }

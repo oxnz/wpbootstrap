@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
-	<div class="panel-heading"><h1 class="title">
+	<header class="post-header panel-heading"><h1 class="title">
 <?php
 $icon = '<i class="fa ';
 if ( in_category( 'Linux' ) )
@@ -33,8 +33,8 @@ $icon .= '"></i> ';
 <?php
 the_title('<a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a>');
 ?>
-	</h1></div><!--/panel-heading-->
-	<ul class="top-info">
+	</h1></header><!--/post-header-->
+	<ul class="post-meta top-info">
 		<li><i class="fa fa-user"></i> <?php the_author_link(); ?></li>
 		<li><?php echo '<i class="fa fa-calendar-o"></i> '.get_the_date(); ?></li>
 		<li><?php the_modified_date('F j, Y', '<i class="fa fa-clock-o"></i> '); ?></li>
@@ -44,13 +44,19 @@ the_title('<a href="' .esc_url(get_permalink()) . '" rel="bookmark">', '</a>');
 	<div class="content panel-body">
 <?php
 if ( has_post_thumbnail() ) {
-	the_post_thumbnail();
+	the_post_thumbnail('post-thumbnail', array(
+		'class' => 'img-thumbnail pull-left',
+	));
 }
 
-the_content('<span class="btn btn-default btn-sm">continue reading &raquo;</span>');
+if ( is_search() ) // Only display Excerpts for Search
+	the_excerpt();
+else
+	the_content('<span class="btn btn-default btn-sm">continue reading &raquo;</span>');
+
 ?>
 	</div>
-	<div class="panel-footer">
+	<footer class="post-footer panel-footer">
 		<ul class="bottom-info">
 			<li><i class="fa fa-th-large"></i>
 				Posted in <?php the_category(' &bull; '); ?></li>
@@ -68,5 +74,5 @@ the_content('<span class="btn btn-default btn-sm">continue reading &raquo;</span
 			<li><i class="fa fa-share-alt"></i> <?php echo rand(0, 100); ?> Shares</li>
 			<li><i class="fa fa-heart"></i> <?php echo rand(0, 100); ?> Likes</li>
 		</ul>
-	</div><!--panel-footer-->
+	</footer><!--panel-footer-->
 </article><!-- #post-## -->

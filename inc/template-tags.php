@@ -90,7 +90,7 @@ function wpbootstrap_post_nav() {
 		<ul class="pager">
 			<?php
 			if ( is_attachment() ) :
-				previous_post_link( '%link', __( '<i class="fa fa-tags">Published In</i>%title', 'wpbootstrap' ) );
+				previous_post_link( '<li class="previous">%link</li>', __( '<i class="fa fa-tags"></i> Published in %title', 'wpbootstrap' ) );
 			else :
 				previous_post_link( '<li class="previous">%link</li>', __( '<i class="fa fa-arrow-circle-o-left"></i> %title', 'wpbootstrap' ) );
 				next_post_link( '<li class="next">%link</li>', __( '%title <i class="fa fa-arrow-circle-o-right"></i>', 'wpbootstrap' ) );

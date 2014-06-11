@@ -3,9 +3,9 @@ get_header();
 ?>
 
 <div class="site-content container">
-	<div id="content" class="row" role="main">
+	<div id="content" class="row">
 		<div class="col-md-8">
-			<div class="blog">
+			<div class="content-main" role="main">
 			<?php
 			if (have_posts()) :
 				while(have_posts()) : the_post();
@@ -13,20 +13,19 @@ get_header();
 					wpbootstrap_post_nav();
 					if(comments_open() || get_comments_number()) {
 						comments_template();
-						}
+					}
 				endwhile;
 			else:
 				get_template_part('content', 'none');
 			endif;
 			?>
-			</div><!-- #blog -->
+			</div><!-- #content-main -->
 		</div><!-- #col-sm-8 -->
 		<div class="col-md-4">
-		<!-- <div class="col-sm-4 col-sm-offset-1" -->
 			<?php get_sidebar( 'content' ); ?>
 			<?php get_sidebar(); ?>
-		</div><!-- #col-sm-4 -->
-	</div><!-- #content -->
-</div><!-- #site-content #container -->
+		</div>
+	</div>
+</div>
 
 <?php get_footer();

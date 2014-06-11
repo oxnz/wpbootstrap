@@ -29,10 +29,6 @@
 	<![endif]-->
 	<link href="<?php echo esc_url(site_url('/favicon.png')); ?>"
 		rel="shortcut icon">
-	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-	<?php 
-		wp_register_script('custom-script', "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", array('jquery'));
-		wp_enqueue_script('custom-script'); ?>
 	<?php wp_head(); ?>
 </head>
 <body>

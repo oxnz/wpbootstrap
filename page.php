@@ -14,6 +14,22 @@
 get_header(); ?>
 
 <?php
+/*
+<h1>
+<?php
+	if ( is_front_page() )
+		get_template_part('content', 'index');
+	else if ( is_front_page() )
+		echo "front";
+	else if ( is_home() )
+		echo "is_home";
+	else
+		echo "other";
+?>
+</h1>
+*/
+?>
+<?php
 	// Start the Loop.
 	while ( have_posts() ) : the_post();
 		// Include the page content template.

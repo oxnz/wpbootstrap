@@ -9,7 +9,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('panel panel-default'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="post-header panel-heading"><h1 class="title">
 <?php
 $icon = '<i class="fa ';

@@ -46,6 +46,14 @@
 							<a href="https://www.facebook.com/yun.xinyi"><i class="fa fa-facebook-square fa-4x"></i></a>
 						</div>
 					</li>
+					<li class="hide">
+						<strong>Subscribe</strong>
+						<div class="subscribe-form">
+							<input type="text">
+							<a href="#" class="btn btn-primary">xx</a>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div><!-- #footer-links -->
@@ -91,7 +99,6 @@ Except where otherwise noted, content on this site is licensed under a
 	<!--
 	<canvas id="footerbg">Your browser does not support the HTML5 canvas tag.</canvas>
 	-->
-	<script src="<?php echo get_template_directory_uri(); ?>/wpbootstrap.js"></script>
 
 <?php wp_footer(); ?>
 	<a href="#" title="back to top" id="back-to-top"><i class="fa fa-arrow-circle-o-up fa-3x"></i></a>

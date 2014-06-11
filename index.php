@@ -1,5 +1,8 @@
 <?php
-get_header(); ?>
+
+//get_header('product');
+get_header();
+?>
 
 <div class="site-content container">
 	<div id="content" class="row">
@@ -7,6 +10,10 @@ get_header(); ?>
 			<div class="content-main" role="main">
 			<?php
 			if (have_posts()) :
+				if ( is_home() )
+					get_template_part('content', 'blog');
+				if ( $wp_query->post_count > 1 )
+					get_template_part('content', 'meta');
 				while(have_posts()) : the_post();
 					get_template_part('content', get_post_format());
 				endwhile;
@@ -18,9 +25,7 @@ get_header(); ?>
 			</div><!-- /content-main -->
 		</div><!-- #col-sm-8 -->
 		<div class="col-sm-4">
-			<div class="content-sidebar" role="complementary">
-				<?php get_sidebar('content'); ?>
-			</div>
+			<?php get_sidebar('content'); ?>
 		</div>
 	</div><!-- #content -->
 </div><!-- #site-content #container -->

@@ -27,7 +27,7 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-	<link href="<?php echo site_url(); ?>/favicon.png"
+	<link href="<?php echo esc_url(site_url('/favicon.png')); ?>"
 		rel="shortcut icon">
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 	<?php 

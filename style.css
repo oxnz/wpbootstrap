@@ -14,11 +14,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400');
 */
-
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css");
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400')
 
 /*
  * override bootstrap color
@@ -41,7 +38,7 @@ dt, dd {
 }
 
 body {
-	background-color: #f3f3f3;
+	background-color: #f3f3e3;
 }
 
 pre,
@@ -628,8 +625,19 @@ p.wp-caption-text {
 	border: 1px solid green;
 }
 
+.post .content .wp-post-image,
 .post .content p {
 	margin: 5px auto;
+}
+
+.post .content p::selection {
+	color: #fff;
+	background-color: #1abc9c;
+}
+
+.post .content .wp-post-image {
+	margin-right: 20px;
+	margin-bottom: 15px;
 }
 
 .site-content .post a.more-link > span {

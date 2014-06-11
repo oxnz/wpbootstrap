@@ -68,8 +68,8 @@ wp_nav_menu(array('container_class'	=> 'collapse navbar-collapse',
 		<input type="text" class="search-input form-control" name="s" id="s" placeholder="Search">
 	  </div>
 	</form>
-	<ul class="nav navbar-nav navbar-right" style="display: none">
-		<li><a href="#">Link</a></li>
+	<ul class="nav navbar-nav navbar-right hide">
+		<li><a href="#">RSS</a></li>
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 			<ul class="dropdown-menu">

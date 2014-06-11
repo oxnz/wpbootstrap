@@ -71,6 +71,7 @@ if ( post_password_required() ) {
 
 <blockquote class="comment-content">
 <?php comment_text(); ?>
+<footer><?php comment_author_link(); ?> from <?php comment_author_IP(); ?></footer>
 </blockquote>
 
 	<ol class="comment-footer">
